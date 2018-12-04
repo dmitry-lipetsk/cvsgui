@@ -18,3 +18,24 @@ Add new bitmap with size 48x48 into wincvs.ico
 
 WinCvs\res\wincvs.ico
  - [add] new size 48x48
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Resolved a problem with compilation. Usage of INT_PTR.
+
+[Source]
+
+WinCvs\CJLib\CJLibrary\CJToolBar.cpp
+ - CCJToolBar::SetButtonText
+   - INT_PTR nString
+   - cast void* to INT_PTR
+   - DefWindowProc returns INT_PTR
+
+ - CCJToolBar::GetButtonText
+   - cast void* to INT_PTR
+
+ - CCJToolBar::Dump
+   - INT_PTR const nCount
+     - pBar->DefWindowProc returns INT_PTR
+
+   - INT_PTR i

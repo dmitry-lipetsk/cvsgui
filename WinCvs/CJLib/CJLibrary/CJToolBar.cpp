@@ -1790,10 +1790,10 @@ INT_PTR CCJToolBar::OnToolHitTest(CPoint point, TOOLINFO* pTI) const
 BOOL CCJToolBar::SetButtonText(int nIndex, LPCTSTR lpszText)
 {
 	// attempt to lookup string index in map
-	int nString = -1;
+	INT_PTR nString = -1;
 	void* p;
 	if (m_pStringMap != NULL && m_pStringMap->Lookup(lpszText, p))
-		nString = (int)p;
+		nString = (INT_PTR)p;
 
 	// add new string if not already in map
 	if (nString == -1)
@@ -1804,7 +1804,7 @@ BOOL CCJToolBar::SetButtonText(int nIndex, LPCTSTR lpszText)
 
 		// add new string to toolbar list
 		CString strTemp(lpszText, lstrlen(lpszText)+1);
-		nString = (int)DefWindowProc(TB_ADDSTRING, 0, (LPARAM)(LPCTSTR)strTemp);
+		nString = DefWindowProc(TB_ADDSTRING, 0, (LPARAM)(LPCTSTR)strTemp);
 		if (nString == -1)
 			return FALSE;
 
@@ -1843,7 +1843,7 @@ void CCJToolBar::GetButtonText(int nIndex, CString& rString) const
 		while (pos)
 		{
 			m_pStringMap->GetNextAssoc(pos, str, p);
-			if ((int)p == button.iString)
+			if ((INT_PTR)p == button.iString)
 			{
 				rString = str;
 				return;
@@ -2213,8 +2213,8 @@ void CCJToolBar::Dump(CDumpContext& dc) const
 	if (dc.GetDepth() > 0)
 	{
 		CCJToolBar* pBar = (CCJToolBar*)this;
-		int nCount = pBar->DefWindowProc(TB_BUTTONCOUNT, 0, 0);
-		for (int i = 0; i < nCount; i++)
+		INT_PTR const nCount = pBar->DefWindowProc(TB_BUTTONCOUNT, 0, 0);
+		for (INT_PTR i = 0; i < nCount; i++)
 		{
 			TBBUTTON button;
 			GetButton(i, &button);
