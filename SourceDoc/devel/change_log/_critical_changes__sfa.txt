@@ -4,3 +4,7 @@
 
 2. [2012-11-09] WinCvs\MfFileDialog.cpp
  - CMfFileDialog::OnFileNameChange
+
+3. [2018-12-03] common\BrowseViewModel.cpp
+  - NotificationManager::NotifyAll
+    - enumeration of nodes from back to forward.

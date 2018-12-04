@@ -48,3 +48,14 @@ Increment WINCVS_PRODUCT_PATCHLEVEL
 
 WinCvs\version_no.h
  - WINCVS_PRODUCT_PATCHLEVEL=3
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Trying to fix a problem with AV into NotificationManager::NotifyAll.
+
+[Source]
+
+common\BrowseViewModel.cpp
+ - NotificationManager::NotifyAll
+   - enumeration of nodes from back to forward.
+   - added the asserts

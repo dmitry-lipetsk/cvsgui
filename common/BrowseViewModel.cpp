@@ -93,12 +93,20 @@ void NotificationManager::CheckOut(CObject* observer)
 /// Fire up a notification once done with changes in observable
 void NotificationManager::NotifyAll()
 {
-	for(std::vector<Node>::iterator i = m_nodes.begin(); i != m_nodes.end(); i++)
+	// [2018-12-04]
+	//  Iteration from forward to back may produce AV. Then will scan from back to front.
+
+	for(std::vector<Node>::iterator i = m_nodes.end(); i != m_nodes.begin();)
 	{
+		--i;
+
 		// Make a local copy so that observers can freely unregister during the process
 		Node& node = *i;
 		node.handler(node.observer);
-	}
+
+		assert(i <= m_nodes.end());
+		assert(i >= m_nodes.begin());
+	} // for i
 }
 
 //////////////////////////////////////////////////////////////////////////
