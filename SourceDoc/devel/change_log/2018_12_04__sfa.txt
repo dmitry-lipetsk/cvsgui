@@ -39,3 +39,12 @@ WinCvs\CJLib\CJLibrary\CJToolBar.cpp
      - pBar->DefWindowProc returns INT_PTR
 
    - INT_PTR i
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Increment WINCVS_PRODUCT_PATCHLEVEL
+
+[Source]
+
+WinCvs\version_no.h
+ - WINCVS_PRODUCT_PATCHLEVEL=3
