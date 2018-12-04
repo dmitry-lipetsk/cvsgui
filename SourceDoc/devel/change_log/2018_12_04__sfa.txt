@@ -1,0 +1,11 @@
+Resolved a problem with compilation
+
+[Source]
+
+WinCvs\CJLib\Include\CJMenuBar.h
+ - enum TRACKINGSTATE
+   - was: typedef enum TRACKINGSTATE
+
+WinCvs\CJLib\Include\CJBrowseEdit.h
+ - enum BROWSE_TYPE
+   - was: typedef enum BROWSE_TYPE
