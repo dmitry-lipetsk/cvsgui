@@ -1,0 +1,690 @@
+# Anjuta Version 1.0.2 
+Compatibility Level: 1 
+
+<PROJECT_DESCRIPTION_START>
+The gcvs package contains an interface for cvs written in C++ using
+gtk+. It contains a version of cvs modified for communication
+purposes with gcvs. gcvs is part of a bigger project named CvsGui
+which provides several graphical clients on Mac and Windows as well.
+<PROJECT_DESCRIPTION_END>
+<CONFIG_PROGS_START>
+AC_PATH_PROG(EXTRA_LIBGLADE_CONFIG, libglade-config,no)
+if test x$EXTRA_LIBGLADE_CONFIG = xno; then
+  AC_MSG_ERROR(Couldn't find libglade-config, please install the LibGlade package.)
+fi
+
+dnl Look for yacc (bison) program
+AC_PROG_YACC
+AM_PROG_LEX
+test -n "$YACC" && YACC="$YACC -d"
+
+dnl Initialize xml-i18n-tools
+AM_PROG_XML_I18N_TOOLS
+
+dnl ***************************************************************************
+dnl Check for Gnome XML
+dnl ***************************************************************************
+GNOME_XML_CHECK
+
+dnl dnl ******************************
+dnl dnl GnomePrint checking
+dnl dnl ******************************
+dnl AC_MSG_CHECKING(for GnomePrint libraries >= 0.35)
+dnl if gnome-config --libs print > /dev/null 2>&1; then
+dnl     vers=`gnome-config --modversion print | sed -e "s/gnome-print-//" | \
+dnl         awk 'BEGIN { FS = "."; } { print $1 * 1000 + $2;}'`
+dnl     if test "$vers" -ge 35; then
+dnl         AC_MSG_RESULT(found)
+dnl     else
+dnl         AC_MSG_ERROR(You need at least GNOME print 0.35 for this version of Anjuta)
+dnl     fi
+dnl else
+dnl     AC_MSG_ERROR(Did not find GnomePrint installed)
+dnl fi
+<CONFIG_PROGS_END>
+<CONFIG_LIBS_START>
+dnl EXTRA_GNOME_LIBS=`gnome-config --libs zvt vfs print gdk_pixbuf libglade`
+dnl EXTRA_GNOME_CFLAGS=`gnome-config --cflags zvt vfs print gdk_pixbuf libglade`
+EXTRA_GNOME_LIBS=""
+EXTRA_GNOME_CFLAGS=""
+AC_SUBST(EXTRA_GNOME_LIBS)
+AC_SUBST(EXTRA_GNOME_CFLAGS)
+
+dnl Gladen not used, so no need to link orbit
+dnl EXTRA_ORBIT_LIBS=`orbit-config --libs client`
+dnl EXTRA_ORBIT_CFLAGS=`orbit-config --cflags client`
+EXTRA_ORBIT_LIBS=""
+EXTRA_ORBIT_CFLAGS=""
+AC_SUBST(EXTRA_ORBIT_LIBS)
+AC_SUBST(EXTRA_ORBIT_CFLAGS)
+
+dnl check if it is for Mac
+if test $host_os = "darwin6.0"; then
+   echo "Doing MacCvs"     
+else
+   AC_PATH_X
+
+dnl   dnl We only support GTK+ >= 1.2.0 now.
+dnl   AM_PATH_GTK(1.2.0,
+dnl           [LIBS="$LIBS $GTK_LIBS"
+dnl            CFLAGS="$CFLAGS $GTK_CFLAGS  -DqGTK"
+dnl            CPPFLAGS="$CPPFLAGS $GTK_CFLAGS  -DqGTK"],
+dnl            AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
+
+   dnl add gcvs specifix flag
+   test -n "$GTK_CFLAGS" && CFLAGS="$CFLAGS -DqGTK" && CPPFLAGS="$CPPFLAGS -DqGTK"
+
+   dnl could be removed when gnome support is implemented
+   test -n "$GTK_CFLAGS" && LIBS="$LIBS $GTK_LIBS"
+ 
+   dnl Set the c++ and the linker flags
+   CPPFLAGS="$CPPFLAGS -DqUnix"
+   CFLAGS="$CFLAGS -DqUnix"
+ 
+   test -n "$x_includes" && CPPFLAGS="$CPPFLAGS -I$x_includes"
+   test -n "$x_includes" && CFLAGS="$CFLAGS -I$x_includes"
+   test -n "$x_libraries" && LDFLAGS="$LDFLAGS -L$x_libraries"
+fi
+
+dnl TCL
+dnl User specified location of the tcl include
+ac_has_tclinc=no
+ac_has_tcllib=no
+
+dnl some default locations for tcl.h
+prefix_locations="$prefix /usr/local/include /usr/include .."
+exec_prefix_locations="$exec_prefix /usr/local/lib /usr/lib .."
+dnl common tcl folder prefixes
+tcl_versions="tcl8.4 tcl8.3 ."
+
+AC_ARG_WITH(tclinclude, [  --with-tclinclude=DIR          use Tcl 8.x includes from DIR],
+        TCL_INCLUDE_DIR=$withval,
+	[ TCL_INCLUDE_DIR=/usr/include
+		for f in $prefix_locations ; do
+			for t in $tcl_versions ; do
+				if test -r "$f/$t/tcl.h"; then
+					break
+				fi
+			done
+ 
+			dnl if tcl_versions is not nesseccery, remove "." from path
+			if test $t = "."; then
+				t=""
+			fi
+ 
+			if test -r "$f/$t/tcl.h"; then
+				TCL_INCLUDE_DIR=$f/$t
+				dnl AC_MSG_RESULT(setting TCL_INCLUDE_DIR to $TCL_INCLUDE_DIR)
+				break
+			fi
+		done
+	])
+
+
+AC_MSG_CHECKING([for tcl.h])
+if test -f $TCL_INCLUDE_DIR/tcl.h; then 
+	AC_MSG_RESULT($TCL_INCLUDE_DIR/tcl.h)
+	ac_has_tclinc=yes
+else
+	AC_MSG_WARN([Cannot find $TCL_INCLUDE_DIR/tcl.h, try --with-tclinclude=DIR])
+fi
+
+dnl User specified location of the tcl lib
+AC_ARG_WITH(tcllib, [  --with-tcllib=DIR          use Tcl 8.x lib from DIR],
+	TCL_LIB_DIR=$withval,
+ 		[ TCL_LIB_DIR=/usr/lib/
+		for f in $exec_prefix_locations ; do
+			for t in $tcl_versions . ; do
+				if test -r "$f/$t/tclConfig.sh"; then
+					break
+				fi
+			done
+ 
+			dnl if tcl_versions is not nesseccery, remove "." from path
+			if test $t = "."; then
+				t=""
+			fi
+ 
+			if test -r "$f/$t/tclConfig.sh"; then
+				TCL_LIB_DIR=$f/$t
+				dnl AC_MSG_RESULT(setting TCL_LIB_DIR to $TCL_LIB_DIR)
+				break
+			fi
+		done
+	])
+
+
+AC_MSG_CHECKING([for tclConfig.sh])
+if test -f $TCL_LIB_DIR/tclConfig.sh; then 
+	AC_MSG_RESULT($TCL_LIB_DIR/tclConfig.sh)
+	ac_has_tcllib=yes
+else
+	AC_MSG_WARN([Cannot find $TCL_LIB_DIR/tclConfig.sh, try --with-tcllib=DIR])
+fi
+
+HAVE_TCL=0
+TCL_CFLAGS=
+TCL_LIB_SPEC=
+
+if test $ac_has_tclinc = yes -a $ac_has_tcllib = yes ; then
+	HAVE_TCL=1
+
+	file=$TCL_LIB_DIR/tclConfig.sh
+	. $file
+
+	# The variables that we use from tclConfig.sh
+	TCL_CFLAGS=-I$TCL_INCLUDE_DIR $TCL_CFLAGS
+	TCL_LIB_SPEC=$TCL_LIB_SPEC
+#	TCL_LIB_SPEC="-L$TCL_PACKAGE_PATH -ltcl"
+fi
+
+AC_SUBST(HAVE_TCL)
+AC_SUBST(TCL_CFLAGS)
+AC_SUBST(TCL_LIB_SPEC)
+
+if test $HAVE_TCL = 1; then
+	AC_MSG_RESULT(Using TCL ${TCL_VERSION}${TCL_PATCH_LEVEL})
+else
+	AC_MSG_RESULT(Unable to find TCL, shell will be disabled)
+fi<CONFIG_LIBS_END>
+<CONFIG_HEADERS_START>
+
+
+dnl AM_WITH_REGEX
+AC_HEADER_STDC
+AC_CHECK_HEADERS(errno.h unistd.h string.h strings.h memory.h utime.h fcntl.h)
+AC_CHECK_HEADERS(get_opt.h limits.h sys/file.h pwd.h sys/param.h sys/select.h)
+AC_CHECK_HEADERS(sys/time.h sys/timeb.h io.h direct.h)
+
+AC_HEADER_SYS_WAIT
+AC_HEADER_STAT
+AC_HEADER_TIME
+AC_HEADER_DIRENT<CONFIG_HEADERS_END>
+<CONFIG_CHARACTERISTICS_START>
+AC_TYPE_SIGNAL
+AC_TYPE_UID_T
+AC_TYPE_MODE_T
+AC_TYPE_SIZE_T
+AC_TYPE_PID_T<CONFIG_CHARACTERISTICS_END>
+<CONFIG_LIB_FUNCS_START>
+AC_REPLACE_FUNCS(mkdir rename strerror memmove vasprintf)
+
+dnl AC_CHECK_FUNCS(stricmp, have_stricmp=yes,
+dnl 	CHECK_HEADER_DEFINE)
+AC_CHECK_FUNCS(stricmp)
+AC_CHECK_FUNCS(strnicmp)
+AC_CHECK_FUNCS(mktemp)
+AC_CHECK_FUNCS(putenv)
+AC_CHECK_FUNCS(vprintf)
+AC_CHECK_FUNCS(tempnam)<CONFIG_LIB_FUNCS_END>
+<CONFIG_ADDITIONAL_START>
+AH_TEMPLATE(DYNAMIC_LINKING, Define if you want support for dynamic linking.)
+AH_TEMPLATE(USCORE, Define if symbol tables on this system use leading underscores.)
+AH_TEMPLATE(DLSYM_ADDS_USCORE, Define if dlsym automatically supplies a leading underscore.)
+AH_TEMPLATE(FD_SETTER, How can you violate a stdio abstraction by setting a stream's fd?)
+AH_TEMPLATE(HAVE_LIBSM,)
+
+AH_TEMPLATE(PACKAGE_DATA_DIR, the packages data locations)
+AH_TEMPLATE(PACKAGE_SOURCE_DIR, the packages source locations)
+AH_TEMPLATE(PACKAGE_DOC_DIR, the packages doc locations)
+AH_TEMPLATE(PACKAGE_HELP_DIR, the packages help locations)
+AH_TEMPLATE(PACKAGE_LOCALE_DIR, the packages locale locations)
+AH_TEMPLATE(PACKAGE_MENU_DIR, the packages menu locations)
+AH_TEMPLATE(PACKAGE_PIXMAPS_DIR, the packages pixmaps locations)
+
+AC_ARG_ENABLE(debug, 
+	[  --enable-debug           Enable debug messages],
+      CFLAGS="$CFLAGS -DDEBUG -O0 -g"
+      CXXFLAGS="$CXXFLAGS -DDEBUG -O0 -g")
+
+dnl Enable debugging mode
+AC_ARG_ENABLE(gCvsDebug, 
+	[  --enable-gCvsDebug           Enable gCvs debug messages],
+	[case "${enableval}" in
+		yes) gCvsDebug=true ;;
+		no)  gCvsDebug=false ;;
+		*) AC_MSG_ERROR(bad value ${enableval} for --enable-gCvsDebug) ;;
+	esac], [gCvsDebug=yes])
+
+dnl M_CONDITIONAL(GCVSDEBUG, test x$gCvsDebug = xtrue)
+
+if test "$gCvsDebug" != true; then
+  CXXFLAGS="$CXXFLAGS -DqCvsDebug=0"
+  CFLAGS="$CFLAGS -DqCvsDebug=0"
+else
+  CXXFLAGS="$CXXFLAGS -DqCvsDebug=1"
+  CFLAGS="$CFLAGS -DqCvsDebug=1"
+fi
+
+dnl Enable stripped and optimized release builds
+AC_ARG_ENABLE(final,
+      [  --enable-final           Build release executables (GCC only)],
+      if test "x$GCC" != xyes; then
+        CFLAGS="$CFLAGS -DNDEBUG -Os -s"
+        CXXFLAGS="$CXXFLAGS -DNDEBUG -Os -s -fno-exceptions -fno-check-new"
+      fi)
+
+dnl Enable compiler warnings
+AC_ARG_ENABLE(warnings,
+      [  --enable-warnings           Enable compiler warnings (GCC only)],
+      if test "x$GCC" != xyes; then
+        CFLAGS="$CFLAGS -Wall -Wmissing-prototypes -Wmissing-declarations -Wparentheses -Wpointer-arith"
+        CXXFLAGS="$CXXFLAGS -Wall -Wparentheses -Wpointer-arith"
+      fi)<CONFIG_ADDITIONAL_END>
+<CONFIG_FILES_START>
+rf/support/Makefile
+rf/support/gtk/Makefile
+gcvs/src/Makefile
+gcvs.spec<CONFIG_FILES_END>
+<MAKEFILE_AM_START>
+ACLOCAL_AMFLAGS = -I m4
+
+gcvs_docdir = ${gcvsdocdir}
+
+gcvs_datadir = ${prefix}/@NO_PREFIX_PACKAGE_DATA_DIR@
+gcvs_data_DATA = \
+	gcvs/gcvs.glade
+
+DIST_SOURCES = \
+	gcvs.spec.in \
+	gcvs.desktop.in.in \
+	xml-i18n-extract.in \
+	xml-i18n-merge.in \
+	xml-i18n-update.in \
+	autogen.sh \
+	GCvs.prj \
+	setup-gettext \
+	$(gcvs_doc_DATA) \
+	$(gcvs_data_DATA)
+
+@XML_I18N_MERGE_DESKTOP_RULE@
+
+# XML merge is broken for .destop in RH 8.0, so temporarily just copy it
+#$(gnomemenu_DATA) : $(gnomemenu_DATA).in $(top_builddir)/xml-i18n-merge $(top_srcdir)/po/*.po
+#	cat $< | sed -e "s/^_//g" > $(gnomemenu_DATA)
+
+etags:
+	etags -C `find . -name \*.cpp`
+	etags -C -a `find . -name \*.h`
+	etags -a `find . -name \*.c`
+
+Makefiles:
+	make ./Makefile
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+ 		test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) ./Makefile.in ); \
+	done
+
+rpm: dist
+	rpm -ta $(distdir).tar.gz
+<MAKEFILE_AM_END>
+
+props.file.type=project
+
+anjuta.version=1.0.2
+anjuta.compatibility.level=1
+
+project.name=gcvs
+project.type=GNOME
+project.target.type=EXECUTABLE
+project.version=1.1b1
+project.author=Karl-Heinz Bruenen
+project.source.target=gcvs_src_gcvs
+project.has.gettext=1
+project.programming.language=C_C++
+project.excluded.modules=intl MacCvs GuiCvs SourceDoc InstallShield cvs-1.9 cvsunix qcvs mpw
+
+project.config.extra.modules.before=rf cvstree cvsgui_protocol
+project.config.extra.modules.after=gcvs Macros cvs-1.10
+project.config.blocked=0
+project.config.disable.overwriting=0 0 1 1 0 0 0 0 0 
+
+project.menu.entry=gcvs
+project.menu.group=Development
+project.menu.comment=gcvs
+project.menu.icon=gcvs_icon.bmp
+project.menu.need.terminal=0
+
+project.configure.options=--enable-debug --enable-warnings
+anjuta.program.arguments=
+preferences.indent.automatic=1
+preferences.use.tabs=1
+preferences.indent.opening=0
+preferences.indent.closing=0
+preferences.tabsize=4
+preferences.indent.size=4
+preferences.autoformat.style=Style of Kangleipak
+preferences.autoformat.custom.style= -i8 -sc -bli0 -bl0 -cbi0 -ss
+preferences.autoformat.disable=0
+preferences.debugger.command=gdb
+preferences.ui.designer=glade '$(project.name).glade'
+preferences.help.browser=devhelp -s '$(current.file.selection)'
+
+module.include.name=common
+module.include.type=
+module.include.expanded=0
+module.include.files=\
+	AboutDlg.h\
+	AdminOptionDlg.h\
+	AnnotateDlg.h\
+	AppConsole.h\
+	AppGlue.h\
+	AppGlue.mac.h\
+	AskYesNo.h\
+	Authen.h\
+	BrowseViewColumn.h\
+	BrowseViewHandlers.h\
+	BrowseViewModel.h\
+	CPStr.h\
+	CTCP2Parse.hpp\
+	CheckoutDlg.h\
+	CommitDlg.h\
+	CvsAlert.h\
+	CvsArgs.h\
+	CvsCommands.h\
+	CvsEntries.h\
+	CvsIgnore.h\
+	CvsPrefs.h\
+	DiffDlg.h\
+	EditorMonDlg.h\
+	FileTraversal.h\
+	GetPassword.h\
+	GetPrefs.h\
+	GetValue.h\
+	GraphOptDlg.h\
+	ImportDlg.h\
+	ImportFilter.h\
+	ImportFilterDlg.h\
+	InitDlg.h\
+	LineCmd.h\
+	LogDlg.h\
+	LogParse.h\
+	MacBinEncoding.h\
+	MacBinMaps.h\
+	MacMisc.h\
+	MacrosSetup.h\
+	MakeSurePathExists.h\
+	MoveToTrash.h\
+	MultiFiles.h\
+	MultiString.h\
+	OptionalPropertySheet.h\
+	Persistent.h\
+	PromptFiles.h\
+	PythonContainer.h\
+	PythonGlue.h\
+	PythonGlue.impl.h\
+	PythonImpl.h\
+	PythonMacros.h\
+	ReleaseDlg.h\
+	RtagDlg.h\
+	SortList.h\
+	TagDlg.h\
+	TclGlue.h\
+	TclGlue.mac.h\
+	TextBinary.h\
+	UCvsApp.h\
+	UCvsCommands.h\
+	UCvsConsole.h\
+	UCvsDialogs.h\
+	UCvsFiles.h\
+	UCvsFolders.h\
+	UCvsFrame.h\
+	UCvsGraph.h\
+	UCvsMenubar.h\
+	UCvsToolbar.h\
+	UpdateDlg.h\
+	VolsPaths.h\
+	../cvsgui_protocol/cvsgui.h\
+	../cvsgui_protocol/cvsgui_process.h\
+	../cvsgui_protocol/cvsgui_protocol.h\
+	../cvsgui_protocol/cvsgui_wire.h\
+	dll_garbage.h\
+	dll_glue.h\
+	dll_loader.h\
+	dll_process.h\
+	fnmatch.h\
+	getline.h\
+	getopt.h\
+	SmartComboBox.h\
+	../cvstree/compat/unistd.h\
+	../cvstree/CvsLog.h\
+	../cvstree/common.h\
+	../cvstree/parser.h\
+	../rf/support/gtk/stdafx.h\
+	../rf/support/mfc/PseudoButton.h\
+	../rf/support/mfc/PseudoDlg.h\
+	../rf/support/mfc/PseudoDraw.h\
+	../rf/support/mfc/StdAfx.h\
+	../rf/support/mfc/dib.h\
+	../rf/support/mfc/pseudolist.h\
+	../rf/support/macapp/UPseudoSupport.h\
+	../rf/support/macapp/stdafx.h\
+	../rf/support/powerplant/UPseudoSupport.h\
+	../rf/support/powerplant/stdafx.h\
+	../rf/uconfig.h\
+	../rf/uconsole.h\
+	../rf/udraw.h\
+	../rf/umain.h\
+	../rf/umenu.h\
+	../rf/uobject.h\
+	../rf/ustr.h\
+	../rf/utoolbar.h\
+	../rf/uwidget.h\
+	../gcvs/stdafx.h\
+	../gcvs/src/callbacks.h\
+	../gcvs/src/interface.h\
+	../gcvs/src/support.h\
+	../acconfig.h\
+	../config.h
+
+module.source.name=.
+module.source.type=
+module.source.expanded=0
+module.source.files=\
+	common/AboutDlg.cpp\
+	common/AdminOptionDlg.cpp\
+	common/AnnotateDlg.cpp\
+	common/AppConsole.cpp\
+	common/AppGlue.cpp\
+	common/AppGlue.mac.cpp\
+	common/AskYesNo.cpp\
+	common/Authen.cpp\
+	common/BrowseViewColumn.cpp\
+	common/BrowseViewModel.cpp\
+	common/CPStr.cpp\
+	common/CTCP2Parse.cpp\
+	common/CheckoutDlg.cpp\
+	common/CommitDlg.cpp\
+	common/CvsAlert.cpp\
+	common/CvsArgs.cpp\
+	common/CvsCommands.cpp\
+	common/CvsEntries.cpp\
+	common/CvsIgnore.cpp\
+	common/CvsPrefs.cpp\
+	common/DiffDlg.cpp\
+	common/EditorMonDlg.cpp\
+	common/FileTraversal.cpp\
+	common/GetPassword.cpp\
+	common/GetPrefs.cpp\
+	common/GetValue.cpp\
+	common/GraphOptDlg.cpp\
+	common/ImportDlg.cpp\
+	common/ImportFilter.cpp\
+	common/ImportFilterDlg.cpp\
+	common/InitDlg.cpp\
+	common/LineCmd.cpp\
+	common/LogDlg.cpp\
+	common/LogParse.cpp\
+	common/MacBinEncoding.cpp\
+	common/MacBinMaps.cpp\
+	common/MacMisc.cpp\
+	common/MacrosSetup.cpp\
+	common/MakeSurePathExists.cpp\
+	common/MoveToTrash.cpp\
+	common/MultiFiles.cpp\
+	common/MultiString.cpp\
+	common/OptionalPropertySheet.cpp\
+	common/Persistent.cpp\
+	common/PromptFiles.cpp\
+	common/PythonContainer.cpp\
+	common/PythonGlue.cpp\
+	common/PythonImpl.cpp\
+	common/ReleaseDlg.cpp\
+	common/RtagDlg.cpp\
+	common/TagDlg.cpp\
+	common/TclGlue.cpp\
+	common/TclGlue.mac.cpp\
+	common/TextBinary.cpp\
+	common/UCvsApp.cpp\
+	common/UCvsConsole.cpp\
+	common/UCvsFiles.cpp\
+	common/UCvsFolders.cpp\
+	common/UCvsFrame.cpp\
+	common/UCvsGraph.cpp\
+	common/UCvsMenubar.cpp\
+	common/UCvsToolbar.cpp\
+	common/UpdateDlg.cpp\
+	common/VolsPaths.c\
+	cvsgui_protocol/cvsgui.c\
+	cvsgui_protocol/cvsgui_process.cpp\
+	cvsgui_protocol/cvsgui_wire.cpp\
+	common/dll_garbage.c\
+	common/dll_glue.c\
+	common/dll_loader.c\
+	common/fnmatch.c\
+	common/getline.c\
+	common/getopt.c\
+	common/getopt1.c\
+	common/SmartComboBox.cpp\
+	cvstree/CvsLog.cpp\
+	cvstree/lexer.cc\
+	cvstree/lexer.cpp\
+	cvstree/main.cpp\
+	cvstree/parser.cc\
+	cvstree/parser.cpp\
+	rf/support/mfc/PseudoButton.cpp\
+	rf/support/mfc/PseudoDlg.cpp\
+	rf/support/mfc/PseudoDraw.cpp\
+	rf/support/mfc/PseudoList.cpp\
+	rf/support/mfc/StdAfx.cpp\
+	rf/support/mfc/dib.c\
+	rf/support/macapp/UPseudoSupport.cpp\
+	rf/support/powerplant/UPseudoSupport.cpp\
+	rf/uconsole.cpp\
+	rf/udraw.cpp\
+	rf/uevent.cpp\
+	rf/umenu.cpp\
+	rf/uobject.cpp\
+	rf/ustr.cpp\
+	rf/utoolbar.cpp\
+	rf/uwidget.cpp\
+	gcvs/src/callbacks.c\
+	gcvs/src/interface.c\
+	gcvs/src/main.cpp\
+	gcvs/src/support.c\
+	gcvs.desktop.in\
+	common/ProgressDlg.cpp
+
+module.pixmap.name=pixmaps
+module.pixmap.type=
+module.pixmap.expanded=0
+module.pixmap.files=\
+	addb.xpm\
+	add.xpm\
+	addfile.xpm\
+	binfile.xpm\
+	branch.xpm\
+	commit.xpm\
+	conflict.xpm\
+	cvsfile.xpm\
+	delfile.xpm\
+	diff.xpm\
+	edit.xpm\
+	error.xpm\
+	explore.xpm\
+	folder.xpm\
+	foldign.xpm\
+	foldmiss.xpm\
+	foldunk.xpm\
+	graph.xpm\
+	ignfile.xpm\
+	ignore.xpm\
+	lock.xpm\
+	log.xpm\
+	missfile.xpm\
+	modbin.xpm\
+	modfile.xpm\
+	release.xpm\
+	reload.xpm\
+	remove.xpm\
+	status.xpm\
+	stop.xpm\
+	tag.xpm\
+	trash.xpm\
+	unedit.xpm\
+	unkfile.xpm\
+	unlock.xpm\
+	untag.xpm\
+	unwatch.xpm\
+	update.xpm\
+	upfolder.xpm\
+	warning.xpm\
+	watch.xpm\
+	viewAdded.xpm\
+	viewChanged.xpm\
+	viewConflict.xpm\
+	viewMissing.xpm\
+	viewModified.xpm\
+	viewRemove.xpm\
+	viewUnknown.xpm\
+	viewIgnored.xpm
+
+module.data.name=data
+module.data.type=
+module.data.expanded=0
+module.data.files=
+
+module.help.name=help
+module.help.type=
+module.help.expanded=0
+module.help.files=
+
+module.doc.name=GuiDoc
+module.doc.type=
+module.doc.expanded=0
+module.doc.files=\
+	MacCVSSF.html\
+	cvsgui-1.html\
+	cvsgui-2.html\
+	cvsgui-3.html\
+	cvsgui-4.html\
+	cvsgui-5.html\
+	cvsgui-6.html\
+	cvsgui-7.html\
+	cvsgui.html\
+	cvsgui.sgml
+
+module.po.expanded=1
+module.po.files=\
+	de.po\
+	en_GB.po
+
+compiler.options.supports=GNOME 
+compiler.options.include.paths=
+compiler.options.library.paths=
+compiler.options.libraries=
+compiler.options.libraries.selected=
+compiler.options.defines=
+compiler.options.warning.buttons=0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+compiler.options.optimize.buttons=0 1 0 0 
+compiler.options.other.buttons=1 0 
+compiler.options.other.c.flags=
+compiler.options.other.l.flags=
+compiler.options.other.l.libs=
+project.source.paths=\
+	rf\
+	rf/support/gtk\
+	common\
+	cvs-1.10\
+	gcvs\
+	gcvs/src
+

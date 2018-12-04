@@ -1,0 +1,35 @@
+/* XPM */
+static const char *i_ignore[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15       13            1",
+/* colors */
+"c None",
+". c #000000",
+"# c #008000",
+"a c #808000",
+"b c #000080",
+"d c #808080",
+"e c #f80000",
+"f c #00fc00",
+"g c #f8fc00",
+"h c #0000f8",
+"i c #f800f8",
+"j c #00fcf8",
+"k c #f8fcf8",
+/* pixels */
+"cddddddddddccccc",
+"cdkkkkkkkkcdcccc",
+"cdkkkkkkkkckdchh",
+"cdkkkkkkkk.hhhhh",
+"cdkk....hhhhhhhh",
+"cdkkkkhhhhhhhhhh",
+"cdkk.hhhhhhhhhhh",
+"cdkkhhhhhhhhh.cc",
+"cdkhhhhhhh.kc.cc",
+"cdhhhhhhkkkkc.cc",
+"chhhhhh....kc.cc",
+"hhhhhhkkkkkkc.cc",
+"hhhhh......kc.cc",
+"hhhhkkkkkkkkc.cc",
+"hhccccccccccc.cc"
+};

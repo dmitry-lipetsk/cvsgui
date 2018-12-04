@@ -1,0 +1,189 @@
+Installation instructions for gcvs on SUNOS/Sparc machine
+*********************************************************************
+
+Contents :
+        A. Introduction
+
+        B. Requirements
+                + SUN packages
+                + libraries to compile
+
+        C. Installation instructions
+                + Extract files
+                + Configure
+                + Make
+                + Make install
+
+        D. BUGS
+
+        E. Tips and Tricks
+
+*********************************************************************
+A.-----Introduction-----
+        This file is just intended to give ONE MEAN to install gcvs on
+        a SunOS Machine.  It is the result of some experiences from a
+        linux user to install it on a SUN machine without
+
+                * neither SUN Administration experience
+                * nor a lot of C programming knowledges...
+
+        For any advanced SUN administrator, this document shouldn't be
+        a lot of help...
+
+        In this file, '$' is used to replace your prompt shell.
+
+        Installation has been tested by me on
+                * 5 Sun SPARC 2.6
+                * 2 Sun SPARC 7
+
+
+B.-----Requirements for gcvs-----
+
++ SUN packages
+        These tools are available as SUN package.
+                (from SUN Site http://www.sunfreeware.com)
+
+        . tcl 8.1 or better
+        . tk 8.1 or better
+        . GNU make 3.78.1       (Sun 7 & 8)
+        . flex 2.5.4a
+
++ libraries to compile
+        . glib 1.2.7            ftp://ftp.gtk.org/pub/gtk/v1.2/
+        . gtk+ 1.2.7            ftp://ftp.gtk.org/pub/gtk/v1.2/
+        . GNU make 3.77         (Sun 2.5 & 2.6) ftp://ftp.gnu.org/gnu/make
+
+
+C.-----Installation Instructions-----
+
+        * Check the [Requirements for gcvs] section first and make sure
+        everything is fine.
+
+
+        +[EXTRACT FILES]
+
+                * Type
+                        $gzip -d gcvs-<version>.tar.gz
+                        $tar -xvf gcvs-<version>.tar
+
+                * Then, go to the gftp-<version> directory
+
+        +[CONFIGURE]
+
+                $./configure
+
+                The command configure will generate a Makefile for your
+                machine.  By default, when you run configure, it will
+                install gcvs with the prefix :
+                        /usr/local
+
+                So the gcvs binary will be
+                        /usr/local/gcvs/bin/gcvs
+
+                You can change this by typing
+                        $./configure --prefix=/usr
+
+                And it will then install the gcvs binary in :
+                        /usr/gcvs/bin/gcvs
+
+                This is one point different from many other package.
+                Installation of gcvs is made by default in :
+                        PREFIX/gcvs/bin/gcvs
+
+                You should create a link for gcvs in one of the directory
+                in your PATH.  By example, (with PREFIX=/usr/local):
+                        $ln -s /usr/local/gcvs/bin/gcvs  /usr/local/bin/gcvs
+
+
+        +[MAKE]
+
+                make will compile a binary for your machine.
+
+                Be sure that the make is the GNU make.
+                If you type :
+                        $make --version
+
+                You should see :
+
+        "GNU Make version 3.77, by Richard Stallman and Roland McGrath.
+         Copyright (C) 1988, 89, 90, 91..."
+
+                If not, you are probably using SUN version of make.
+                        (usually located in "/usr/ccs/bin/make")
+
+                Then use complete path of your GNU make program
+                        (maybe "/usr/local/bin/make")
+
+        +[MAKE INSTALL]
+
+                Login as root if necessary and then type
+
+                        $make install
+
+                Then, everything should work perfectly!
+
+                You now can run :
+                        $/usr/local/gcvs/bin/gcvs
+
+
+D.-----BUGS-----
+
+        During the make procedure, I encounter on some machine
+        a problem like this :
+
+ "Making all in Macros
+  make[2]: Entering directory `/export/home/gwendal/gcvs-1.0a4/Macros'
+  make[2]: *** No rule to make target `*.tcl', needed by `all-am'.  Stop.
+  make[2]: Leaving directory `/export/home/gwendal/gcvs-1.0a4/Macros'
+  make[1]: *** [all-recursive] Error 1
+  make[1]: Leaving directory `/export/home/gwendal/gcvs-1.0a4'
+  make: *** [all-recursive-am] Error 2"
+
+        If so, edit the gcvs-<version>/Makefile file  and replace the line
+                SUBDIRS = common cvstree rf gcvs Macros  cvs-1.10 GuiDoc
+        by :
+                SUBDIRS = common cvstree rf gcvs cvs-1.10 GuiDoc
+
+        and do a $make again.
+
+    Everything will work except the Macros menu... It will probably be
+    fixed in future release.
+
+
+E.-----TIPS AND TRICKS-----
+
+        Installation of required packages should be easy but there are some
+        things maybe not trivial that could be mentionned.
+
+        Use mainly GNU tools to compile this application:
+                GNU flex 2.5.4.a, GNU gcc 2.95.2, GNU make 3.77 or better
+        the "ar", "as" programs from solaris could be used and must be in your 
+        PATH (usually in /usr/ccs/bin)
+
+        There are a lot of warnings while compiling GTK1.2.7 in the Xutil.h 
+        file but apparently it doesn't impact the gcvs compilation...
+        Librairies GTK and Glib 1.2.0 and better should work fine but not 
+        tested by me on SUN... (please, let me know your experiences...)
+
+        I used GNU make 3.77 instead of 3.76.1 package (let me know if it works
+        on your system with the package 3.76.1 version)  compiled from source :
+                ftp://ftp.gnu.org/gnu/make
+
+        For SunOS8 and SunOS7 package for GNU Make 3.78.1 is
+        available and works fine.
+
+        If you install tcl/tk or other needed package with the local "mode", be
+        sure that you have added :
+        /usr/local/bin in your environment PATH variable
+        /usr/local/lib in your environment LD_LIBRARY_PATH variable
+
+        After each package installation, try the command "rehash" for the system
+        to find the new tools added.
+
+
+*******************************************************************************
+Any comments to this README.SUN file could be sent to
+Gwendal TANGUY<gwendal@swissquote.ch>
+file written march, the 28th 2000
+based on the gcvs-1.0a4 version of gcvs.
+*******************************************************************************

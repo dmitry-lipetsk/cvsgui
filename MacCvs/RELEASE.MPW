@@ -1,0 +1,40 @@
+set CVSROOT ':pserver:alexcvs@devnet.3d.com:/cvsroot'
+export CVSROOT
+set USER alexp
+export USER
+
+directory 'Sources:MacCvs Distrib:MacCVS_app:'
+delete -y -i cvsgui
+cvs -z9 -w export -r HEAD MacCvsSrc
+delete -y -i ':cvsgui:cvs-1.10:'
+
+directory 'Sources:MacCvs Distrib:MacCVS_core:'
+delete -y -i cvsgui
+cvs -z9 -w export -r CVSGUI111 'cvsgui/cvs-1.10'
+
+delete -y 'Sources:MacCvs Distrib:MacCVS_core:cvsgui:cvs-1.10:windows-NT:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_core:cvsgui:cvs-1.10:os2:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_core:cvsgui:cvs-1.10:vms:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:MacCvs:GUSI20:Examples:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:MacCvs:GUSI20:test:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:MacCvs:GUSI20:lib:'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:rf:support:mfc'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:rf:support:macapp'
+delete -y 'Sources:MacCvs Distrib:MacCVS_app:cvsgui:rf:support:gtk'
+
+duplicate -y MacOS9:cvsgui:MacCvs:Build:maccvs 'Sources:MacCvs Distrib:MacCvs 3.1 Application:maccvs'
+duplicate -y MacOS9:cvsgui:MacCvs:Build:cvs2.Lib 'Sources:MacCvs Distrib:MacCvs 3.1 Application:cvs2.Lib'
+duplicate -y MacOS9:cvsgui:MacCvs:Build:GUSIMSL.PPC.Lib 'Sources:MacCvs Distrib:MacCvs 3.1 Application:GUSIMSL.PPC.Lib'
+duplicate -y MacOS9:cvsgui:mpw:MPWCvs:Build:mpwcvs 'Sources:MacCvs Distrib:MacCvs 3.1 Application:MPW tools:cvs'
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:ChangeLog'
+duplicate -y MacOS9:cvsgui:ChangeLog 'Sources:MacCvs Distrib:MacCvs 3.1 Application:ChangeLog'
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:BUGS'
+duplicate -y MacOS9:cvsgui:MacCvs:BUGS 'Sources:MacCvs Distrib:MacCvs 3.1 Application:BUGS'
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:IMPORTANT'
+duplicate -y MacOS9:cvsgui:MacCvs:BUGS 'Sources:MacCvs Distrib:MacCvs 3.1 Application:IMPORTANT'
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:README'
+duplicate -y MacOS9:cvsgui:MacCvs:BUGS 'Sources:MacCvs Distrib:MacCvs 3.1 Application:README'
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:Macros:'Å.tcl
+setfile -a l 'Sources:MacCvs Distrib:MacCvs 3.1 Application:Macros:'Å.txt
+duplicate -y 'MacOS9:cvsgui:Macros:'Å.tcl 'Sources:MacCvs Distrib:MacCvs 3.1 Application:Macros:'
+duplicate -y 'MacOS9:cvsgui:Macros:'Å.txt 'Sources:MacCvs Distrib:MacCvs 3.1 Application:Macros:'

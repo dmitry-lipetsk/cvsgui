@@ -1,0 +1,42 @@
+// wincvs.odl : type library source for wincvs.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (wincvs.tlb).
+
+[ uuid(D2D77DC3-8299-11D1-8949-444553540000), version(1.0) ]
+library Wincvs
+{
+	importlib("stdole32.tlb");
+	
+
+	//  Primary dispatch interface for CWincvsDoc
+	
+	[ uuid(D2D77DC4-8299-11D1-8949-444553540000) ]
+	dispinterface IWincvs
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CWincvsDoc)
+			[id(1)] BSTR ViewPath;
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CWincvsDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CWincvsDoc
+	
+	[ uuid(D2D77DC2-8299-11D1-8949-444553540000) ]
+	coclass Document
+	{
+		[default] dispinterface IWincvs;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

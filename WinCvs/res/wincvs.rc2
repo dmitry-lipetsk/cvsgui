@@ -1,0 +1,62 @@
+//
+// WINCVS.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION WINCVS_FILEVERSION
+ PRODUCTVERSION WINCVS_PRODUCTVERSION
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS WCVS_PATCHED_FLAG | WCVS_SPECIAL_BUILD_FLAG | WCVS_PRERELEASE_FLAG | WCVS_PRIVATE_BUILD_FLAG | WCVS_DEBUG_FLAG
+#ifdef _UNICODE
+ FILEOS VOS_NT
+#else
+ FILEOS VOS__WINDOWS32
+#endif
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "WinCvs\r\nCopyright 2002, Alexandre Parenteau and others.\r\n"
+                              "Licensed under GNU General Public License version 2.0 or above.\0"
+            VALUE "CompanyName", "GNU\0"
+            VALUE "FileDescription", "WinCvs GUI shell for CVS.\0"
+            VALUE "FileVersion", "WinCvs " WINCVS_FILEVERSION_STRING "\0"
+            VALUE "InternalName", "Wincvs\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002, see comments\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "wincvs.exe\0"
+            VALUE "PrivateBuild", WCVS_PRIVATE_BUILD_STRING "\0"
+            VALUE "ProductName", "WinCvs\0"
+            VALUE "ProductVersion", "WinCvs " WINCVS_PRODUCTVERSION_STRING "\0"
+            VALUE "SpecialBuild", WCVS_SPECIAL_BUILD_STRING "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+// End of version info resource
+
+#include "wincvs2.rc"
+
+PYSHELL  PYSCRIPT  MOVEABLE PURE   "res\\mfcshell.py"

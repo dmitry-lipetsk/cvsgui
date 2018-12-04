@@ -1,0 +1,38 @@
+In this file:
+ - Common information
+ - Support for Python
+ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Common information
+
+Output files (exe,dll,pdb,chm,txt) will be copied into
+ ..\..\output\win{32/64}bit
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Support for PYTHON [work in progress....]
+
+1. -------------------------
+
+Download and install Python software on your computer with VS2010
+ - For build of 32bit WinCVS required the 32bit python software
+ - For build of 64bit WinCVS required the 64bit python software
+
+ I tested the compile and work with Python 2.7 [32 and 64 bit]
+
+2. -------------------------
+
+Define in your system next variables:
+
+PATH_PYTHON
+ - Path to program folder with 32bit installation of Python.
+   Example (Win7 64bit): "c:\Program Files (x86)\Python27"
+
+   Required for compile WinCVS for Windows 32bit
+   
+PATH_PYTHON_64BIT
+ - Path to program folder with 64bit installation of Python
+   Example (Win7 64bit): "c:\Program Files\Python27"
+
+   Required for compile WinCVS for Windows 64bit
+   
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

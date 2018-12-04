@@ -1,0 +1,12 @@
+Debug
+Release
+*.aps
+*.ncb
+*.opt
+*.plg
+.deps
+Makefile
+Makefile.in
+*.o
+*.a
+cvstree

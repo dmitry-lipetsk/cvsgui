@@ -1,0 +1,1 @@
+MacCvsX binary package for Mac OS X 10.1 or later. Please take the time to read the ReadMe for News and important notes.

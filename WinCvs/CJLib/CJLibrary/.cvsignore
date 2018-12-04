@@ -1,0 +1,8 @@
+*.opt
+*.ncb
+Debug
+Release
+*.aps
+*.plg
+Release_unicode
+Debug_unicode

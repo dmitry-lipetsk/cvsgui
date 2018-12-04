@@ -1,0 +1,17 @@
+echo "	$1.moc \\"
+echo "	$1Data.moc \\"
+echo
+echo "	$1.cpp \\"
+echo "	$1Data.cpp \\"
+echo
+echo "	$1.h \\"
+echo "	$1Data.h \\"
+echo
+echo "$1Data.cpp:$1Data.moc"
+echo "$1Data.moc : $1Data.h"
+echo "	@MOC@ \$< -o \$@"
+echo
+echo "$1.cpp:$1.moc"
+echo "$1.moc : $1.h"
+echo "	@MOC@ \$< -o \$@"
+

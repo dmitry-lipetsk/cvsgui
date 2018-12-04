@@ -1,0 +1,124 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {QCvsAlert.h}
+	ClassSource {QCvsAlert.cpp}
+	ClassName {QCvsAlert}
+	DataHeader {QCvsAlertData.h}
+	DataSource {QCvsAlertData.cpp}
+	DataName {QCvsAlertData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {qcvs alert}
+	WindowFlags {118784}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {350 120}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+Label {
+		Text {}
+		Alignment {1313}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {5 5 340 79}
+		Name {Label_1}
+		Variable {fText}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {233 89 112 26}
+		Name {PushButton_1}
+		Variable {fDef}
+		Signal {[Protected]  clicked --> accept  ()}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {FALSE}
+		Text {}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {117 89 111 26}
+		Name {PushButton_2}
+		Variable {fCancel}
+		Signal {[Protected]  clicked --> reject  ()}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1{
+	Widget {Label_1}
+	BoxStretch {3}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Stretch-1.2.1{
+	Stretch {1}
+}
+Layout_Widget-1.2.2{
+	Widget {PushButton_2}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.3{
+	Widget {PushButton_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+}

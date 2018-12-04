@@ -1,0 +1,70 @@
++--------------------------------------------------------------------------------
+Name:
+	
+	README
+	
+Contents:
+
+	The MacCVS Read Me file.
+	
+Change Log:
+
+	2/20/2003	jens <jum@mac.com>			Update to CW8 & Mach-O requirements.
+	1/10/2002	alex <aubonbeurre@hotmail.com>		Update to CW7.
+	3/12/2001	rmgw <hawkfish@electricfish.com>	Document 3.2 needs.
+	12/6/2000	alex <aubonbeurre@hotmail.com>		Put some versions.
+	7/7/2000	rmgw <hawkfish@electricfish.com>	Document PowerPlant needs.
+	7/5/2000	rmgw <hawkfish@electricfish.com>	Document needs, build directions.
+	7/9/1999	alex <aubonbeurre@hotmail.com>		First written.
+
+Disclaimer:
+
+	This implementation of MacCVS is provided for free and without support.
+	Refer to each file to know its policy.
+
++--------------------------------------------------------------------------------
+
+Please read the COPYING file first located on the parent
+folder.
+
+* In order to compile MacCVS you will need:
+
+- CodeWarrior Pro8
+- Apple's Developer Tools
+- PowerPlant 2.1.1.
+
+* Tested on :
+
+1) CW Pro 8.3, IDE 5.1.1, PowerPlant 2.1.1 (__PowerPlant__ == 0x02218000),
+MSL 8.0.03 (__MSL__ == 0x00008003), December 2002 Developer Tools, Mac OS X 10.2.3 / 10.2.4
+
+* To Build MacCVS : the folder hierarchy should look like that :
+  (Make sure you've updated the "cvs-1.10" subtree to the "CVSGUI1112" branch! 
+   And don't forget the option to create new folders when updating...)
+
++ - MacCvs 3.2 Sources
+	+ - common
+	+ - cvs-1.10
+	+ - GuiDoc
+	+ - MacCvs
+		+ - Build 			: contains the projects to build MacCVS on Macintosh.
+		+ - BUGS 			: known bugs in the MacCVS port.
+		+ - Distrib			: contains tools to build the distribution disk image
+		+ - Goodies			: some samples and misc. things for MacCVS (mostly obsolete).
+		+ - GUSI20
+		+ - GUSI_MSL
+		+ - MachOGUSI			: thin GUSI wrapper for Mach-O
+		+ - rsrc			: resources specific to MacCVS.
+		+ - src 			: sources specific to MacCVS.
+		+ - TCL
+		+ - WASTE			: A WASTE distribution that builds in Mach-O
+		+ - WText
+	+ - rf
+
+When this is set up correctly, do the following:
+
+- using Terminal, go into cvs-1.10 and type "./autogen.sh", then "make" to build the cvsgui tool
+- Open the project ":MacCvs:Build:MacCvs.CWP8.mach-o.mcp" and build the target "MacCvs all"
+
+The Debug build will be in :MacCvs:Build:Debug:maccvsX, the release build will be in :MacCvs:Build:Release:MacCvsX.app
+

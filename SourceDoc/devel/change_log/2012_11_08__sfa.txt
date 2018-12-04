@@ -1,0 +1,313 @@
+A new iterative algorithm in CWinLogData::ComputeBounds
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData
+   - [add] class tag_traits_for_cb
+   - ComputeBounds
+     - Iterative implementation
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A new iterative algorithm in TGraph::TraverseGraph
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - TGraph
+   - [add] class tag_traits_for_tg
+   - TraverseGraph
+     - Iterative implementation
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Using INT_PTR in return type of DoModal method
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+WinCvs\TipDlg.h(cpp)
+ - CTipDlg::DoModal()
+   - returns INT_PTR
+
+WinCvs\MfFileDialog.h(cpp)
+ - CMfFileDialog::DoModal
+   - returns INT_PTR
+   - uses INT_PTR
+
+WinCvs\HHelpSupport.h(cpp)
+ - CHHelpPropertySheet::DoModal
+ - CHHelpDialog::DoModal
+   - returns INT_PTR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Using UINT_PTR in OnTimer (WM_TIMER message handler)
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+WinCvs\BrowseFileView.h(cpp)
+ - CBrowseFileView::OnTimer
+   - [arg] nIDEvent
+      - now with UINT_PTR type
+
+WinCvs\CvsStatusBar.h(cpp)
+ - CCvsStatusBar::OnTimer
+   - [arg] nIDEvent
+      - now with UINT_PTR type
+      - not used
+
+WinCvs\MainFrm.h(cpp)
+ - CMainFrame::OnTimer
+   - [arg] nIDEvent
+      - now with UINT_PTR type
+      - not used
+
+WinCvs\Splash.h(cpp)
+ - CSplashWnd::OnTimer
+   - [arg] nIDEvent
+      - now with UINT_PTR type
+      - not used
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Using INT_PTR in return type of DoModal method
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+common\ProgressDlg.h(cpp)
+ - CProgressDlg::DoModal
+   - returns INT_PTR
+
+common\OptionalPropertySheet.h(cpp)
+ - COptionalPropertySheet::DoModal
+   - returns INT_PTR
+
+common\CvsAlert.h(cpp)
+ - CCVSAlert_MAIN::DoModal
+   - returns INT_PTR
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Using UINT_PTR in OnTimer (WM_TIMER message handler)
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+common\EditorMonDlg.h(cpp)
+ - CEditorMonDlg::OnTimer
+   - [arg] nIDEvent
+      - now with UINT_PTR type
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CJLib source code
+ - allow to compile in VS2010
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+WinCvs\CJLib\Include\CJToolBar.h
+WinCvs\CJLib\CJLibrary\CJToolBar.cpp
+ - CCJToolBar::OnToolHitTest
+   - returns INT_PTR
+   - uses INT_PTR
+
+WinCvs\CJLib\Include\CJShellList.h
+WinCvs\CJLib\CJLibrary\CJShellList.cpp
+ - CCJShellList::OnShellNotify
+   - returns LRESULT
+
+WinCvs\CJLib\Include\CJReBar.h
+WinCvs\CJLib\CJLibrary\CJReBar.cpp
+ - CCJReBar::OnToolHitTest
+   - returns INT_PTR
+
+WinCvs\CJLib\Include\CJOutlookBar.h
+WinCvs\CJLib\CJLibrary\CJOutlookBar.cpp
+ - CCJOutlookBar::OnTimer
+   - [arg] nIDEvent
+     - now with UINT_PTR type
+
+WinCvs\CJLib\Include\CJFlatComboBox.h
+WinCvs\CJLib\CJLibrary\CJFlatComboBox.cpp
+ - CCJFlatComboBox::OnTimer
+   - [arg] nIDEvent
+     - now with UINT_PTR type
+
+WinCvs\CJLib\Include\CJFlatButton.h
+WinCvs\CJLib\CJLibrary\CJFlatButton.cpp
+ - CCJFlatButton::OnTimer
+   - [arg] nIDEvent
+     - now with UINT_PTR type
+
+WinCvs\CJLib\Include\CJCaptionPopupWnd.h
+WinCvs\CJLib\CJLibrary\CJCaptionPopupWnd.cpp
+ - CCJCaptionPopupWnd::OnTimer
+   - [arg] nIDEvent
+     - now with UINT_PTR type
+
+WinCvs\CJLib\Include\CJCaption.h
+WinCvs\CJLib\CJLibrary\CJCaption.cpp
+ - CCJCaption::OnPushPinButton
+ - CCJCaption::OnPushPinCancel
+   - [arg] wParam: now with WPARAM type
+       - was renamed
+       - not used
+   - [arg] lParam: now with LPARAM type
+       - was renamed
+       - not used
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CJLib source code [allow to compile in VS2010]
+ - use a SetWindowLongPtr in work with WinProc
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+WinCvs\CJLib\CJLibrary\Subclass.cpp
+ - CSubclassWndMap::Add
+ - CSubclassWndMap::Remove
+   - [use] SetWindowLongPtr instead SetWindowLong
+     - [use] GWLP_WNDPROC instead GWL_WNDPROC
+     - [use] (LONG_PTR) instead (DWORD)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C++ normalization
+
+[Source]
+
+common\ItemListDlg.cpp
+ - CTagParserConsole::Parse
+   - tag.find(':') returns stirng::size_type, not int
+
+ - CModuleParserConsole::Normalize
+   - cvsOut.c_str() instead &(*cvsOut.begin())
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CWndRedrawMngr
+ - [use] GetWindowLongPtr, SetWindowLongPtr, GWLP_USERDATA
+
+Tested with
+ - VS2010 SP1+ (32/64) [Platform SDK 7.0A]
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+WinCvs\wincvs_winutil.cpp
+ - CWndRedrawMngr::CWndRedrawMngr
+ - CWndRedrawMngr::~CWndRedrawMngr
+   - [use] GetWindowLongPtr
+   - [use] SetWindowLongPtr
+   - [use] GWLP_USERDATA
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Final correction of InsertBranchName
+ - exit from function after creation an 'empty branch' node
+
+As I understand, original implementation continue scan tree after
+creation of 'empty branch' node because it recursive and uses only
+two result code - true and false. Or error in the absence of 'return true'
+after creation of 'empty branch' node....
+
+In any case - now we make the return after creation of 'empty branch'.
+
+Kill me, if this is wrong behavior.
+
+PS. Excuse me my French
+
+[Source]
+
+CvsLog.cpp
+ - InsertBranchName
+   - [change] return void
+   - [change] return after creation of 'empty branch' node.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update of CJLib
+ - Allow to compilation in VS2010 [Dirty hack]
+
+[Source]
+
+WinCvs\CJLib\CJLibrary\CJToolBar.cpp
+ - CCJToolBar::AssertValid
+   - VS2010 MFC not support the 'afxData.bWin95'
+     - dirty solution: rules for three cases: <VC6, <VS2010, >=VS2010 [without bWin95]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Change of CCvsRootConsole::SetCvsOut
+ - C++ normalization
+
+[Source]
+
+CvsRootDlg.h(cpp)
+ - CCvsRootConsole::SetCvsOut
+   - [arg] lLen
+      - now with size_t type
+   - uses m_cvsOutVec.assign instead "m_cvsOutVec.resize+memcpy"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Change of CWincvsView::OutConsole
+ - C++ normalization
+
+[Source]
+
+WinCvs\wincvsView.h(cpp)
+ - CWincvsView::OutConsole
+   - [arg] len: now with size_t type
+   - [var] index: now with size_t type
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+DAO classes not supports the Win64.
+
+[Source]
+
+common\GetPrefs.cpp
+ - [del] include <afxdao.h>
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Replacement of _cpp_max on explicit code
+ - fast solution of problem with _cpp_max and VS2010
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::ScrollTo
+   - replacement of _cpp_max on explicit code

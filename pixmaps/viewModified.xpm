@@ -1,0 +1,32 @@
+/* XPM */
+static char *viewModified[] = {
+/* width height num_colors chars_per_pixel */
+"   16    15        9            1",
+/* colors */
+". c #000000",
+"# c #008000",
+"a c #000080",
+"b c #c0c0c0",
+"c c #808080",
+"d c #ff0000",
+"e c #0000ff",
+"f c #00ffff",
+"g c #ffffff",
+/* pixels */
+"ccccccccbbbbb.bb",
+"cdddddddcbbbbb.b",
+"cdddddddgcb.....",
+"cddddddd........",
+"cdd....ddd.bbb.b",
+"cddddddddd.bb.bb",
+"cdd.....dd...bbb",
+"cdddddddd..bb.bb",
+"cdd......bggbb.b",
+"cddddddd.bgbbb.b",
+"cdd......bbbbb.b",
+"cdddddddc..bb..b",
+"cdd.....dc....cb",
+"cddddddddd.bb..c",
+"...........bbb.."
+ 
+};

@@ -1,0 +1,322 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {QGetPrefs_CVSROOT.h}
+	ClassSource {QGetPrefs_CVSROOT.cpp}
+	ClassName {QGetPrefs_CVSROOT}
+	DataHeader {QGetPrefs_CVSROOTData.h}
+	DataSource {QGetPrefs_CVSROOTData.cpp}
+	DataName {QGetPrefs_CVSROOTData}
+	WindowBaseClass {QWidget}
+	WindowCaption {Preferences}
+	WindowFlags {12288}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {520 260}
+MinSize {520 260}
+MaxSize {520 260}
+Grid {10}
+
+ComboBox {
+		Style {ReadWrite}
+		SizeLimit {32767}
+		Policy {AtTop}
+		AutoResize {FALSE}
+		Rect {136 20 379 30}
+		Name {ComboBox_2}
+		Variable {fCvsroot}
+		MinimumSize {0 30}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+ButtonGroup {
+		Title {Authentication :}
+		Alignment {Left}
+		Style {49}
+		Rect {5 70 258 185}
+		Name {ButtonGroup_1}
+		Variable {fAuthen}
+		MinimumSize {10 37}
+		MaximumSize {32767 187}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {Local mode}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 82 248 30}
+		Name {RadioButton_6}
+		Variable {fLocal}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {Rsh ("".rhosts"" file)}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 117 248 29}
+		Name {RadioButton_1}
+		Variable {fRsh}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {Password (""pserver"")}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 151 248 30}
+		Name {RadioButton_2}
+		Variable {fPserver}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {Kerberos (""kserver"")}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 186 248 29}
+		Name {RadioButton_3}
+		Variable {fKserver}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {Secure shell (""ssh"")}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {10 220 248 30}
+		Name {RadioButton_4}
+		Variable {fSsh}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+ButtonGroup {
+		Title {Cvs version :}
+		Alignment {Left}
+		Style {49}
+		Rect {268 70 247 185}
+		Name {ButtonGroup_4}
+		Variable {fCvs}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+RadioButton {
+		Checked {FALSE}
+		Text {cvs-1.10}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {273 82 237 30}
+		Name {RadioButton_5}
+		Variable {fCvs110}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {Enter the CVSROOT :}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {5 20 126 30}
+		Name {Label_2}
+		MinimumSize {0 30}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Layout-1.1{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1.1{
+	Widget {Label_2}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.1.2{
+	Widget {ComboBox_2}
+	BoxStretch {3}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {5}
+}
+Layout_Widget-1.2.1{
+	Widget {ButtonGroup_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2.1.1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Spacing-1.2.1.1.1{
+	Spacing {7}
+}
+Layout_Widget-1.2.1.1.2{
+	Widget {RadioButton_6}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.1.1.3{
+	Widget {RadioButton_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.1.1.4{
+	Widget {RadioButton_2}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.1.1.5{
+	Widget {RadioButton_3}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.1.1.6{
+	Widget {RadioButton_4}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.2{
+	Widget {ButtonGroup_4}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2.2.1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Box_Spacing-1.2.2.1.1{
+	Spacing {7}
+}
+Layout_Widget-1.2.2.1.2{
+	Widget {RadioButton_5}
+	BoxStretch {1}
+	Alignment {33}
+}
+}

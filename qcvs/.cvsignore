@@ -1,0 +1,6 @@
+.deps
+*.moc
+qcvs
+Makefile
+Makefile.in
+*.o

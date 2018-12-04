@@ -1,0 +1,19 @@
+// MacCVS Flags
+#define qCvsDebug 1
+
+// Powerplant Flags
+#if qCarbon
+#	pragma precompile_target "MacCVSPchDbgCarbon"
+#elif qMachO
+#	pragma precompile_target "MacCVSPchDbgMachO"
+#else
+#	if __POWERPC__
+#		pragma precompile_target "MacCVSPchDbgPPC"
+#	elif __CFM68K__
+#		pragma precompile_target "MacCVSPchDbgCFM68K"
+#	else
+#		pragma precompile_target "MacCVSPchDbg68K"
+#	endif
+#endif
+
+#include "MacCvsApp.pch"

@@ -1,0 +1,127 @@
+1. VS2010 change a sln-file (assigns new GUIDs for projects) because
+   vcxproj not contains the ProjectGuid xml-node.
+
+   Update vcxproj files (manualy define the ProjectGuid) for
+   resolving this problem with sln file.
+
+   Seem, this problem occurred because I created vcxproj-files from VC6's projects
+
+[Source]
+
+WinCvs\build\vc10\CJLibrary.vcxproj
+ - [add] ProjectGuid
+    - value has been copied from "wincvs.sln"
+ - [del] SccProjectName
+ - [del] SccLocalPath
+    - seem this is garbage
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CJLib
+ - define UNICODE (synonim for _UNICODE) only when it not defined
+
+ Reason: warning when we compile unicode version of CJLib in VS2010
+
+[Source]
+
+WinCvs\CJLib\CJLibrary\StdAfx.h
+ - define UNICODE (synonim for _UNICODE) only when it not defined
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+C++ normalization
+ - for reducing a number of warnings when we compile in VS2010
+
+[Source]
+
+WinCvs\wincvs_winutil.cpp
+ - _GetMenuEntryRecurs
+   - [local var] iPos
+     - new type: int instead UINT
+       - GetMenuItemCount/GetMenuItemID uses int, not UINT
+   - [use] const
+
+ - CWndRedrawMngr::CWndRedrawMngr
+ - CWndRedrawMngr::~CWndRedrawMngr
+   - explicit conversion to (BOOL) of result from ::GetWindowLongPtr
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+When we compile for Windows (WinCVS), we (by default) will use a RELEASE libraries of Python (USE_PYTHON=1)
+In case, when need use a DEBUG libraries of python, need define a USE_PYTHON=2 (in project properties).
+
+Tested with
+ - Python 2.7 (32/64 bits)
+ - Debug/Release compile in VS2010 (32/64 bits)
+ - Debug/Release compile in VC6SP5
+
+[Source]
+
+common\PythonContainer.h
+ - new rules for USE_PYTHON:
+    - 0 compile without python
+    - 1 compile with RELEASE python libraries
+    - 2 compile with RELEASE/DEBUG python libraries (depended on _DEBUG)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A more correct implementation for previous change of USE_PYTHON.
+
+[Source]
+
+cvsgui\common\PythonContainer.h
+  - 0     - not use
+ For Windows (WinCVS):
+  - 2     - use RELEASE or DEBUG python libraries
+  - other - use RELEASE python libraries
+ Other platform:
+  - other - RELEASE or DEBUG python libraries
+
+ I agree, that these rules in not ideal. You can replace them onto more right.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Fix for Python x64 [Windows build]
+ - bind to "Py_InitModule4_64", not to "Py_InitModule4"
+
+Tested with Python 2.7 x64
+
+[Source]
+
+common\PythonGlue.cpp
+ - [add] LOAD_CODEFRAG2
+ - for _WIN64: LOAD_CODEFRAG2(Py_InitModule4,"Py_InitModule4_64")
+
+Amen
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Upgrade vcxproj files
+ - removing of import from "Microsoft.Cpp.UpgradeFromVC60.props"
+
+[Source]
+
+WinCvs\build\vc10\wincvs.vcxproj
+WinCvs\build\vc10\cvstree.vcxproj
+WinCvs\build\vc10\CJLibrary.vcxproj
+ - [del] import of Microsoft.Cpp.UpgradeFromVC60.props
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Change splash to "2.x WinCVS"
+
+[Source]
+
+WinCvs\Splsh16.bmp
+ - "2.x WinCVS"
+
+I'm right?
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Change WinCVS version to "2.1.2".
+
+[Source]
+
+WinCvs\version_no.h
+ - [change] WINCVS_PRODUCT_PATCHLEVEL=2

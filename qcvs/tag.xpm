@@ -1,0 +1,28 @@
+/* XPM */
+static const char *i_tag[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        6            1",
+/* colors */
+". c #000000",
+"# c #c0c0c0",
+"a c #808080",
+"b c #f80000",
+"c c #0000f8",
+"d c #f8fcf8",
+/* pixels */
+"##aaaaaaaaaa####",
+"##adddddddd#a###",
+"##adddddddd#da##",
+"##adcccccccc...#",
+"##adcddccddcd#.#",
+"##addddccdddd#.#",
+"##addddccdddd#.#",
+"##addddccdddd#.#",
+"##addddccdddd#.#",
+"##addddccdddd#.#",
+"##addddccdddd#.#",
+"##adddccccddd#.#",
+"##adddddddddd#.#",
+"##a###########.#",
+"##aaaaaaaaaaaa.#"
+};

@@ -1,0 +1,73 @@
+If you are a developper and want to help, enjoy !
+
+- A powerplant architecture is now available on the Mac side so it should be
+  easy to add new dialogs/features. A multi-thread application could be usefull
+  especially when Matthias Neeracher will release GUSI 2.0 (4.0a0 ?).
+
+- Many request for improved GUI : a diff viewer, a conflict solver...
+
+- Other concerns could be : have a "real" english writer for the documentation,
+  help-online on Macintosh, internationalization (i18n), complete the ISO 
+  tables (4.0a0 ?)...
+  
+- have a look at the open tasks page on 
+  https://sourceforge.net/pm/?group_id=10072
+
+Others concerns, need an interface description :
+
+- a contextual menu (right button) with some selection commands in it
+  ("sort of" done on Windows, but tell me what you want to have in it).
+  Done but incomplete.
+  
+- module creations (cf jCVS).
+
+- external/internal visual diff (windiff, tkdiff ...). 
+  Done on Windows but incomplete.
+
+- Add backslash (*\ Data) support for cvsignore.
+
+- Optionnaly hide ignored file (only on Windows right now).
+
+- Mac : check Internet Config while importing for unknown types (Jack Jansen).
+
+- Prevent the user from ending the CVSROOT with a \ or a /.
+
+- ~/.cvsrc support.
+
+- A Real shell with completion and regexp !
+
+- In the graph log on WinCvs the CR shows up : first we should remove the CR
+  from the log file and make sure the lexer removes it as well.
+  
+- "I would also really like to be able to add tags to selected
+  revisions in the graph display" (Derek Scherger).
+  
+- Add to the .cvsignore from WinCvs. 
+
+GCvs bugs/requests :
+
+- select things in the output window, copy etc.
+
+- 'Select All' selects all the files in the file view
+
+- popup menus (Kalle <gcvs@bruenen-net.de>)
+
+- rebuild 'Persistent::LoadAll' to do the work like WinCvs and MacCvs
+  (simplify the code)
+
+- add "reset sticky" (-A) option to checkout dialog
+
+- add "don't shorten the module paths" (-N) option
+
+- add watcher thread for notify the app about file changes
+
+- adapt Jerzy changes on filtering (Kalle <gcvs@bruenen-net.de>)
+- adapt Jerzy changes on tag dialogs (Kalle <gcvs@bruenen-net.de>)
+
+- Python support
+
+- create special classes for GUI elements to move 'UEventSendMessage' calls 
+  from GUI code to library code
+  
+- remove redundant code elements from platform implementations
+  e.g. WinCvs/GraphView.* and common/UCvsGraph.*

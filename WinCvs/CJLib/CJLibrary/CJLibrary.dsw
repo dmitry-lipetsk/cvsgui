@@ -1,0 +1,251 @@
+Microsoft Developer Studio Workspace File, Format Version 5.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "BrowseEditDemo"=..\Examples\BrowseEditDemo\BrowseEditDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name ClassWiz
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "CJLibrary"=.\CJLibrary.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ClassWiz"=..\Examples\ClassWiz\ClassWiz.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "DevStudioUIDemo"=..\Examples\DevStudioUIDemo\DevStudioUIDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ExplorerUIDemo"=..\Examples\ExplorerUIDemo\ExplorerUIDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FlatButtonDemo"=..\Examples\FlatButtonDemo\FlatButtonDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "FlatComboDemo"=..\Examples\FlatComboDemo\FlatComboDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MDIMenuDemo"=..\Examples\MDIMenuDemo\MDIMenuDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "MaskEditDemo"=..\Examples\MaskEditDemo\MaskEditDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "OutlookUIDemo"=..\Examples\OutlookUIDemo\OutlookUIDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "PagerDemo"=..\Examples\PagerDemo\PagerDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "RebarDemo"=..\Examples\RebarDemo\RebarDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "SDIMenuDemo"=..\Examples\SDIMenuDemo\SDIMenuDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ToolBarDemo"=..\Examples\ToolBarDemo\ToolBarDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "TreeCtrlDemo"=..\Examples\TreeCtrlDemo\TreeCtrlDemo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name CJLibrary
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "VC6ForVC5Demo"=..\Examples\VC6ForVC5Demo\VC6ForVC5Demo.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

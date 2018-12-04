@@ -1,0 +1,35 @@
+/* XPM */
+static const char *i_remove[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15       13            1",
+/* colors */
+". c #000000",
+"# c #008000",
+"a c #808000",
+"b c #000080",
+"c c #c0c0c0",
+"d c #808080",
+"e c #f80000",
+"f c #00fc00",
+"g c #f8fc00",
+"h c #0000f8",
+"i c #f800f8",
+"j c #00fcf8",
+"k c #f8fcf8",
+/* pixels */
+"cccccccccccccccc",
+"cc...ccccccccc.c",
+"cc....cccccc..cc",
+"ccc....cccc..ccc",
+"ccccc...cc..cccc",
+"cccccc.....ccccc",
+"ccccccc...cccccc",
+"cccccc.....ccccc",
+"ccccc...cc..cccc",
+"cccc...cccc..ccc",
+"ccc...cccccc.ccc",
+"cc....ccccccc.cc",
+"cc...ccccccccccc",
+"ccc.cccccccccc.c",
+"cccccccccccccccc"
+};

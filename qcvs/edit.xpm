@@ -1,0 +1,30 @@
+/* XPM */
+static const char *i_edit[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        8            1",
+/* colors */
+". c #000000",
+"# c #808000",
+"a c #000080",
+"b c #c0c0c0",
+"c c #808080",
+"d c #f8fc00",
+"e c #0000f8",
+"f c #f8fcf8",
+/* pixels */
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbb...bbb",
+"bbbbbbbbb.ccc.bb",
+"bbbbbbbbb..#c.bb",
+"bbbbbbbb.bd...bb",
+"bbbbbbbb.ddd.bbb",
+"bbbbbbb.dddd.bbb",
+"bbbbbbb.ddd.bbbb",
+"bbbbbb.bddd.bbbb",
+"bbbbbb.bbb.bbbbb",
+"bbbbbb....bbbbbb",
+"bbbbbb...bbbbbbb",
+"bbbbbb..bbbbbbbb",
+"b.b....bbbbbbbbb",
+"bbbbbbbbbbbbbbbb"
+};

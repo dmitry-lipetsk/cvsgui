@@ -1,0 +1,27 @@
+/* XPM */
+static char *viewRemove[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        5            1",
+/* colors */
+". c #000000",
+"# c #c0c0c0",
+"a c #808080",
+"b c #ff0000",
+"c c #ffffff",
+/* pixels */
+"aaaaaaaaa#######",
+"abbbbbbb#a######",
+"acbbbbbb#ca#####",
+"abccbbbb....####",
+"abbccbbbccb.####",
+"abbbccbccbb.####",
+"abbbbcccbb...###",
+"abbbccccb.b##.##",
+"abbbcbbc.bcc##.#",
+"abbcbbbc.#c###.#",
+"abbcbbbb.b#.##.#",
+"abccbbbba.b##..#",
+"abcbbbbbca....a#",
+"accbbbbbbcb.#..a",
+"a##########.##.."
+};

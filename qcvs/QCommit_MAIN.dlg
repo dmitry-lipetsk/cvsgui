@@ -1,0 +1,169 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {QCommit_MAIN.h}
+	ClassSource {QCommit_MAIN.cpp}
+	ClassName {QCommit_MAIN}
+	DataHeader {QCommit_MAINData.h}
+	DataSource {QCommit_MAINData.cpp}
+	DataName {QCommit_MAINData}
+	WindowBaseClass {QWidget}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {520 260}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {5 5 510 168}
+		Name {ButtonGroup_1}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+MultiLineEdit {
+		Line {}
+		ReadOnly {FALSE}
+		OverwriteMode {FALSE}
+		Rect {10 10 500 158}
+		Name {MultiLineEdit_1}
+		Variable {fLog}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {SameFont}
+		PalettePropagation {SameFont}
+}
+ComboBox {
+		Style {ReadOnly}
+		SizeLimit {10}
+		Policy {AtBottom}
+		AutoResize {FALSE}
+		Rect {5 184 253 30}
+		Name {ComboBox_1}
+		Variable {fCombo}
+		Signal {[Protected]  activated --> OnCombo  (int)}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Do not recuse into sub-folders}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {5 225 510 30}
+		Name {CheckBox_1}
+		Variable {fNorecurs}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {<- Previous logs or CVS/Template}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {263 184 252 30}
+		Name {Label_1}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1{
+	Widget {ButtonGroup_1}
+	BoxStretch {4}
+	Alignment {36}
+}
+Box_Layout-1.1.1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1.1.1{
+	Widget {MultiLineEdit_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.2.1{
+	Widget {ComboBox_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.2.2{
+	Widget {Label_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Layout_Widget-1.3{
+	Widget {CheckBox_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+}

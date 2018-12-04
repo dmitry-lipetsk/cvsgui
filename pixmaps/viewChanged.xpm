@@ -1,0 +1,31 @@
+/* XPM */
+static char *viewChanged[] = {
+/* width height num_colors chars_per_pixel */
+"   16    15        9            1",
+/* colors */
+". c #000000",
+"# c #008000",
+"a c #000080",
+"b c #c0c0c0",
+"c c #808080",
+"d c #ff0000",
+"e c #0000ff",
+"f c #00ffff",
+"g c #ffffff",
+/* pixels */
+"ccccccccbbbbbbbb",
+"cdddddddcbbbbbbb",
+"cdddddddgcbbbbbb",
+"cddddddd...bbbbb",
+"cddccccddd.bbbbb",
+"cddddddddd.bbbbb",
+"cddcccccdd...bbb",
+"cdddddddd..bb.bb",
+"cddccccc.bggbb.b",
+"cddddddd.bgbbb.b",
+"cddccccc.bbbbb.b",
+"cdddddddc..bb..b",
+"cddcccccdc....cb",
+"cddddddddd.bb..c",
+"...........bbb..
+};

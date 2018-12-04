@@ -1,0 +1,32 @@
+Please read the COPYING file first.
+
+This folder (should) contain :
+
+- A cvs 1.10 folder (Mac/Win) : the cvs 1.10 distribution : most of the differences
+are located into cvs-1.10/macintosh and client.c because this version
+improves a lot the Macintosh port. Some other changes in cvs 1.10 are due
+to the CvsGui architecture and makes cvs 1.10 behave a little bit
+differently.
+- A cvs-1.10 folder : It contains a cvs 1.10 source code distribution
+altered in order to communicate using pipes with a process
+(cvs-1.10/lib/cvsgui.*).
+- A common folder : the common source code part for the CvsGui applications.
+- A cvstree folder : the common source code part for reverse cvs log parser.
+- A MacCvs folder : the Macintosh specific source code for MacCvs.
+- A WinCvs folder : the Windows specific source code for WinCvs.
+- A GuiDoc folder : includes the (tiny) documentation for CvsGui
+and some specific features for each ports.
+- A ChangeLog : the recent changes in the source code.
+- A mpw folder (Mac) : MPW tools for Macintosh.
+- gcvs (Unix) : the gcvs application for Unix (requires GTK >= 1.2 or higher)
+- A Macros folder : the TCL scripts used by CvsGui.
+- A rf folder : see PORTING.
+
+For any other informations, refer to the CVS documentation or ask support
+to Cyclic Software (http://www.cyclic.com).
+
+This implementation of CvsGui is provided for free and without support.
+Refer to each files to know the policy of each of them.
+
+Alexandre Parenteau  <aubonbeurre@hotmail.com>
+http://www.wincvs.org

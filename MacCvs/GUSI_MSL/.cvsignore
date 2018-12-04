@@ -1,0 +1,5 @@
+*.dbg
+*.xSYM
+*.Lib
+*Data
+*.idb

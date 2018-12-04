@@ -1,0 +1,263 @@
+Was defined a new TAG: CVSGUI__2012_03_24
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. Revision of CLogNode::SetUserData using
+   - Potentially wrong code was removed
+   - Added the debug verifications
+2. C++ normalization
+
+Tested with
+ - VS2010 SP1 (32/64)
+ - VC6SP5, Platform SDK "February 2003"
+
+[Source]
+
+cvstree\CvsLog.h
+ - [add] include <assert.h>
+
+ - CLogNode::SetUserData
+   - [add] const
+   - [add] assert for preventing overwrite not null pointer "m_data"
+
+WinCvs\GraphView.cpp
+ - CWinLogData::CreateNewData
+   - [add] debug check: detect unexpected kind of node
+   -
+
+ - CGraphView::CalcImageSize
+ - CGraphView::OnBeginPrinting
+   - Do not calls CLogNode::SetUserData after CWinLogData::CreateNewData.
+     Because "CreateNewData" sets the DATA to NODE.
+     Also: see current changes in SetUserData :)
+
+   - [add] _ASSERTs
+   - [add] const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Code review of CLogNode, CWinLogData
+ - C++ normalization
+
+[Source]
+
+cvstree\CvsLog.h
+ - [add] inline const CLogNodeData* CLogNode::GetUserData(void) const
+
+WinCvs\GraphView.h
+ - CWinLogData
+   - [add] typedef self_type
+   - [add] private copy constructor
+   - [add] private copy operator
+
+   - GetData(CLogNode* node)
+      - [add] _ASSERT
+      - uses "const"
+      - replacement of (CWinLogData*) on static_cast<self_type*>
+
+   - [add] const CWinLogData* GetData(const CLogNode* const node)
+
+   - CreateNewData
+     - normalization
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData
+ - C++ normalization
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData::IsDiskNode
+ - CWinLogData::IsDeadNode
+ - CWinLogData::IsUserState
+   - Defined as const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData, CBrowseFileView
+ - use const
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData
+   - UpdateSelf=0
+   - GetBoundsSelf=0
+   - Update
+      - const methods
+      - changed arg 'entryInfo' - now this is pointer to const
+
+   - [add] inline const CRect& Bounds(void)const;
+   - [add] inline const CRect& SelfBounds(void)const;
+
+ - CWinLogHeaderData
+ - CWinLogRevData
+ - CWinLogTagData
+ - CWinLogBranchData
+   - UpdateSelf
+   - GetBoundsSelf
+     - synchronous changes
+
+WinCvs\BrowseFileView.h(cpp)
+ - CBrowseFileView::GetImageForEntry
+   - changed arg 'data' - now this is pointer to const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData
+ - [use] const
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogHeaderData::UpdateSelf
+   - [use] const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CGraphView::OnDraw
+ - [use] const
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CGraphView::OnDraw
+   - uses 'const' for local variables
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of TGraphRectSelect
+ - normalization
+
+[Source]
+
+WinCvs\GraphView.h
+ - TGraphRectSelect
+   - declaration of all members with data as constants
+   - declaration of all members with data in private section
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CLogNodeData and CLogNode
+ - normalization
+
+[Source]
+
+cvstree\CvsLog.h
+ - CLogNodeData
+   - [add] typedef self_type
+   - private copy constructor
+   - private copy operator
+
+   - m_node now the const member
+
+ - CLogNode
+   - [add] typedef self_type
+   - private copy constructor
+   - private copy operator
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CRevNumber implementation
+ - use a size_t instead int
+ - replacement memcmp on normal C++ code (partially)
+ - replacement "size()==0" on "empty()"
+
+ Resolve a warnings in compilation for 64bit
+
+[Source]
+
+CvsLog.h(cpp)
+ - CRevNumber
+   - [add] typedef items_type
+   - [add] typedef size_type
+
+   - size
+      - returns size_type
+
+   - empty
+      - returns bool
+
+   - IntList (both version)
+      - returns items_type instead std::vector<int>
+
+   - m_allDigits
+      - has type items_type
+
+   - operator==(const CRevNumber& arev) const
+      - replacement memcmp on items_type::operator ==
+      - [use] this->empty()
+
+   - ischildof
+      - replacement memcmp on std::equal
+      - [use] this->empty()
+      - [add] asserts
+      - small changes in logic
+
+   - issamebranch
+      - [use] this->
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CRevNumber
+ - normalization of copy operator code
+
+[Source]
+
+cvstree\CvsLog.cpp
+ - CRevNumber::operator=(const CRevNumber& arev)
+   - uses "m_allDigits = arev.m_allDigits" instead
+     cycle for copy
+
+ This change is removes a warning in compilation for 64bit
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Normalization of classes CLogNodeHeader, CLogNodeRev, CLogNodeTag, CLogNodeBranch.
+ - contains the constant data
+ - allows an only RO-access to own data
+
+[Source]
+
+cvstree\CvsLog.h
+ - CLogNodeHeader
+   - [del] inline CRcsFile& operator*();
+   - [change] const m_header
+
+ - CLogNodeRev
+   - [del] inline CRevFile& operator*();
+   - [change] const m_rev
+
+ - CLogNodeTag
+   - [del] inline std::string& operator*();
+   - [change] const m_tag
+
+ - CLogNodeBranch
+   - [del] inline std::string& operator*();
+   - [change] const m_branch
+
+WinCvs\GraphView.cpp
+ - CGraphView::OnGraphChangelogmessage
+   - using a const reference to CLogNodeRev data
+
+ - CGraphView::OnGraphSetdescription
+   - using a const reference to CLogNodeHeader data
+
+ - CGraphView::OnGraphSetstate
+   - using a const reference to CLogNodeRev data
+
+common\LogParse.cpp
+ - CvsLogOutput
+   - using a const references to Node's data
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Code review.
+ - normalization
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - TGraph::TraverseGraph
+   - removing a ';' after last close bracket

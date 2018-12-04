@@ -1,0 +1,31 @@
+/* XPM */
+static const char *i_savefile[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        9            1",
+/* colors */
+". c #000000",
+"# c #808000",
+"a c #000080",
+"b c #808080",
+"c c #c0c0c0",
+"d c #f80000",
+"e c #00fc00",
+"f c #f8fc00",
+"g c #f8fcf8",
+/* pixels */
+"c..............c",
+"c.#.cccccccc.c.c",
+"c.#.cccccccc...c",
+"c.#.cccccccc.#.c",
+"c.#.cccccccc.#.c",
+"c.#.cccccccc.#.c",
+"c.#.cccccccc.#.c",
+"c.##........##.c",
+"c.############.c",
+"c.##.........#.c",
+"c.##......cc.#.c",
+"c.##......cc.#.c",
+"c.##......cc.#.c",
+"cc.............c",
+"cccccccccccccccc"
+};

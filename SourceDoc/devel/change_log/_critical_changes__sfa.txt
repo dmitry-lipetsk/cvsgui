@@ -1,0 +1,6 @@
+1. [2012-11-08] cvstree\CvsLog.cpp
+ - InsertBranchName
+   - exit from function after creating an 'empty branch' node
+
+2. [2012-11-09] WinCvs\MfFileDialog.cpp
+ - CMfFileDialog::OnFileNameChange

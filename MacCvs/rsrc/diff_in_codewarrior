@@ -1,0 +1,20 @@
+#!/bin/sh
+
+EXTRASPACE="with"
+IGNORECASE="without"
+
+if [ "$1" = "-wb" ]; then
+  EXTRASPACE="without"
+  shift
+fi
+if [ "$1" = "-i" ]; then
+  IGNORECASE="with"
+  shift
+fi
+
+/usr/bin/osascript << EOI
+tell application "CodeWarrior IDE"
+	Compare Files "$1" to "$2" $IGNORECASE case sensitive $EXTRASPACE ignore extra space with compare text file contents
+	activate
+end tell
+EOI

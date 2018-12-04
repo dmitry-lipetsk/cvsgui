@@ -1,0 +1,132 @@
+#pragma once on
+
+#define qMacPP 1 // for pseudo
+#define qMacCvsPP 1
+#define _MSL_USING_MW_C_HEADERS 0
+#define _BSD_WCHAR_T_DEFINED_ 1
+
+#if qMachO
+#	define qCarbon 1
+#endif
+
+#define PP_Suppress_Notes_22	1	// no update notes for old projects
+
+#define	PP_Uses_Old_Integer_Types		0
+#define PP_Obsolete_AllowTargetSwitch	0
+#define PP_Obsolete_ThrowExceptionCode	0
+#define PP_Warn_Obsolete_Classes		1
+#define	PP_Debug_Obsolete_Support			0		// No support for obsolete stuff
+
+#define PP_Uses_Periodical_Timers   1
+
+	//	Carbon/Classic Target
+#define PP_Target_Carbon		qCarbon
+#define PP_Target_Classic		(!PP_Target_Carbon)
+#define TARGET_API_MAC_CARBON	PP_Target_Carbon
+#define TARGET_API_MAC_OS8		PP_Target_Classic
+#define TARGET_API_MAC_OSX		qMachO
+
+#define PP_Uses_Aqua_MenuBar	TARGET_API_MAC_CARBON
+
+//#include "dll_garbage.h" /*RANGECHECK*/
+
+//	Thread Classes
+
+#define THREAD_DEBUG					0	// Off
+#define THREAD_PROFILE					0	// Off
+#define THREAD_INACTIVITY				0	// Off
+#define THREAD_PROTECT_TIMETASK			0	// Off
+
+// ---------------------------------------------------------------------------
+//	Networking classes
+
+#define USE_MACTCP						TARGET_API_MAC_OS8
+#define USE_OPENTPT						1
+
+#if TARGET_API_MAC_CARBON
+#	define PP_StdDialogs_Option			PP_StdDialogs_NavServicesOnly
+#	define PP_MenuUtils_Option			PP_MenuUtils_AppearanceOnly
+#	define OTCARBONAPPLICATION			1
+#else
+#	define PP_StdDialogs_Option			PP_StdDialogs_Conditional
+#	define PP_MenuUtils_Option			PP_MenuUtils_Conditional
+#	define OTCARBONAPPLICATION			0
+#endif
+
+#include <ansi_parms.h>
+
+// I have this problem with CW7 on OSX 10.2
+#if TARGET_API_MAC_OSX
+#	include <cmath>
+#	define __NOEXTENSIONS__
+#	include <Carbon/Carbon.h>
+
+
+#	include <Python.h>
+#	define mbstate_t mbstate_t_mw
+#endif
+
+#if qCvsDebug
+#	define PP_Debug				1
+#	if 0 //!qCarbon
+#		define DEBUG_NEW						DEBUG_NEW_LEAKS
+#	else
+#		define DEBUG_NEW						DEBUG_NEW_OFF
+#	endif
+#	if 0 // !qCarbon
+#		define PP_DebugNew_Support				1
+#	else
+#		define PP_DebugNew_Support				0
+#	endif
+#	include <PP_DebugHeaders.cp>
+#else
+#	define PP_Debug				0
+	#define DEBUG_NEW						DEBUG_NEW_OFF
+		// Not debugging, so make sure everything is off
+		// (only used for final builds)
+	#define PP_DebugNew_Support				0
+#	include <PP_ClassHeaders.cp>
+#endif
+
+	// Tho one would normally conditionalize this #include with
+	// a check for PP_DebugNew_Support, DebugNew.h must always be
+	// brought in else use of the NEW macro will generate compile
+	// errors in final targets. However, it must be conditionalized
+	// by the C++ check to avoid being pulled into C sources and
+	// confusing the compiler.
+	
+#if defined(__cplusplus)
+	#include "DebugNew.h"
+#endif
+
+#include <sys/types.h>
+#include <vector>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+#define HAVE_UNISTD_H 1
+#define HAVE_ERRNO_H 1
+#define TIME_WITH_SYS_TIME 1
+#define HAVE_SYS_TIME_H 1
+#define HAVE_STRING_H 1
+
+#if TARGET_API_MAC_OSX
+#	define HAVE_PWD_H 1
+#endif
+
+// waste
+#define WASTE_IC_SUPPORT	0
+#define	WASTE_OBJECTS		0
+#define WASTE_DEBUG			qCvsDebug
+
+// adjusting for the toolbar
+extern short CvsGetMBarHeight(void);
+#define GetMBarHeight() CvsGetMBarHeight()
+
+// MacPython
+#if !TARGET_API_MAC_OSX
+#	define WITH_THREAD
+#	define USE_GUSI2
+#	define WITHOUT_FRAMEWORKS
+#endif

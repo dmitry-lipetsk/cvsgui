@@ -1,0 +1,123 @@
+#define kBundleIdentifier "org.gnu.MacCvs"
+
+#define kBundleDisplayName  "MacCvsX"
+
+#define kBundleVersion "3.3a3-20050421"
+
+// Change this to your short version string
+#define kBundleShortVersion kBundleDisplayName " " kBundleVersion
+
+// Change this to the string to display in the Finder's Get Info window
+#define kBundleGetInfo kBundleShortVersion ", Copyleft GNU 2005."
+
+plist
+{
+	dictionary
+	{
+		key "CFBundleIdentifier" value string kBundleIdentifier
+		
+		key "CFBundleName" value string kBundleDisplayName
+		key "CFBundleGetInfoString" value string kBundleGetInfo
+		key "CFBundleShortVersionString" value string kBundleShortVersion
+		
+		key "CFBundlePackageType" value string __OUTPUT_TYPE__
+		key "CFBundleSignature" value string __OUTPUT_CREATOR__
+		key "CFBundleExecutable" value string __OUTPUT_FILENAME__
+		key "CFBundleVersion" value string kBundleVersion
+		
+		key "CFBundleDevelopmentRegion" value string "English"
+		key "CFBundleInfoDictionaryVersion" value string "6.0"
+		key "LSRequiresCarbon" value boolean true
+//		key "CFBundleIconFile" value string "128"
+		key "CFBundleIconFile" value string "maccvs.icns"
+//		key "CSResourcesFileMapped" value boolean true
+		key "NSAppleScriptEnabled" value boolean true
+
+    key "CFBundleDocumentTypes" value array [
+      dictionary {
+        key "CFBundleTypeOSTypes" value array [
+          string "****"
+        ]
+        key "CFBundleTypeRole" value string "Viewer"
+      }
+    ]
+    
+		key "DefaultBinaryMappings" value array [
+		  dictionary {
+		    key "FileType" value string "GIFf"
+		    key "Extension" value string ""
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "GIF documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "gif"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "GIF documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "tiff"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "TIFF documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "tif"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "TIFF documents"
+		  }
+		  dictionary {
+		    key "FileType" value string "JPEG"
+		    key "Extension" value string ""
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "JPEG documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "jpg"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "JPEG documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "jpeg"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "JPEG documents"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "mcp"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "Metrowerks projects"
+		  }
+		  dictionary {
+		    key "FileType" value string "MMPr"
+		    key "Extension" value string ""
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "Metrowerks projects"
+		  }
+		  dictionary {
+		    key "FileType" value string ""
+		    key "Extension" value string "doc"
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "Microsoft Word documents"
+		  }
+		  dictionary {
+		    key "FileType" value string "WDBN"
+		    key "Extension" value string ""
+		    key "Encoding" value string "PlainBinary"
+		    key "Description" value string "Microsoft Word documents"
+		  }
+		]
+	}
+}
+
+// Change this to be localized for English
+localize "English"
+{
+	comment "Localized versions of Info.plist keys"
+	key "CFBundleName" value string kBundleDisplayName
+	key "CFBundleGetInfoString" value string kBundleGetInfo
+	key "CFBundleShortVersionString" value string kBundleShortVersion
+}

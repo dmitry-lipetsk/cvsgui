@@ -1,0 +1,1163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{640739a4-5604-4333-b6ba-c86819fa9eac}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5599988d-4b97-48a7-ab08-08a74bb31fb0}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{af1ab4e4-2552-4415-b8b2-49a4c8258f78}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Help Files">
+      <UniqueIdentifier>{48bc8b18-e18f-4401-882b-77bfa07d1030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Gui">
+      <UniqueIdentifier>{81b41447-2668-4e4b-a6bf-13e74f29fd56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Relay Framework">
+      <UniqueIdentifier>{728818a3-0a9a-4fef-bbcd-d42097f8cd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cvsgui protocol">
+      <UniqueIdentifier>{eabef837-1e66-4221-ac96-5ea6a9049850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PythonLib">
+      <UniqueIdentifier>{bcf94f81-37c4-425d-8850-3e60a95f2ad1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PythonLib\cvsgui">
+      <UniqueIdentifier>{232745dc-fead-46d3-a2b7-ae299109bfa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Macros">
+      <UniqueIdentifier>{a0786cae-13c5-498d-a765-1e123a90db85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Macros\Python">
+      <UniqueIdentifier>{4b76fd35-29c9-4581-bf42-4295847aa26a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Macros\TCL">
+      <UniqueIdentifier>{4358e6fa-37bf-403e-b4e5-09b6b9023c29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controls">
+      <UniqueIdentifier>{174fcdb2-6c5e-40e1-a459-4e6f3da9a9a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doxygen">
+      <UniqueIdentifier>{70ac7f2d-d588-4e75-a910-e18da45a6818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LibIntl">
+      <UniqueIdentifier>{78b68262-ed36-4f6e-85ac-15381658cc9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common Gui\headers">
+      <UniqueIdentifier>{797162d9-cb90-4895-90b4-44a4dd7ee0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\headers">
+      <UniqueIdentifier>{bb996e75-5f9b-4e08-be1c-5edaf4e03578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PythonLib\headers">
+      <UniqueIdentifier>{d40a364a-b88e-4f18-bc30-51edb193c674}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\BrowseFileView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\BrowserBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ConsoleBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CustomizeMenus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsSandboxInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CvsStatusBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ExploreBar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FileViewWatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GraphDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GraphFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\GraphView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\LogFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ndir.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\NoPython.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Splash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Stat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\TipDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wincvs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wincvs_winutil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinCvsBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WinCvsDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wincvsDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\wincvsView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AboutDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AdminOptionDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AnnotateDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AppConsole.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AppGlue.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\AskYesNo.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\Authen.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\BrowseViewColumn.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\BrowseViewHandlers.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\BrowseViewModel.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CheckoutDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CommitDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsAlert.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsArgs.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsCommands.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsEntries.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsIgnore.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsPrefs.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\CvsRootDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\DiffDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\DiffParse.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\dll_loader.c">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\EditorMonDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\FileActionDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\FileTraversal.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\FilterMaskOptDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\FilterSelectionDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\fnmatch.c">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\getline.c">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\getopt.c">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\getopt1.c">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\GetPassword.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\GetPrefs.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\GraphOptDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HHelpSupport.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ImportDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ImportFilter.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ImportFilterDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\initdlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ItemListDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\LaunchHandlers.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\LineCmd.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\LogDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\LoginDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\LogParse.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\MakeSurePathExists.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MfFileDialog.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MMenuString.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\MoveToTrash.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\MultiFiles.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\MultiString.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\OptionalPropertySheet.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\Persistent.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ProgressDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\PromptFiles.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\ReleaseDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\RemoveDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\RtagDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\SaveSettingsDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\SelectionDetailsDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\StatusDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\TagDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\TemplateDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\TextBinary.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\UpdateDlg.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\UpdateToTempParse.cpp">
+      <Filter>Common Gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\support\mfc\dib.c">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\support\mfc\PseudoButton.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\support\mfc\PseudoDlg.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\support\mfc\PseudoDraw.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\support\mfc\PseudoList.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\uconsole.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\uevent.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\umenu.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\uobject.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\ustr.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\utoolbar.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\rf\uwidget.cpp">
+      <Filter>Relay Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cvsgui_protocol\cvsgui_process.cpp">
+      <Filter>cvsgui protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\cvsgui_protocol\cvsgui_wire.cpp">
+      <Filter>cvsgui protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\MacrosSetup.cpp">
+      <Filter>PythonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\PythonContainer.cpp">
+      <Filter>PythonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\PythonGlue.cpp">
+      <Filter>PythonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\PythonImpl.cpp">
+      <Filter>PythonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\TclGlue.cpp">
+      <Filter>PythonLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ColorStatic.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\CvsrootEntryDlg.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HistComboBoxEx.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HtmlStatic.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MultilineEntryDlg.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\common\SmartComboBox.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SortHeaderCtrl.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SubstModeEntryDlg.cpp">
+      <Filter>Controls</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\common\CvsSandboxInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ndir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Splash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\TipDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version_fu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version_no.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\support\mfc\dib.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\support\mfc\PseudoButton.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\support\mfc\PseudoDlg.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\support\mfc\PseudoDraw.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\support\mfc\pseudolist.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\uconsole.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\umain.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\umenu.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\uobject.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\ustr.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\utoolbar.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\rf\uwidget.h">
+      <Filter>Relay Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvsgui_protocol\cvsgui_process.h">
+      <Filter>cvsgui protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvsgui_protocol\cvsgui_protocol.h">
+      <Filter>cvsgui protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvsgui_protocol\cvsgui_wire.h">
+      <Filter>cvsgui protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\MacrosSetup.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PythonContainer.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PythonGlue.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PythonGlue.impl.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PythonImpl.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PythonMacros.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\TclGlue.h">
+      <Filter>PythonLib\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ColorStatic.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CvsrootEntryDlg.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HistComboBoxEx.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HtmlStatic.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MultilineEntryDlg.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\SmartComboBox.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SortHeaderCtrl.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SubstModeEntryDlg.h">
+      <Filter>Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\cvsgui_i18n.h">
+      <Filter>LibIntl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AboutDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AdminOptionDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AnnotateDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AppConsole.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AppGlue.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\AskYesNo.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\Authen.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\BrowseViewColumn.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\BrowseViewHandlers.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\BrowseViewModel.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CheckoutDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CommitDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsAlert.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsArgs.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsCommands.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsEntries.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsIgnore.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsPrefs.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\CvsRootDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\DiffDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\DiffParse.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\dll_loader.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\EditorMonDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\FileActionDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\FileTraversal.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\FilterMaskOptDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\FilterSelectionDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\fnmatch.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\getline.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\getopt.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\GetPassword.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\GetPrefs.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\GraphOptDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HHelpSupport.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ImportDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ImportFilter.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ImportFilterDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\initdlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ItemListDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\LaunchHandlers.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\LineCmd.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\LogDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\LoginDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\LogParse.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\MakeSurePathExists.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MfFileDialog.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MMenuString.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\MoveToTrash.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\MultiFiles.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\MultiString.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\OptionalPropertySheet.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\Persistent.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ProgressDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\PromptFiles.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\ReleaseDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\RemoveDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\RtagDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\SaveSettingsDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\SelectionDetailsDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\SortList.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\StatusDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\TagDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\TemplateDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\TextBinary.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\UpdateDlg.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\common\UpdateToTempParse.h">
+      <Filter>Common Gui\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BrowseFileView.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\BrowserBar.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ConsoleBar.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CustomizeMenus.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\CvsStatusBar.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ExploreBar.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\FileViewWatcher.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GraphDoc.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GraphFrm.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\GraphView.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\LogFrm.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MainFrm.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\NoPython.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wincvs.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wincvs_winutil.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WinCvsBrowser.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WinCvsDebug.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wincvsDoc.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\wincvsView.h">
+      <Filter>Source Files\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="..\..\wincvs.odl">
+      <Filter>Source Files</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\wincvs.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\Resource.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\about.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\Browsbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\button_popup.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\custmenu.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\filelist.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\histloc.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\idle.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\idr_cntr.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\idr_grap.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\import.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\itemlist.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\litebulb.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\locate.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\MB_Exclamation.ICO">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\MB_Information.ICO">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\MB_Question.ICO">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\MB_Stop.ICO">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\modules.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\multius.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\multiuse.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\python.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\smallico.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\Splsh16.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\stateico.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\tbFilter.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\wincvs.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\wincvs.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\wincvsDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\res\workspac.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\HHelp\cshelp.txt">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\MakeHHelp.bat">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\HHelp\tips.txt">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\HHelp\toc.hhc">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\HHelp\wincvs.hhk">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\HHelp\wincvs.hhp">
+      <Filter>Help Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\__init__.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\App.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\CmdUI.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\ColorConsole.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\Cvs.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\CvsEntry.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\CvsLog.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\Macro.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\MacroRegistry.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\MacroUtils.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\MenuMgr.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\Persistent.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\SafeTk.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\Shell.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\PythonLib\cvsgui\SubstModeTk.py">
+      <Filter>PythonLib\cvsgui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\AddDelIgnore.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\AddRootModule.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\Bonsai.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\BrowseRepoTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ChangeRepo.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ChangeRoot.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ChangeSubstModeTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\Cleanup.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CleanupMissing.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CmdHere.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ConflictScanner.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CopyToBranch.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CopyToHeadVersion.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\cvs2cl.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\cvs2clTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CvsAlertTest.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CvsPromptTest.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CvsVersion.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CvsView.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\EditFileTypeAssoc.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ExtDiffFiles.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ExtendedAddTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\FastSearch.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\FixDST.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\HideAdminFiles.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListModules.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListTags.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\MoveBranchPointToHead.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\Override2ndPartyAdd.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\RecursiveAddTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ResurrectFile.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\RListModule.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\SearchLogComments.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ShowLogEntry.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\TagAndUpdate.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\TemplateMacro.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\TemplateMacroTk.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\test.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ZipSelected.py">
+      <Filter>Macros\Python</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ChangeRoot.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ChangeRootTK.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\Cleanup.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ColorTest.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\cvs2cl.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\CvsAddAll.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\cvsignore_add.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\cvsignore_remove.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\EditSafely.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\FastModSearch.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\FolderTest.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ForceUpdate.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListDeleted.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListLockedFiles.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListModules.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListNonCVS.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\ListStickyTags.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\PrepPatch.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\QueryState.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\RevertChanges.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\SelectionTest.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\SetCurrentVersion.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\startup.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\TclVersion.tcl">
+      <Filter>Macros\TCL</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\Macros\DocMacros.txt">
+      <Filter>Macros</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\SourceDoc\DoDoxygen.bat">
+      <Filter>Doxygen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\SourceDoc\DoDoxygen.sh">
+      <Filter>Doxygen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\SourceDoc\Doxyfile">
+      <Filter>Doxygen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\SourceDoc\Readme.txt">
+      <Filter>Doxygen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\ChangeLog" />
+    <CustomBuild Include="..\..\..\TODO" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>MacCvsX</string>
+	<key>CFBundleGetInfoString</key>
+	<string>MacCvsX 3.3a3, Copyleft GNU 2003.</string>
+	<key>CFBundleIconFile</key>
+	<string>maccvs.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.gnu.MacCvs</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>MacCvsX</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>MacCvsX 3.3a3</string>
+	<key>CFBundleSignature</key>
+	<string>mCVS</string>
+	<key>CFBundleVersion</key>
+	<string>3.3a3</string>
+	<key>DefaultBinaryMappings</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>GIF documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string></string>
+			<key>FileType</key>
+			<string>GIFf</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>GIF documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>gif</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>TIFF documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>tiff</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>TIFF documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>tif</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>JPEG documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string></string>
+			<key>FileType</key>
+			<string>JPEG</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>JPEG documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>jpg</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>JPEG documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>jpeg</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Metrowerks projects</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>mcp</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Metrowerks projects</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string></string>
+			<key>FileType</key>
+			<string>MMPr</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Microsoft Word documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string>doc</string>
+			<key>FileType</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Microsoft Word documents</string>
+			<key>Encoding</key>
+			<string>PlainBinary</string>
+			<key>Extension</key>
+			<string></string>
+			<key>FileType</key>
+			<string>WDBN</string>
+		</dict>
+	</array>
+	<key>LSRequiresCarbon</key>
+	<true/>
+	<key>NSAppleScriptEnabled</key>
+	<true/>
+</dict>
+</plist>

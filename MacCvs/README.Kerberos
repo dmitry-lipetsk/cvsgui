@@ -1,0 +1,11 @@
+MacCVS is not distributed with the Kerberos library. This library
+is optionnal. It was contributed by Miro Jurisic <meeroh@mit.edu>.
+
+The KClient 1.6.2 is located at this adress :
+
+ftp://ftp.cit.cornell.edu/pub/mac/kerberos
+
+Read the README and follow the instructions...
+
+Good luck,
+alex <aubonbeurre@hotmail.com>

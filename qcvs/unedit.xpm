@@ -1,0 +1,30 @@
+/* XPM */
+static const char *i_unedit[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        8            1",
+/* colors */
+". c #000000",
+"# c #808000",
+"a c #000080",
+"b c #c0c0c0",
+"c c #808080",
+"d c #f8fc00",
+"e c #0000f8",
+"f c #f8fcf8",
+/* pixels */
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbc....ccb",
+"bbbbbbb.ffffff.b",
+"bbbbbb.ffffff..b",
+"bbbbb.ffffff.c.b",
+"bbbb.ffffff.cc.b",
+"bbb.ffffff.cc.bb",
+"bb.ffffff.cc.bbb",
+"bb.bbbbb.cc.bbbb",
+"b.bbbbbb.c.bbbbb",
+"b.bbbbbb..bbbbbb",
+"bb......cbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb"
+};

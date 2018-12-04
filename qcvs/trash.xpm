@@ -1,0 +1,35 @@
+/* XPM */
+static const char *i_trash[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15       13            1",
+/* colors */
+". c #000000",
+"# c #008000",
+"a c #808000",
+"b c #000080",
+"c c #c0c0c0",
+"d c #808080",
+"e c #f80000",
+"f c #00fc00",
+"g c #f8fc00",
+"h c #0000f8",
+"i c #f800f8",
+"j c #00fcf8",
+"k c #f8fcf8",
+/* pixels */
+"ccccddddcccccccc",
+"ccddkdkkddcccccc",
+"ddkkd.cckkddcccc",
+"dkkdd.dccckkddcc",
+"dcckk.ddcccckk.c",
+"dcccckkdccckkd.c",
+"cdccc##kkkkddd.c",
+"cdcc#cc##cdddd.c",
+"cdc###c##cddd.cc",
+"cdcc#cccccddd.cc",
+"ccdc#c#c#cddd.cc",
+"ccdcc####cddd.cc",
+"cc..cc#cccdd.ccc",
+"cccc..ccccdd.ccc",
+"cccccc..ccdd.ccc"
+};

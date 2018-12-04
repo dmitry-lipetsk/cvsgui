@@ -1,0 +1,146 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {QLineCmd.h}
+	ClassSource {QLineCmd.cpp}
+	ClassName {QLineCmd}
+	DataHeader {QLineCmdData.h}
+	DataSource {QLineCmdData.cpp}
+	DataName {QLineCmdData}
+	WindowBaseClass {QWidget}
+	WindowCaption {Line command}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {520 260}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+ButtonGroup {
+		Title {}
+		Alignment {Left}
+		Style {49}
+		Rect {5 5 510 196}
+		Name {ButtonGroup_1}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Label {
+		Text {}
+		Alignment {1313}
+		AutoResize {FALSE}
+		Margin {-1}
+		Rect {177 216 338 30}
+		Name {Label_1}
+		Variable {fPath}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {NoFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+CheckBox {
+		Checked {FALSE}
+		Text {Execute from this path :}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {5 206 169 30}
+		Name {CheckBox_3}
+		Variable {fPathCheck}
+		Signal {[Protected]  toggled --> OnCheckPath  (bool)}
+		MinimumSize {0 0}
+		MaximumSize {32767 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+MultiLineEdit {
+		Line {}
+		ReadOnly {FALSE}
+		OverwriteMode {FALSE}
+		Rect {10 10 500 186}
+		Name {MultiLineEdit_1}
+		Variable {fCmd}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {SameFont}
+		PalettePropagation {SameFont}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1{
+	Widget {ButtonGroup_1}
+	BoxStretch {4}
+	Alignment {36}
+}
+Box_Layout-1.1.1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1.1.1{
+	Widget {MultiLineEdit_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+Box_Layout-1.2{
+	Direction {LeftToRight}
+	Border {5}
+	AutoBorder {3}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.2.1{
+	Widget {CheckBox_3}
+	BoxStretch {1}
+	Alignment {9}
+}
+Layout_Widget-1.2.2{
+	Widget {Label_1}
+	BoxStretch {2}
+	Alignment {36}
+}
+}

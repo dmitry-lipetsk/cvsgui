@@ -1,0 +1,26 @@
+// ===========================================================================
+//	FinalClassicPrefix.pch++	©1999-2000 Metrowerks Inc. All rights reserved.
+// ===========================================================================
+//	Precompiled header source for a Classic Target
+
+
+#if __POWERPC__
+	#pragma precompile_target "FinalClassicHeadersPPC++"
+#else
+	#pragma precompile_target "FinalClassicHeaders68K++"
+#endif
+
+
+#define NDEBUG					1
+
+
+// ---------------------------------------------------------------------------
+//	Common Settings
+
+#include "CommonClassicPrefix.h"
+
+
+// ---------------------------------------------------------------------------
+//	PowerPlant and Toolbox Headers
+
+#include <PP_ClassHeaders.cp>

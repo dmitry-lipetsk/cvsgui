@@ -1,0 +1,32 @@
+/* XPM */
+static const char *i_state4[] = {
+/* width height num_colors chars_per_pixel */
+"    16    16        9            1",
+/* colors */
+". c #000000",
+"# c #000080",
+"a c #c0c0c0",
+"b c #808080",
+"c c #f80000",
+"d c #f8fc00",
+"e c #0000f8",
+"f c None",
+"g c #ffffff",
+/* pixels */
+"fbbbbbbbbbbfffff",
+"fbggggggggabffff",
+"fbggggggggagbfff",
+"fbgggggggg....ff",
+"fbgggg.ggggga.ff",
+"fbgg....gggga.ff",
+"fbgg.gg.gggga.ff",
+"fbgg.ggg.ggga.ff",
+"fbgg.....ggga.ff",
+"fbgg.ggg.ggga.ff",
+"fbgg.ggg.ggga.ff",
+"fbgggggggggga.ff",
+"fbgggggggggga.ff",
+"fbgggggggggga.ff",
+"fbaaaaaaaaaaa.ff",
+"ffffffffffffffff"
+};

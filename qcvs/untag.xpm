@@ -1,0 +1,28 @@
+/* XPM */
+static const char *i_untag[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        6            1",
+/* colors */
+". c #000000",
+"# c #c0c0c0",
+"a c #808080",
+"b c #f80000",
+"c c #0000f8",
+"d c #f8fcf8",
+/* pixels */
+"##aaaaaaaaaa####",
+"##adddddddd#a###",
+"##adddddddd#..##",
+"##.dccccccc....#",
+"##a.cddcc..cd#.#",
+"##ad.ddc..ddd#.#",
+"##add...cdddd#.#",
+"##addd...dddd#.#",
+"##add..c..ddd#.#",
+"##ad.ddcc..dd#.#",
+"##a.dddccd..d#.#",
+"##.dddccccdd.#.#",
+"##addddddddd...#",
+"##a##########..#",
+"##aaaaaaaaaaaa.#"
+};

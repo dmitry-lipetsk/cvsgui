@@ -1,0 +1,10 @@
+Debug
+Release
+*.aps
+*.ncb
+*.opt
+*.plg
+*.clw
+dlldata.c
+*.positions
+*.Tags.WW

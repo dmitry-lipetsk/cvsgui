@@ -1,0 +1,24 @@
+Just do it !
+
+The new unix version contains a folder named "rf" which is
+intended to help porting CvsGui to several platforms. "rf"
+stands for "relay framework". It's not a framework, it's
+a minimal collection of tools in order to dispatch, intercept,
+send, post events. In the source code, it's mentionned as
+"pseudo framework". It's very light and easy to port.
+
+As a general manner, CvsGui is using the most popular/actives
+compiler and tools for the platforms in order to encourage
+people to modify the source code. The project doesn't try
+to use a generic multi-platform framework (like wxWINDOWS or
+QT) because :
+
+1) It never works as well as expected and on all the platforms.
+2) It's unlikely to interest people who develop on one platform
+to learn about a multi-platform framework.
+
+CvsGui is encouraging platforms porting and will ultimately
+integrate any of them in the main distribution.
+
+Alexandre Parenteau  <aubonbeurre@hotmail.com>
+http://www.wincvs.org

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.gnu.MacCvs</string>
+	<key>CFBundleName</key>
+	<string>maccvsX</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>mCVS</string>
+	<key>CFBundleExecutable</key>
+	<string>maccvsX</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>LSPrefersCarbon</key>
+	<true/>
+	<key>CFBundleVersion</key>
+	<string>3.3</string>
+	<key>CFBundleShortVersionString</key>
+	<string>3.3a1</string>
+	<key>CFBundleLongVersionString</key>
+	<string>3.3a1, Copyleft GNU</string>
+	<key>CFBundleGetInfoString</key>
+	<string>maccvsX 3.3a1</string>
+	<key>CFBundleIconFile</key>
+	<!-- 	<string>maccvs.icns</string> -->
+	<string>128</string>
+	<!-- Makes the resource fork read only -->
+	<key>CSResourcesFileMapped</key>
+	<true/>
+    <key>NSAppleScriptEnabled</key>
+    <string>Yes</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>Copyleft GNU</string>
+    </dict>
+
+<!--
+   <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeOSTypes</key>
+            <array>
+                <string>TEXT</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+            <string>129</string>
+            <key>CFBundleTypeName</key>
+            <string>Text document</string>
+            <key>CFBundleTypeExtensions</key>
+            <array>
+                <string>txt</string>
+                <string>text</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeOSTypes</key>
+            <array>
+                <string>ttro</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+            <string>130</string>
+            <key>CFBundleTypeName</key>
+            <string>Read Only document</string>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+        </dict>
+        <dict>
+            <key>CFBundleTypeOSTypes</key>
+            <array>
+                <string>PICT</string>
+            </array>
+            <key>CFBundleTypeIconFile</key>
+            <string>131</string>
+            <key>CFBundleTypeName</key>
+            <string>PICT document</string>
+            <key>CFBundleTypeExtensions</key>
+            <array>
+                <string>pict</string>
+            </array>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
+        </dict>
+    </array>
+-->
+</plist>

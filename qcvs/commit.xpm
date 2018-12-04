@@ -1,0 +1,29 @@
+/* XPM */
+static const char *i_commit[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        7            1",
+/* colors */
+". c #000000",
+"a c #000080",
+"b c #808080",
+"c c #c0c0c0",
+"d c #f80000",
+"g c #f8fcf8",
+"k c None",
+/* pixels */
+"kkbbbbbbbbbbkkkk",
+"kkbaaggggggcbkkk",
+"kkadaggggggcgbkk",
+"kaddaaaaaag....k",
+"addddddddagggc.k",
+"kaddaaaadagggc.k",
+"kkadaggadagggc.k",
+"kkbaaggadagggc.k",
+"kkbggggadagggc.k",
+"kkbggggadagggc.k",
+"kkbggggaaagggc.k",
+"kkbggggggggggc.k",
+"kkbggggggggggc.k",
+"kkbccccccccccc.k",
+"kkbbbbbbbbbbbb.k"
+};

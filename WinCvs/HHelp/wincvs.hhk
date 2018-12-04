@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="exit">
+		<param name="Name" value="File Exit command">
+		<param name="Local" value="html\ExitCommandFileMenu.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="files">
+		<param name="See Also" value="files">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="managing">
+			<param name="Name" value="File menu commands">
+			<param name="Local" value="html\FileMenuCommands.htm">
+			<param name="Name" value="File Save Output As command">
+			<param name="Local" value="html\SaveOutputAsCommandFileMenu.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="printing and print preview">
+		<param name="Name" value="File Print command">
+		<param name="Local" value="html\PrintCommandFileMenu.htm">
+		<param name="Name" value="File Print Preview command">
+		<param name="Local" value="html\PrintPreviewCommandFileMenu.htm">
+		<param name="Name" value="print preview toolbar">
+		<param name="Local" value="html\PrintPreviewToolbar.htm">
+		<param name="Name" value="File Print Setup command">
+		<param name="Local" value="html\PrintSetupCommandFileMenu.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="status bar">
+		<param name="Name" value="status bar">
+		<param name="Local" value="html\StatusBar.htm">
+		<param name="Name" value="View Status Bar Command">
+		<param name="Local" value="html\StatusBarCommandViewMenu.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="toolbar">
+		<param name="Name" value="toolbar">
+		<param name="Local" value="html\Toolbar.htm">
+		<param name="Name" value="Toolbars menu commands">
+		<param name="Local" value="html\ToolbarsMenuCommands.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

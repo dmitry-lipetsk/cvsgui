@@ -1,0 +1,2981 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "//#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""version_no.h""     // Location of the global version and build numbering\r\n"
+    "#include ""version_fu.h""     // preprocessor definitions for the VERSION_INFO resource\r\n"
+    "#include ""res\\wincvs.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_CNTR_INPLACE        ICON    DISCARDABLE     "res\\idr_cntr.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\wincvs.ico"
+IDR_WINCVSTYPE          ICON    DISCARDABLE     "res\\wincvsDoc.ico"
+IDR_GRAPH               ICON    DISCARDABLE     "res\\idr_grap.ico"
+IDI_MB_STOP             ICON    DISCARDABLE     "res\\MB_Stop.ICO"
+IDI_MB_INFORMATION      ICON    DISCARDABLE     "res\\MB_Information.ICO"
+IDI_MB_QUESTION         ICON    DISCARDABLE     "res\\MB_Question.ICO"
+IDI_MB_EXCLAMATION      ICON    DISCARDABLE     "res\\MB_Exclamation.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_BROWSER             BITMAP  MOVEABLE PURE   "res\\Browsbar.bmp"
+IDB_SMALLICONS          BITMAP  DISCARDABLE     "res\\smallico.bmp"
+IDR_FILELIST            BITMAP  DISCARDABLE     "res\\filelist.bmp"
+IDR_MULTIUSER           BITMAP  DISCARDABLE     "res\\multius.bmp"
+IDR_STATEICONS          BITMAP  DISCARDABLE     "res\\stateico.bmp"
+IDB_LIGHTBULB           BITMAP  DISCARDABLE     "res\\litebulb.bmp"
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splsh16.bmp"
+IDR_TAGS                BITMAP  DISCARDABLE     "res\\multiuse.bmp"
+IDB_ABOUT               BITMAP  DISCARDABLE     "res\\about.bmp"
+IDR_CUSTMENUS           BITMAP  DISCARDABLE     "res\\custmenu.bmp"
+IDB_IDLE                BITMAP  DISCARDABLE     "res\\idle.bmp"
+IDR_FILTER              BITMAP  DISCARDABLE     "res\\tbFilter.bmp"
+IDR_WORKSPACE           BITMAP  DISCARDABLE     "res\\workspac.bmp"
+IDB_LOCATE              BITMAP  DISCARDABLE     "res\\locate.bmp"
+IDB_HISTLOC             BITMAP  DISCARDABLE     "res\\histloc.bmp"
+IDB_PYTHON              BITMAP  DISCARDABLE     "res\\python.bmp"
+IDR_ITEMLIST            BITMAP  DISCARDABLE     "res\\itemlist.bmp"
+IDB_MODULES             BITMAP  DISCARDABLE     "res\\modules.bmp"
+IDB_IMPORT              BITMAP  DISCARDABLE     "res\\import.bmp"
+IDB_BUTTON_POPUP        BITMAP  DISCARDABLE     "res\\button_popup.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_BROWSER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_UPDATE
+    BUTTON      ID_VIEW_COMMIT
+    SEPARATOR
+    BUTTON      IDC_STATIC
+    BUTTON      ID_BROWSER_OPEN
+    SEPARATOR
+    BUTTON      ID_STOPCVS
+    BUTTON      ID_VIEW_QUERYUPDATE
+END
+
+IDR_FILELIST TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_ADD
+    BUTTON      ID_VIEW_ADDB
+    BUTTON      ID_VIEW_ADDU
+    BUTTON      ID_VIEW_RMV
+    SEPARATOR
+    BUTTON      ID_VIEW_SMALLICONS
+    BUTTON      ID_VIEW_FULLLIST
+    BUTTON      ID_VIEW_ROWDETAILS
+    SEPARATOR
+    BUTTON      ID_VIEW_EXPLORE
+    BUTTON      ID_QUERY_COMMANDPROMPT
+    BUTTON      ID_VIEW_UPONE
+    SEPARATOR
+    BUTTON      ID_VIEW_DIFF
+    BUTTON      ID_VIEW_LOG
+    BUTTON      ID_VIEW_STATUS
+    BUTTON      ID_QUERY_ANNOTATE
+    SEPARATOR
+    BUTTON      ID_VIEW_GRAPH
+    SEPARATOR
+    BUTTON      ID_VIEW_TRASH
+END
+
+IDB_SMALLICONS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+    BUTTON      IDOK
+END
+
+IDR_MULTIUSER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_WATCHON
+    BUTTON      ID_VIEW_WATCHOFF
+    BUTTON      ID_VIEW_WATCHERS
+    SEPARATOR
+    BUTTON      ID_VIEW_EDIT
+    BUTTON      ID_VIEW_RESERVEDEDIT
+    BUTTON      ID_VIEW_UNEDIT
+    BUTTON      ID_VIEW_EDITORS
+    SEPARATOR
+    BUTTON      ID_VIEW_RELEASE
+END
+
+IDR_STATEICONS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDOK
+    BUTTON      IDOK
+END
+
+IDR_TAGS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_TAGNEW
+    BUTTON      ID_VIEW_TAGDELETE
+    SEPARATOR
+    BUTTON      ID_VIEW_TAGBRANCH
+END
+
+IDR_CUSTMENUS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32920
+    BUTTON      ID_BUTTON32921
+    BUTTON      ID_BUTTON32940
+    BUTTON      ID_BUTTON32940
+END
+
+IDR_FILTER TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_VIEW_RECURSIVE
+    SEPARATOR
+    BUTTON      ID_VIEW_FILTERBAR_ENABLE
+    BUTTON      ID_VIEW_FILTERBAR_CLEARALL
+    SEPARATOR
+    BUTTON      ID_VIEW_CLEARALL
+    SEPARATOR
+    BUTTON      ID_VIEW_MODIFIED
+    BUTTON      ID_VIEW_CHANGED
+    BUTTON      ID_VIEW_ADDED
+    BUTTON      ID_VIEW_REMOVED
+    BUTTON      ID_VIEW_CONFLICT
+    SEPARATOR
+    BUTTON      ID_VIEW_MISSING
+    BUTTON      ID_VIEW_HIDEMISSING
+    SEPARATOR
+    BUTTON      ID_VIEW_UNKNOWN
+    BUTTON      ID_VIEW_HIDEUNKNOWN
+    SEPARATOR
+    BUTTON      ID_VIEW_IGNORE
+    SEPARATOR
+    BUTTON      ID_VIEW_RELOAD
+END
+
+IDR_WORKSPACE TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDOK
+    BUTTON      IDOK
+END
+
+IDB_HISTLOC TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      1
+    BUTTON      1
+    BUTTON      1
+    BUTTON      1
+    BUTTON      1
+END
+
+IDR_ITEMLIST TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+END
+
+IDB_MODULES TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+END
+
+IDB_IMPORT TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      IDC_STATIC
+    BUTTON      IDC_STATIC
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save Output &As...\tCtrl+S",  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Erase all",                  ID_EDIT_CLEAR_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find next\tAlt+F3",           ID_EDIT_REPEAT
+        MENUITEM SEPARATOR
+        MENUITEM "F&ont...",                    ID_FORMAT_FONT
+        MENUITEM SEPARATOR
+        POPUP "&Shell"
+        BEGIN
+            MENUITEM "&Tcl",                        ID_USE_TCLSHELL
+            MENUITEM "&Python",                     ID_USE_PYSHELL
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Refresh\tF5",                ID_VIEW_RELOAD
+        MENUITEM "&Flat Mode",                  ID_VIEW_RECURSIVE
+        MENUITEM SEPARATOR
+        POPUP "&Toolbars"
+        BEGIN
+            MENUITEM "&Standard",                   ID_VIEW_TOOLBAR
+            MENUITEM "&Browse",                     ID_VIEW_BROWSER_BAR
+            MENUITEM "&Files",                      ID_VIEW_FILES_BAR
+            MENUITEM "&Multi-Users",                ID_VIEW_MULTI_BAR
+            MENUITEM "T&ags",                       ID_VIEW_TAGS_BAR
+            MENUITEM "&Filter",                     ID_VIEW_FILTER_BAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Workspace\tAlt+0",           ID_VIEW_WORKSPACE
+        MENUITEM "&Output\tAlt+1",              ID_VIEW_CONSOLE_BAR
+        MENUITEM SEPARATOR
+        POPUP "&Browse Location"
+        BEGIN
+            MENUITEM "&Change...",                  ID_BROWSER_OPEN
+            MENUITEM "&Save Settings...",           ID_SAVESETTINGS
+            MENUITEM "&Remove unwanted...",         ID_VIEW_BROWSELOCATION_REMOVEUNWANTED
+
+        END
+        MENUITEM SEPARATOR
+        POPUP "F&ile Filter"
+        BEGIN
+            MENUITEM "C&lear All",                  ID_VIEW_CLEARALL
+            MENUITEM SEPARATOR
+            MENUITEM "Show All &Commitable",        ID_VIEW_MODIFIED
+            MENUITEM "Show C&hanged",               ID_VIEW_CHANGED
+            MENUITEM "Show &Added",                 ID_VIEW_ADDED
+            MENUITEM "Show &Removed",               ID_VIEW_REMOVED
+            MENUITEM "Show C&onflicts",             ID_VIEW_CONFLICT
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Missing",               ID_VIEW_MISSING
+            MENUITEM "Hide Mi&ssing",               ID_VIEW_HIDEMISSING
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Unknown",               ID_VIEW_UNKNOWN
+            MENUITEM "Hide U&nknown",               ID_VIEW_HIDEUNKNOWN
+            MENUITEM SEPARATOR
+            MENUITEM "Show &Ignored",               ID_VIEW_IGNORE
+        END
+        POPUP "Fi&lter Bar"
+        BEGIN
+            MENUITEM "&Enable",                     ID_VIEW_FILTERBAR_ENABLE
+            MENUITEM "&Clear All",                  ID_VIEW_FILTERBAR_CLEARALL
+
+            MENUITEM "&Options...",                 ID_VIEW_FILTERBAR_OPTIONS
+
+        END
+    END
+    POPUP "&Admin"
+    BEGIN
+        MENUITEM "Pr&eferences...\tCtrl+F1",    ID_APP_PREFERENCES
+        MENUITEM "&Command Line...\tCtrl+L",    ID_APP_CMDLINE
+        MENUITEM SEPARATOR
+        MENUITEM "&Login...",                   ID_APP_LOGIN
+        MENUITEM "Lo&gout",                     ID_APP_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Stop CVS",                   ID_STOPCVS
+        MENUITEM SEPARATOR
+        POPUP "&Admin macros"
+        BEGIN
+            MENUITEM "Shell is not available !",    ID_MACRO_ADMIN
+        END
+    END
+    POPUP "&Remote"
+    BEGIN
+        MENUITEM "&Create a new repository...", ID_VIEW_INIT
+        MENUITEM "&Import module...",           ID_VIEW_IMPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Chec&kout module...",         ID_VIEW_CHECKOUT
+        MENUITEM "&Export module...",           ID_VIEW_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Create a &tag by module...",  ID_APP_RTAGCREATE
+        MENUITEM "&Delete a tag...",            ID_APP_RTAGDELETE
+        MENUITEM "Create a &branch...",         ID_APP_RTAGBRANCH
+    END
+    POPUP "&Modify"
+    BEGIN
+        MENUITEM "&Update...\tCtrl+U",          ID_VIEW_UPDATE
+        MENUITEM "Co&mmit...\tCtrl+M",          ID_VIEW_COMMIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Add",                        ID_VIEW_ADD
+        MENUITEM "Add &binary",                 ID_VIEW_ADDB
+        MENUITEM "Add &unicode",                ID_VIEW_ADDU
+        MENUITEM "&Remove",                     ID_VIEW_RMV
+        MENUITEM SEPARATOR
+        MENUITEM "&Erase\tCtrl+Backspace, F8",  ID_VIEW_TRASH
+        MENUITEM SEPARATOR
+        MENUITEM "Create a &tag...",            ID_VIEW_TAGNEW
+        MENUITEM "&Delete a tag...",            ID_VIEW_TAGDELETE
+        MENUITEM "Create a &branch...",         ID_VIEW_TAGBRANCH
+    END
+    POPUP "&Query"
+    BEGIN
+        MENUITEM "&Query Update\tCtrl+Q",       ID_VIEW_QUERYUPDATE
+        MENUITEM "&Diff...\tCtrl+D",            ID_VIEW_DIFF
+        MENUITEM "&Log...",                     ID_VIEW_LOG
+        MENUITEM "&Status...",                  ID_VIEW_STATUS
+        MENUITEM "&Annotate...",                ID_QUERY_ANNOTATE
+        MENUITEM "&Graph...\tCtrl+G",           ID_VIEW_GRAPH
+        MENUITEM "&Compare",                    ID_QUERY_COMPARE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xplore\tF2",                ID_VIEW_EXPLORE
+        MENUITEM "Command Prompt\tCtrl+K",      ID_QUERY_COMMANDPROMPT
+        MENUITEM "Open in &new instance\tCtrl+F2", ID_VIEW_NEWINSTANCE
+        POPUP "S&hell Action"
+        BEGIN
+            MENUITEM "&Edit\tF4",                   ID_VIEW_EDITSEL
+            MENUITEM "E&dit with editor\tShift+F4", ID_VIEW_EDITSELDEF
+            MENUITEM SEPARATOR
+            MENUITEM "&Open\tF3",                   ID_VIEW_OPENSEL
+            MENUITEM "Open &with...\tCtrl+F3",      ID_VIEW_OPENSELAS
+            MENUITEM SEPARATOR
+            MENUITEM "&Shell default\tShift+F3",    ID_QUERY_SHELLACTION_DEFAULT
+
+            MENUITEM SEPARATOR
+            MENUITEM "Edit with &conflict editor",  ID_VIEW_EDITSELCONFLICT
+            MENUITEM "Open with &annotate viewer",  ID_VIEW_OPENSELANNOTATE
+        END
+        MENUITEM "P&roperties\tAlt+Enter",      ID_QUERY_PROPERTIES
+    END
+    POPUP "&Trace"
+    BEGIN
+        MENUITEM "&Edit",                       ID_VIEW_EDIT
+        MENUITEM "Reserve&d edit",              ID_VIEW_RESERVEDEDIT
+        MENUITEM "&Force edit",                 ID_VIEW_FORCEEDIT
+        MENUITEM "U&nedit",                     ID_VIEW_UNEDIT
+        MENUITEM SEPARATOR
+        MENUITEM "&Add a Watch",                ID_VIEW_WATCHON
+        MENUITEM "&Remove a Watch",             ID_VIEW_WATCHOFF
+        MENUITEM SEPARATOR
+        MENUITEM "Relea&se...",                 ID_VIEW_RELEASE
+        MENUITEM SEPARATOR
+        MENUITEM "&Watchers",                   ID_VIEW_WATCHERS
+        MENUITEM "E&ditors",                    ID_VIEW_EDITORS
+        MENUITEM SEPARATOR
+        MENUITEM "&Unlock",                     ID_VIEW_UNLOCKF
+    END
+    POPUP "Macro&s"
+    BEGIN
+        MENUITEM "Shell is not available !",    ID_MACRO_SEL
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Tip of the day",             CG_IDS_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Help Topics\tF1",            ID_HELP
+        MENUITEM "CVS Documentation",           ID_HELP_CVS
+        MENUITEM SEPARATOR
+        MENUITEM "&Credits",                    ID_APP_CREDITS
+        MENUITEM "C&opyrights",                 ID_APP_COPYRIGHTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About WinCvs...",            ID_APP_ABOUT
+    END
+END
+
+IDR_CNTR_INPLACE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Save Output &As...",          ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Tip of the day",             CG_IDS_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Help Topics",                ID_HELP
+        MENUITEM "CVS Documentation",           ID_HELP_CVS
+        MENUITEM SEPARATOR
+        MENUITEM "&Credits",                    ID_APP_CREDITS
+        MENUITEM "C&opyrights",                 ID_APP_COPYRIGHTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About WinCvs...",            ID_APP_ABOUT
+    END
+END
+
+IDR_GRAPH MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Erase all",                  ID_EDIT_CLEAR_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Find...\tCtrl+F",            ID_EDIT_FIND
+        MENUITEM "Find next\tAlt+F3",           ID_EDIT_REPEAT
+        MENUITEM SEPARATOR
+        MENUITEM "F&ont...",                    ID_FORMAT_FONT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "R&efresh\tF5",                ID_VIEW_RELOAD
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&Standard",                   ID_VIEW_TOOLBAR
+            MENUITEM "&Browse",                     ID_VIEW_BROWSER_BAR
+            MENUITEM "&Files",                      ID_VIEW_FILES_BAR
+            MENUITEM "&Multi-Users",                ID_VIEW_MULTI_BAR
+            MENUITEM "T&ags",                       ID_VIEW_TAGS_BAR
+            MENUITEM "&Filter",                     ID_VIEW_FILTER_BAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Workspace\tAlt+0",           ID_VIEW_WORKSPACE
+        MENUITEM "&Output\tAlt+1",              ID_VIEW_CONSOLE_BAR
+        MENUITEM SEPARATOR
+        POPUP "&Browse Location"
+        BEGIN
+            MENUITEM "&Change...",                  ID_BROWSER_OPEN
+            MENUITEM "&Save Settings...",           ID_SAVESETTINGS
+            MENUITEM "&Remove unwanted...",         ID_VIEW_BROWSELOCATION_REMOVEUNWANTED
+
+        END
+    END
+    POPUP "&Admin"
+    BEGIN
+        MENUITEM "Pr&eferences...\tCtrl+F1",    ID_APP_PREFERENCES
+        MENUITEM "&Command Line...\tCtrl+L",    ID_APP_CMDLINE
+        MENUITEM SEPARATOR
+        MENUITEM "&Login...",                   ID_APP_LOGIN
+        MENUITEM "Logou&t",                     ID_APP_LOGOUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Stop cvs",                   ID_STOPCVS
+    END
+    POPUP "&Graph"
+    BEGIN
+        MENUITEM "Upda&te to selected (sticky)", ID_VIEW_TAG
+        MENUITEM "&Update to HEAD (remove sticky)", ID_VIEW_UPDATE
+        MENUITEM "Retrie&ve revision",          ID_VIEW_RETRIEVE
+        MENUITEM "Retrieve revision as...",     ID_VIEW_RETRIEVEAS
+        MENUITEM SEPARATOR
+        POPUP "S&hell Action"
+        BEGIN
+            MENUITEM "&Edit selection\tF4",         ID_VIEW_EDITSEL
+            MENUITEM "E&dit with editor\tShift+F4", ID_VIEW_EDITSELDEF
+            MENUITEM SEPARATOR
+            MENUITEM "&Open\tF3",                   ID_VIEW_OPENSEL
+            MENUITEM "Open &with...\tCtrl+F3",      ID_VIEW_OPENSELAS
+            MENUITEM SEPARATOR
+            MENUITEM "&Shell default\tShift+F3",    ID_QUERY_SHELLACTION_DEFAULT
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Diff...\tCtrl+D",            ID_VIEW_DIFF
+        MENUITEM "&Annotate...",                ID_QUERY_ANNOTATE
+        POPUP "&Tag"
+        BEGIN
+            MENUITEM "Create a &tag...",            ID_VIEW_TAGNEW
+            MENUITEM "&Delete a tag...",            ID_VIEW_TAGDELETE
+            MENUITEM "Create a &branch...",         ID_VIEW_TAGBRANCH
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Select non significant",     ID_VIEW_SELNONSIG
+        POPUP "A&dmin options"
+        BEGIN
+            MENUITEM "D&elete revisions...",        ID_VIEW_DELREV
+            MENUITEM SEPARATOR
+            MENUITEM "Change log &message...",      ID_GRAPH_ADMINOPTIONS_CHANGELOGMESSAGE
+
+            MENUITEM "Set &state...",               ID_GRAPH_ADMINOPTIONS_SETSTATE
+
+            MENUITEM "Set &description...",         ID_GRAPH_ADMINOPTIONS_SETDESCRIPTION
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Unlock revision",            ID_VIEW_UNLOCKF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Graph &Options...",           ID_GRAPH_GRAPHOPTIONS
+        MENUITEM "F&ont...",                    ID_FORMAT_FONT
+        MENUITEM SEPARATOR
+        MENUITEM "&Close\tCtrl+F4",             ID_FILE_CLOSE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "C&lose All",                  ID_WINDOW_CLOSEALL
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Tip of the day",             CG_IDS_TIPOFTHEDAY
+        MENUITEM SEPARATOR
+        MENUITEM "&Help Topics\tF1",            ID_HELP
+        MENUITEM "CVS Documentation",           ID_HELP_CVS
+        MENUITEM SEPARATOR
+        MENUITEM "&Credits",                    ID_APP_CREDITS
+        MENUITEM "C&opyrights",                 ID_APP_COPYRIGHTS
+        MENUITEM SEPARATOR
+        MENUITEM "&About WinCvs...",            ID_APP_ABOUT
+    END
+END
+
+IDR_SUBSTMODE MENU DISCARDABLE 
+BEGIN
+    POPUP "Subst Mode"
+    BEGIN
+        MENUITEM "&Text (t - default)",         ID_SUBSTMODE_TEXT
+        MENUITEM "&Binary (b)",                 ID_SUBSTMODE_BINARY
+        MENUITEM "Binary &Delta (B)",           ID_SUBSTMODE_BINARYDELTA
+        MENUITEM "&Unicode (u)",                ID_SUBSTMODE_UNICODE
+        MENUITEM "&Extended Encoding ({...})",  ID_SUBSTMODE_EXTENDEDENCODING
+
+        MENUITEM SEPARATOR
+        MENUITEM "Substitute &Keyword (k)",     ID_SUBSTMODE_SUBSTITUTEKEYWORD
+
+        MENUITEM "Substitute &Value (v)",       ID_SUBSTMODE_SUBSTITUTEVALUE
+        MENUITEM "Insert &Lockers Name (l)",    ID_SUBSTMODE_LOCKERSNAME
+        MENUITEM "&No Substitution (o)",        ID_SUBSTMODE_NOSUBSTITUTION
+        MENUITEM SEPARATOR
+        MENUITEM "Force &Reserved Edit (c)",    ID_SUBSTMODE_FORCERESERVEDEDIT
+
+        MENUITEM "&Compress Deltas (z)",        ID_SUBSTMODE_COMPRESSDELTAS
+        MENUITEM "Uni&x Line Endings (L)",      ID_SUBSTMODE_UNIXLINEENDINGS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_VIEW_WORKSPACE,      VIRTKEY, ALT, NOINVERT
+    "1",            ID_VIEW_CONSOLE_BAR,    VIRTKEY, ALT, NOINVERT
+    "=",            ID_VIEW_DIFF,           ASCII,  ALT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_VIEW_DIFF,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_VIEW_DIFF,           VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_VIEW_GRAPH,          VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_VIEW_GRAPH,          VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "K",            ID_QUERY_COMMANDPROMPT, VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_APP_CMDLINE,         VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_VIEW_COMMIT,         VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_VIEW_QUERYUPDATE,    VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_VIEW_UPDATE,         VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_VIEW_UPDATE,         VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_VIEW_TRASH,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_APP_PREFERENCES,     VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F2,          ID_VIEW_EXPLORE,        VIRTKEY, NOINVERT
+    VK_F2,          ID_VIEW_NEWINSTANCE,    VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_VIEW_OPENSEL,        VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_OPENSELAS,      VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, ALT, NOINVERT
+    VK_F3,          ID_QUERY_SHELLACTION_DEFAULT, VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_VIEW_EDITSEL,        VIRTKEY, NOINVERT
+    VK_F4,          ID_VIEW_EDITSELDEF,     VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_VIEW_RELOAD,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_VIEW_OPENSEL,        VIRTKEY, NOINVERT
+    VK_F7,          ID_VIEW_OPENSELAS,      VIRTKEY, CONTROL, NOINVERT
+    VK_F8,          ID_VIEW_TRASH,          VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_PRIOR,       ID_VIEW_UPONE,          VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_VIEW_EDITSELDEF,     VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_QUERY_PROPERTIES,    VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_CNTR_INPLACE ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+END
+
+IDR_GRAPH ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_VIEW_WORKSPACE,      VIRTKEY, ALT, NOINVERT
+    "1",            ID_VIEW_CONSOLE_BAR,    VIRTKEY, ALT, NOINVERT
+    "=",            ID_VIEW_DIFF,           ASCII,  ALT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_VIEW_DIFF,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_VIEW_GRAPH,          VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_APP_CMDLINE,         VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_VIEW_COMMIT,         VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_VIEW_UPDATE,         VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         ID_ACCEL32911,          VIRTKEY, NOINVERT
+    VK_BACK,        ID_VIEW_TRASH,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_APP_PREFERENCES,     VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F3,          ID_VIEW_OPENSEL,        VIRTKEY, NOINVERT
+    VK_F3,          ID_VIEW_OPENSELAS,      VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, ALT, NOINVERT
+    VK_F3,          ID_QUERY_SHELLACTION_DEFAULT, VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_VIEW_EDITSEL,        VIRTKEY, NOINVERT
+    VK_F4,          ID_VIEW_EDITSELDEF,     VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_VIEW_RELOAD,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_VIEW_OPENSEL,        VIRTKEY, NOINVERT
+    VK_F7,          ID_VIEW_OPENSELAS,      VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 219, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About WinCvs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         180,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,9,
+                    41,49
+    CTEXT           "WinCvs version 1.3",IDC_WINCVSVER,59,7,153,20,
+                    SS_NOPREFIX | SS_CENTERIMAGE
+    CTEXT           "http://www.wincvs.org",IDC_WINCVSURL,59,31,153,8
+    DEFPUSHBUTTON   "OK",IDOK,108,63,56,14,WS_GROUP
+    CTEXT           "http://cvsgui.sourceforge.net/",IDC_CVSGUISFURL,59,46,
+                    153,8
+END
+
+IDD_PASSWRD DIALOG DISCARDABLE  0, 0, 186, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Password authentication"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Enter the &password:",IDC_STATIC,7,7,172,36
+    EDITTEXT        IDC_PASSWORD,15,20,156,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,21,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,75,49,50,14
+    PUSHBUTTON      "Help",IDHELP,129,49,50,14
+END
+
+IDD_ALERT DIALOG DISCARDABLE  0, 0, 197, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WinCvs Alert"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            "",IDC_ICON_STATIC,7,7,21,20
+    PUSHBUTTON      "OK",IDOK,34,60,50,14
+    PUSHBUTTON      "Other",IDC_OTHER_BUTTON,87,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,60,50,14
+    CONTROL         "IDC_OPTIONCHECK_BUTTON",IDC_OPTIONCHECK_BUTTON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,79,117,10
+    EDITTEXT        IDC_ALERT_MESSAGE,34,9,156,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_MESSAGE_DETAILS,34,24,156,12,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PROMPT,34,39,156,14,ES_AUTOHSCROLL
+END
+
+IDD_PREFS_GLOBALS DIALOG DISCARDABLE  0, 0, 276, 159
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Globals"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Files &attribute:",IDC_STATIC,12,11,44,8
+    COMBOBOX        IDC_CHECKOUTATTRIBUTE,66,9,60,48,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "C&VS Messages:",IDC_STATIC,12,27,51,8
+    COMBOBOX        IDC_CVSMESSAGES,66,25,60,48,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Prune empty directories",IDC_PRUNE_EMPTY_DIR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,41,105,10
+    CONTROL         "&Compression level:",IDC_HAS_COMPRESSION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,56,75,10
+    EDITTEXT        IDC_COMPRESSION,88,54,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_COMPRESSION,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,114,54,11,14
+    CONTROL         "&Encrypt communication",IDC_ENCRYPTION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,71,105,10
+    CONTROL         "Checkout text files with the &Unix LF (0xa)",
+                    IDC_UNIX_LF,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,86,
+                    153,10
+    CONTROL         "Disable &splash screen",IDC_NO_SPLASH_SCREEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,10,134,10
+    CONTROL         "Suppl&y control when adding files",
+                    IDC_CONTROL_ADDED_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,25,134,10
+    CONTROL         "&Match path case with Entries case",
+                    IDC_MATCH_ENTRIES_CASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,41,134,10
+    CONTROL         "Sma&rt sorting",IDC_SMART_SORTING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,56,134,10
+    GROUPBOX        "Timeouts:",IDC_STATIC,7,104,262,48
+    CONTROL         "&Logout automatically after:",IDC_AUTO_LOGOUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,118,99,10
+    EDITTEXT        IDC_AUTO_LOGOUT_TIME,155,116,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_AUTO_LOGOUT_TIME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,190,122,11,14
+    LTEXT           "minutes",IDC_STATIC,203,119,46,8
+    CONTROL         "Re&fresh file view when inactive each:",
+                    IDC_REFRESH_INACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,16,134,136,10
+    EDITTEXT        IDC_REFRESH_INACTIVE_TIME,155,132,42,14,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_REFRESH_INACTIVE_TIME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,190,134,11,14
+    LTEXT           "milliseconds",IDC_STATIC,203,135,46,8
+END
+
+IDD_CHECKOUT_MAIN DIALOG DISCARDABLE  0, 0, 284, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Checkout settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Module name(s) and path on the server:",IDC_STATIC,7,7,
+                    270,68
+    COMBOBOX        IDC_MODNAME,14,20,242,69,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_MODNAME,256,20,13,12
+    CONTROL         "Check out into &directory:",IDC_OVERRIDE_CHECKOUT_DIR,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,40,93,10
+    EDITTEXT        IDC_CHECKOUT_DIR,110,38,159,14,ES_AUTOHSCROLL
+    CONTROL         "Don't shorten module &paths",IDC_DONT_SHORTEN_PATHS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,110,58,159,10
+    GROUPBOX        "Local &folder to checkout to:",IDC_STATIC,7,79,270,35
+    EDITTEXT        IDC_PATH,14,92,242,14,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "&...",IDC_BROWSE_PATH,255,92,14,14,BS_CENTER
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,121,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Do not recurse into &sub-directories",IDC_NORECURS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,139,270,10
+END
+
+IDD_COMMIT_MAIN DIALOG DISCARDABLE  0, 0, 284, 148
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Commit settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Reserved for: IDD_MULTILINE_ENTRY",
+                    IDC_MULTILINE_ENTRY_STATIC,7,7,270,94,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    GROUPBOX        "Preview changes:",IDC_PREVIEWINFO,7,105,270,36
+    LTEXT           "&Selection:",IDC_STATIC,14,121,34,8
+    COMBOBOX        IDC_FILETODIFF,51,119,160,73,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Diff...",IDC_DIFF,220,118,50,14
+END
+
+IDD_IMPORT_MAIN DIALOG DISCARDABLE  0, 0, 284, 206
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Import settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Module",IDC_STATIC,7,7,270,74
+    LTEXT           "&Repository path:",IDC_STATIC,15,20,51,8
+    COMBOBOX        IDC_REPOSITORY_PATH,78,18,177,88,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_MODNAME,256,18,13,12
+    LTEXT           "&Vendor tag:",IDC_STATIC,15,36,51,8
+    COMBOBOX        IDC_VENDOR_TAG,78,34,177,86,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG1,256,34,13,12
+    LTEXT           "&Release tag:",IDC_STATIC,15,52,51,8
+    COMBOBOX        IDC_RELEASE_TAG,78,50,177,85,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG2,256,50,13,12
+    CONTROL         "&Don't create vendor branch or release tags",
+                    IDC_NO_VENDOR_RELEASE_TAGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,67,151,10
+    CONTROL         "&Overwrite release tags",IDC_OVERWRITE_RELEASE_TAGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,183,67,86,10
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,86,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    LTEXT           "Reserved for: IDD_MULTILINE_ENTRY",
+                    IDC_MULTILINE_ENTRY_STATIC,7,105,270,94,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+END
+
+IDD_IMPORT_OPTIONS DIALOG DISCARDABLE  0, 0, 284, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Import options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Local &folder to import:",IDC_STATIC,7,7,250,57
+    COMBOBOX        IDC_PATH,14,20,219,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_PATH,233,20,14,12
+    PUSHBUTTON      "F&ilter...",IDC_IMPORT_FILTER,14,41,50,14
+    CONTROL         "Use &default cvsignore (and CVSROOT/cvsignore or .cvsignore)",
+                    IDC_DEFAULT_CVSIGNORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,88,233,10
+    CONTROL         "Use the file's modification time as the &time of import",
+                    IDC_FILES_MODIFICATION_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,106,233,10
+    CONTROL         "&Create CVS directories while importing",
+                    IDC_CREATE_SANDBOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    14,124,233,10
+    CONTROL         "Vendor &branch id:",IDC_HAS_BRANCHID,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,142,82,10
+    COMBOBOX        IDC_BRANCHID,99,141,134,100,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_BRANCHID,234,141,13,12
+    CONTROL         "Use &server cvswrappers to detect file types",
+                    IDC_SERVER_CVSWRAPPERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,72,233,10
+END
+
+IDD_CMDLINE_MAIN DIALOG DISCARDABLE  0, 0, 284, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Reserved for: IDD_MULTILINE_ENTRY",
+                    IDC_MULTILINE_ENTRY_STATIC,7,7,270,94,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Add global &options",IDC_ADD_DEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,107,241,10
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,120,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Execute for &directory",IDC_HAS_PATH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,137,96,10
+    CONTROL         "Execute for current &selection",IDC_ADD_SELECTION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,126,137,110,10
+    COMBOBOX        IDC_PATH,7,149,255,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_PATH,263,149,14,12
+END
+
+IDD_IMPORTFILTER DIALOG DISCARDABLE  0, 0, 354, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,191,162,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,244,162,50,14
+    PUSHBUTTON      "Help",IDHELP,297,162,50,14
+    LTEXT           "&Fix the errors (if any) before continuing the import process:",
+                    IDC_STATIC,7,7,229,8
+    CONTROL         "List2",IDC_ENTRIES_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,7,22,340,132
+    PUSHBUTTON      "&Edit",IDC_ENTRY_EDIT,7,162,50,14
+END
+
+IDD_WARNINGDESC DIALOG DISCARDABLE  0, 0, 255, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Warning description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,138,50,14
+    EDITTEXT        IDC_WARNING_DESC,7,7,241,122,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Help",IDHELP,198,138,50,14
+END
+
+IDD_ENTRYDESC DIALOG DISCARDABLE  0, 0, 255, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Entry description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Entry state:",IDC_STATIC,7,7,210,90
+    CONTROL         "&Leave unchanged",IDC_ENTRYSTATE_NO_CHANGE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,13,19,171,10
+    CONTROL         "Force &binary (-kb)",IDC_ENTRYSTATE_FORCE_BINARY,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,31,171,10
+    CONTROL         "Force &unicode (-ku)",IDC_ENTRYSTATE_FORCE_UNICODE,
+                    "Button",BS_AUTORADIOBUTTON | WS_TABSTOP,13,43,171,10
+    CONTROL         "Force &text (default)",IDC_ENTRYSTATE_FORCE_TEXT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,55,171,10
+    CONTROL         "Force &no keywords expansion (-ko)",
+                    IDC_ENTRYSTATE_NO_EXPANSION,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,13,67,171,10
+    CONTROL         "&Ignore (-I)",IDC_ENTRYSTATE_IGNORE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,13,79,171,10
+    LTEXT           "&Conflicts (if any):",IDC_STATIC,7,103,116,8
+    EDITTEXT        IDC_CONFLICT_DESC,7,115,241,51,ES_MULTILINE | 
+                    ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,92,175,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,145,175,50,14
+    PUSHBUTTON      "Help",IDHELP,198,175,50,14
+END
+
+IDD_UPDATE_MAIN DIALOG DISCARDABLE  0, 0, 284, 114
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Update settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Do not recurse into &sub-folders",IDC_NORECURS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,13,201,10
+    CONTROL         "Create &missing directories that exist in the repository",
+                    IDC_CREATE_MISSING_DIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,30,201,10
+    CONTROL         "Get the &clean copy",IDC_GET_CLEAN_COPY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,47,201,10
+END
+
+IDD_LOG_MAIN DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Log settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Supress header information when no revisions are selected",
+                    IDC_SUPRESS_HEADER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,7,227,10
+    CONTROL         "&CVS 1.x/RCS 5.7 compatible output",IDC_CVSRCSOUTPUT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,20,227,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,13,35,263,1
+    CONTROL         "List revisions on the &default branch only",
+                    IDC_DEFAULT_BRANCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,42,227,10
+    CONTROL         "Do not &recurse into sub-folders",IDC_NORECURS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,58,227,10
+    CONTROL         "Print only the RCS &files names",IDC_RCS_FILENAMES_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,74,227,10
+    CONTROL         "Do not print &tag names",IDC_NOTAGS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,90,227,10
+    CONTROL         "Print &headers only",IDC_HEADERS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,106,227,10
+    CONTROL         "Print headers with the d&escriptive text",
+                    IDC_HEADERS_DESC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,122,227,10
+END
+
+IDD_LOG_FILTERS DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Log filters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Log filters:",IDC_STATIC,12,10,263,93
+    CONTROL         "By &rev.tag:",IDC_HAS_REV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,26,79,10
+    COMBOBOX        IDC_RANGE_REV_TAG,130,24,117,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_TAG,248,24,13,12
+    CONTROL         "By &date(s):",IDC_HAS_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,44,79,10
+    COMBOBOX        IDC_RANGE_DATE,130,43,132,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "By &state(s):",IDC_HAS_STATES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,62,79,10
+    COMBOBOX        IDC_STATES,130,61,132,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "By &user(s):",IDC_HAS_USERS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,18,81,79,10
+    COMBOBOX        IDC_USERS,130,80,132,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_UPDATE_MERGE DIALOG DISCARDABLE  0, 0, 284, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Merge options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Merge &type:",IDC_STATIC,13,15,42,8
+    COMBOBOX        IDC_MERGE_TYPE,60,13,210,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REV_TAG,13,35,97,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_TAG1,110,35,13,12
+    CONTROL         "&Date:",IDC_HAS_DATE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,36,33,10
+    COMBOBOX        IDC_DATE1,165,35,105,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_REV_TAG2,13,57,97,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_TAG2,110,57,13,12
+    CONTROL         "D&ate:",IDC_HAS_DATE2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,131,58,33,10
+    COMBOBOX        IDC_DATE2,165,57,105,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Produce &3-way conflicts",IDC_THREE_WAY_CONFLICTS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,80,217,10
+    CONTROL         "Perform merge from &branch point",IDC_BRANCHPOINT_MERGE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,97,217,10
+END
+
+IDD_DIFF_MAIN DIALOG DISCARDABLE  0, 0, 306, 189
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Diff settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Diff compare options",IDC_STATIC,7,7,291,91
+    LTEXT           "Compare t&ype:",IDC_STATIC,14,20,46,8
+    COMBOBOX        IDC_COMPARE_TYPE,65,18,205,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Revision or date #&1:",IDC_STATIC,14,35,135,40
+    COMBOBOX        IDC_REV_TAG1,20,46,109,68,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG1,129,46,13,12
+    CONTROL         "&Is a date",IDC_ISDATE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,20,61,43,10
+    GROUPBOX        "Revision or date #&2:",IDC_STATIC,155,35,135,40
+    COMBOBOX        IDC_REV_TAG2,161,46,109,68,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG2,270,46,13,12
+    CONTROL         "I&s a date",IDC_ISDATE2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,161,61,43,10
+    CONTROL         "Don't &recurse",IDC_NORECURS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,81,65,10
+    GROUPBOX        "Command line diff options",IDC_STATIC,7,101,291,81
+    CONTROL         "Use the &external diff",IDC_USE_EXTERNAL_DIFF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,114,87,10
+    CONTROL         "&Fetch all files at once",IDC_BULK_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,111,114,87,10
+    CONTROL         "&Unified diff",IDC_UNIFIEDDIFF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,130,49,10
+    CONTROL         "Ignore &case",IDC_IGNORECASE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,78,130,53,10
+    CONTROL         "Ignore &whitespace",IDC_IGNOREWHITESPACE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,140,130,74,10
+    LTEXT           "Reserved for: IDD_SUBSTMODE_ENTRY",
+                    IDC_SUBSTMODE_ENTRY_STATIC,20,145,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    LTEXT           "&Other options:",IDC_STATIC,20,165,45,8
+    COMBOBOX        IDC_DIFFOPTIONS,69,163,182,63,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add...",IDC_BROWSE_DIFFOPTIONS,255,162,35,14
+END
+
+IDD_UPDATE_OPTIONS DIALOG DISCARDABLE  0, 0, 284, 170
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Update options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Sticky options:",IDC_STATIC,7,7,270,98
+    CONTROL         "Reset any &sticky tags/date/kopts",IDC_RESET_STICKY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,22,247,10
+    CONTROL         "By &date:",IDC_HAS_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,38,100,10
+    COMBOBOX        IDC_DATE,129,37,140,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "By &revision/tag/branch:",IDC_HAS_REV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,54,100,10
+    COMBOBOX        IDC_REV_TAG,129,53,126,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,256,53,13,12
+    CONTROL         "If no &matching revision is found, use the most recent one",
+                    IDC_FORCE_HEAD_REV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,70,247,10
+    LTEXT           "Reserved for: IDD_SUBSTMODE_ENTRY",
+                    IDC_SUBSTMODE_ENTRY_STATIC,15,84,254,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Send result to the &console window (avoids stickiness)",
+                    IDC_STDOUT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,112,
+                    215,10
+    CONTROL         "Select between conflicting case sensitive &names",
+                    IDC_CASE_SENSITIVE_NAMES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,126,215,10
+    CONTROL         "Update using &last checkin time",IDC_LAST_CHECKIN_TIME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,140,215,10
+END
+
+IDD_PREFS_WINCVS DIALOG DISCARDABLE  0, 0, 276, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "WinCvs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_WINCVS_SETTINGS_TYPE,7,7,116,68,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List1",IDC_WINCVS_SETTINGS_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,26,262,89
+    PUSHBUTTON      "&Browse...",IDC_BROWSE_WINCVS_SETTINGS,162,122,50,14
+    PUSHBUTTON      "&Clear",IDC_CLEAR_WINCVS_SETTINGS,219,122,50,14
+END
+
+IDD_TIP DIALOG DISCARDABLE  0, 0, 231, 164
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip of the Day"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,12,11,207,123
+    LTEXT           "Some String",IDC_TIPSTRING,28,63,177,60
+    CONTROL         "&Show Tips on StartUp",IDC_STARTUP,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,13,146,85,10
+    PUSHBUTTON      "&Next Tip",IDC_NEXTTIP,109,143,50,14,WS_GROUP
+    DEFPUSHBUTTON   "&Close",IDOK,168,143,50,14,WS_GROUP
+    CONTROL         "",IDC_BULB,"Static",SS_BITMAP,20,17,190,111
+END
+
+IDD_INIT_MAIN DIALOG DISCARDABLE  0, 0, 284, 146
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Init settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HELP_INIT,7,7,270,105,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,120,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+END
+
+IDD_PROGRESS DIALOG DISCARDABLE  0, 0, 201, 28
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Progress..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDOK,144,7,50,13
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    7,132,13
+    LTEXT           "IDC_PROGRESS_TEXT",IDC_PROGRESS_TEXT,7,7,132,13
+END
+
+IDD_CUSTOMIZE DIALOG DISCARDABLE  0, 0, 329, 159
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Customize menu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_ALLCMDS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_AUTOARRANGE | WS_BORDER | WS_TABSTOP,7,7,128,126
+    PUSHBUTTON      "&Add ->",IDC_ADD,140,51,50,14
+    PUSHBUTTON      "<- &Remove",IDC_REMOVE,140,68,50,14
+    PUSHBUTTON      "Move &Up",IDC_UP,140,101,50,14
+    PUSHBUTTON      "Move &Down",IDC_DOWN,140,118,50,14
+    CONTROL         "List1",IDC_MENULIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,194,7,128,126
+    DEFPUSHBUTTON   "OK",IDOK,164,141,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,218,141,50,14
+    PUSHBUTTON      "Help",IDHELP,272,141,50,14
+END
+
+IDD_SAVESETTINGS DIALOG DISCARDABLE  0, 0, 270, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Enter a setting &name:",IDC_STATIC,7,7,256,58
+    EDITTEXT        IDC_SETTINGS_NAME,13,22,117,14,ES_AUTOHSCROLL
+    LTEXT           "For &copy:",IDC_STATIC,13,45,40,8
+    EDITTEXT        IDC_PATH,59,42,195,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "1- The preference settings will be load/save automatically whenever this location is loaded/unloaded in the browser. This option let you define several preference settings for different checked-out copies on your disk.",
+                    IDC_STATIC,7,74,256,30
+    LTEXT           "2- The settings are stored in the 'Settings' folder of the application: you can use this setting file to export your settings from machine to machine.",
+                    IDC_STATIC,7,107,256,20
+    CONTROL         "Copy from this &existing setting:",IDC_COPY_SETTINGS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,133,116,10
+    COMBOBOX        IDC_COPY_SETTINGS_NAME,139,132,124,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Path:",IDC_STATIC,19,153,25,8
+    EDITTEXT        IDC_COPY_PATH,49,150,214,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,105,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,170,50,14
+    PUSHBUTTON      "Help",IDHELP,213,170,50,14
+END
+
+IDD_COMMIT_OPTIONS DIALOG DISCARDABLE  0, 0, 284, 148
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Commit options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Do &not recurse",IDC_NORECURS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,13,263,10
+    CONTROL         "&Force commit (even if not modified)",IDC_FORCE_COMMIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,31,263,10
+    CONTROL         "Force &revision/branch:",IDC_FORCE_REVISION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,49,100,10
+    COMBOBOX        IDC_REV_TAG,129,48,134,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,264,48,13,12
+    CONTROL         "F&orce recurse",IDC_FORCE_RECURSE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,67,263,10
+    CONTROL         "&Do not run any module program",IDC_NO_MODULE_PROGRAM,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,85,263,10
+    GROUPBOX        "Reserved edits",IDC_STATIC,13,104,264,37
+    CONTROL         "&Check for valid edits before committing",
+                    IDC_CHECK_VALID_EDITS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,119,189,10
+END
+
+IDD_PREFS_CVSCMD_DIALOGS DIALOG DISCARDABLE  0, 0, 276, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Command Dialogs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Skip dialogs:",IDC_STATIC,7,9,98,127
+    LISTBOX         IDC_SKIP_DIALOGS,17,25,77,99,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Key to force the dialog:",IDC_STATIC,115,9,92,42
+    CONTROL         "&Shift",IDC_FORCE_KEY_SHIFT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,124,22,30,10
+    CONTROL         "&Ctrl",IDC_FORCE_KEY_CTRL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,124,36,26,10
+    GROUPBOX        "Dialog confirmation (for multiline editing only):",
+                    IDC_STATIC,115,104,154,32
+    CONTROL         "Ctrl + &Enter to confirm",IDC_CTRL_PRESSED_ON_OK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,124,118,83,10
+END
+
+IDD_ANNOTATE_MAIN DIALOG DISCARDABLE  0, 0, 276, 159
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Annotate settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Revision options:",IDC_STATIC,7,10,222,70
+    CONTROL         "Annotate as of &specified revision, tag or date",
+                    IDC_HAS_REV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,24,
+                    182,10
+    CONTROL         "Is a &date:",IDC_ISDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,29,40,45,10
+    COMBOBOX        IDC_REV_TAG_DATE,81,38,126,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,207,38,13,12
+    CONTROL         "Use &head revision if not found",IDC_FORCE_HEAD_REV,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,62,145,10
+    CONTROL         "Do not recurse into &sub-directories",IDC_NORECURS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,86,214,10
+    GROUPBOX        "Command options:",IDC_STATIC,7,100,261,52
+    COMBOBOX        IDC_ACTION,15,115,110,93,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "IDC_ACTION_DESC",IDC_ACTION_DESC,129,117,126,8
+    CONTROL         "&Fetch all files at once",IDC_BULK_ANNOTATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,135,87,10
+END
+
+IDD_GRAPH_OPTIONS DIALOGEX 0, 0, 245, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graph Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "&Colors",IDC_STATIC,7,7,231,104
+    PUSHBUTTON      "&Header:",IDC_COLOR_HEADER,15,23,41,14
+    CONTROL         "",IDC_RGB_HEADER,"Static",SS_WHITERECT | SS_SUNKEN,59,
+                    23,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Tag:",IDC_COLOR_TAG,15,44,41,14
+    CONTROL         "",IDC_RGB_TAG,"Static",SS_WHITERECT | SS_SUNKEN,60,44,
+                    20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Branch:",IDC_COLOR_BRANCH,15,65,41,14
+    CONTROL         "",IDC_RGB_BRANCH,"Static",SS_WHITERECT | SS_SUNKEN,60,
+                    65,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Node:",IDC_COLOR_NODE,90,23,41,14
+    CONTROL         "",IDC_RGB_NODE,"Static",SS_WHITERECT | SS_SUNKEN,134,23,
+                    20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Dead:",IDC_COLOR_DEAD,90,44,41,14
+    CONTROL         "",IDC_RGB_DEAD,"Static",SS_WHITERECT | SS_SUNKEN,134,44,
+                    20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&State:",IDC_COLOR_STATE,90,65,41,14
+    CONTROL         "",IDC_RGB_STATE,"Static",SS_WHITERECT | SS_SUNKEN,134,
+                    65,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "S&election:",IDC_COLOR_SELECTION,165,23,41,14
+    CONTROL         "",IDC_RGB_SELECTION,"Static",SS_WHITERECT | SS_SUNKEN,
+                    209,23,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Sh&adow:",IDC_COLOR_SHADOW,165,44,41,14
+    CONTROL         "",IDC_RGB_SHADOW,"Static",SS_WHITERECT | SS_SUNKEN,209,
+                    44,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Merge:",IDC_COLOR_MERGE,165,65,41,14
+    CONTROL         "",IDC_RGB_MERGE,"Static",SS_WHITERECT | SS_SUNKEN,209,
+                    65,20,14,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Reset",IDC_RESET_COLORS,165,88,64,14
+    DEFPUSHBUTTON   "OK",IDOK,29,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,117,50,14
+    PUSHBUTTON      "&Apply",IDC_APPLY,135,117,50,14,WS_DISABLED
+    PUSHBUTTON      "Help",IDHELP,188,117,50,14
+END
+
+IDD_EDITMESSAGE DIALOG DISCARDABLE  0, 0, 186, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Title"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Yes",2000,72,93,50,14
+    PUSHBUTTON      "No",2001,129,93,50,14
+    LTEXT           "",2002,7,7,172,56
+    EDITTEXT        2003,7,70,172,14,ES_AUTOHSCROLL
+END
+
+IDD_ADMINOPTION DIALOG DISCARDABLE  0, 0, 284, 108
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Admin option"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Reserved for: IDD_MULTILINE_ENTRY",
+                    IDC_MULTILINE_ENTRY_STATIC,7,7,270,94,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+END
+
+IDD_EDITORMON DIALOG DISCARDABLE  0, 0, 234, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Entering log message..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,177,69,50,14,NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,177,7,50,14
+    LTEXT           "You run external editor to enter the log message.",
+                    IDC_STATIC,7,7,165,8
+    LTEXT           "Please complete the message and close the editor\nsaving the file and it will be inserted into log dialog.",
+                    IDC_STATIC,7,22,165,22
+    LTEXT           "To terminate the editor click Cancel button.",
+                    IDC_STATIC,7,50,136,8
+    LTEXT           "&Editor's file:",IDC_STATIC,7,69,36,8
+    EDITTEXT        IDC_TEMPFILE,49,69,123,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    PUSHBUTTON      "Help",IDHELP,177,24,50,14
+END
+
+IDD_NOPYTHON DIALOG DISCARDABLE  0, 0, 236, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Install Python"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         183,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,8,
+                    21,20
+    CTEXT           "WinCvs could not find Python installed on your system.\nPlease go to this URL and install Python to enable Macros and scripting shell support...",
+                    IDC_STATIC,34,7,195,34,SS_NOPREFIX
+    CTEXT           "http://www.python.org",IDC_PYTHON_URL,34,50,195,8
+    DEFPUSHBUTTON   "OK",IDOK,126,69,50,14,WS_GROUP
+    CONTROL         "Remind me next time",IDC_REMIND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,34,71,86,10
+    PUSHBUTTON      "Help",IDHELP,179,69,50,14
+END
+
+IDD_TAG_MAIN DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Enter the tag name",IDC_GRPBOX_TEXT,12,11,222,36
+    LTEXT           "&Tag name:",IDC_TAGDESC_TEXT,19,27,62,8
+    COMBOBOX        IDC_TAGNAME,85,25,127,56,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,212,25,13,12
+    CONTROL         "&Do not recurse into sub-directories",IDC_NORECURS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,56,226,10
+    CONTROL         "Allow move/delete of &branch tag (not recommended)",
+                    IDC_MOVDEL_BRANCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    12,71,226,10
+    CONTROL         "&Check that the files are unmodified before tagging",
+                    IDC_CHECK_UNMODIFIED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,86,226,10
+    CONTROL         "&Overwrite existing tags with the same name",
+                    IDC_OVERWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    101,226,10
+END
+
+IDD_RTAG_MAIN DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "RTag settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Enter the tag name and which module to tag",
+                    IDC_GRPBOX_TEXT,7,7,269,56
+    LTEXT           "&Tag name:",IDC_TAGDESC_TEXT,15,23,35,8
+    COMBOBOX        IDC_TAGNAME,61,21,192,56,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,253,21,13,12
+    LTEXT           "&Module:",IDC_MODULEDESC_TEXT,15,43,26,8
+    COMBOBOX        IDC_MODNAME,61,41,192,69,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_MODNAME,253,41,13,12
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,69,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Do not recurse into &sub-directories",IDC_NORECURS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,84,224,10
+    CONTROL         "Allow move/delete of &branch tag (not recommended)",
+                    IDC_MOVDEL_BRANCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,98,224,10
+    CONTROL         "Tag also the ""&Attic"" (deleted revisions) folder",
+                    IDC_ATTIC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,112,
+                    224,10
+    CONTROL         "&Overwrite existing tags with the same name",
+                    IDC_OVERWRITE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,
+                    126,224,10
+END
+
+IDD_RTAG_OPTIONS DIALOG DISCARDABLE  0, 0, 284, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "RTag Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Optionally use this revision/tag/date to tag:",
+                    IDC_GRPBOX_TEXT,10,13,263,70
+    CONTROL         "Before &date:",IDC_HAS_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,28,100,10
+    COMBOBOX        IDC_DATE,132,27,132,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Rev./tag/branch:",IDC_HAS_REV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,47,100,10
+    COMBOBOX        IDC_REV_TAG,132,46,117,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_TAG,250,46,13,12
+    CONTROL         "&If no matching revision is found, use the most recent one",
+                    IDC_FORCE_HEAD_REV,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,66,247,10
+END
+
+IDD_STATUS_MAIN DIALOG DISCARDABLE  0, 0, 276, 135
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Status settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Output",IDC_STATIC,7,10,222,70
+    CONTROL         "&Standard",IDC_OUTPUT_STANDARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,17,25,45,10
+    CONTROL         "&Quick summary",IDC_OUTPUT_QUICK,"Button",
+                    BS_AUTORADIOBUTTON,17,42,64,10
+    CONTROL         "&Verbose format (includes tag information for the file)",
+                    IDC_OUTPUT_VERBOSE,"Button",BS_AUTORADIOBUTTON,17,59,176,
+                    10
+    CONTROL         "Do not &recurse into sub-directories",IDC_NORECURS,
+                    "Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,15,93,
+                    128,10
+END
+
+IDD_ITEM_LIST DIALOG DISCARDABLE  0, 0, 340, 242
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Item:",IDC_ITEM_LABEL,7,10,39,8
+    EDITTEXT        IDC_ITEM,51,7,227,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Selection...",IDC_BROWSE_SELECTION,283,7,50,14
+    CONTROL         "List1",IDC_ITEM_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,25,326,112
+    GROUPBOX        "Options",IDC_GROUP_OPTIONS,7,141,326,73
+    LTEXT           "R&ead items &from:",IDC_STATIC,14,156,54,8
+    COMBOBOX        IDC_READ_FROM,75,154,180,73,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_READ_FROM,256,154,13,12
+    PUSHBUTTON      "Refresh(F5)",IDC_REFRESH_ITEMS,274,153,50,14
+    CONTROL         "Option",IDC_ITEM_LIST_OPTION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,175,50,10
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,75,173,249,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+    CONTROL         "Re&v./tag:",IDC_HAS_REV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,193,47,10
+    COMBOBOX        IDC_REV_TAG,62,192,98,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "...",IDC_BROWSE_TAG,160,192,13,12
+    CONTROL         "&Date:",IDC_HAS_DATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,191,193,33,10
+    COMBOBOX        IDC_DATE,226,192,98,55,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Auto refresh:",IDC_STATIC,14,221,45,8
+    COMBOBOX        IDC_AUTO_REFRESH,62,219,66,60,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,175,221,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,229,221,50,14
+    PUSHBUTTON      "Help",IDHELP,283,221,50,14
+END
+
+IDD_LOGIN_MAIN DIALOG DISCARDABLE  0, 0, 284, 146
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Login settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HELPLOGIN,7,7,270,105,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,125,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+END
+
+IDD_DIFF_OPTIONS DIALOGEX 0, 0, 341, 218
+STYLE DS_CONTEXTHELP | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Diff options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Select &options:",IDC_STATICGROUP_SELECTOPTIONS,7,7,267,
+                    183
+    CONTROL         "List1",IDC_DIFF_OPTION_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,16,20,249,118
+    DEFPUSHBUTTON   "OK",IDOK,284,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,284,24,50,14
+    PUSHBUTTON      "Help",IDHELP,284,41,50,14
+    LTEXT           "Option's &description:",IDC_STATIC_OPTDESC,16,142,64,8
+    EDITTEXT        IDC_DIFF_OPTION_DESCRIPTION,16,155,249,27,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "&Current options:",IDC_STATIC_CURRENTOPTIONS,7,200,50,8
+    EDITTEXT        IDC_CURRENT_DIFF_OPTIONS,64,197,210,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_PREFS_CVS DIALOG DISCARDABLE  0, 0, 276, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "CVS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "CVS setup",IDC_STATIC,7,7,262,129
+    LTEXT           "&HOME (consult CVS client documentation about its use):",
+                    IDC_STATIC,14,19,178,8
+    EDITTEXT        IDC_HOME,14,32,233,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&...",IDC_BROWSE_PATH,248,32,14,14
+    CONTROL         "Alternate &CVS executable (NOTE: it must support cvsgui protocol):",
+                    IDC_HAS_ALTERNATE_CVS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,54,224,10
+    COMBOBOX        IDC_ALTERNATE_CVS,14,66,233,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_FILENAME,248,66,14,12
+    CONTROL         "Enable CVS console",IDC_CONSOLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,91,81,10
+    LTEXT           "Show &as:",IDC_STATIC,113,92,30,8
+    COMBOBOX        IDC_SHOW_CVS_METHOD,148,90,114,60,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Command line length limit:",IDC_ENABLE_CMDLINE_LIMIT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,115,97,10
+    EDITTEXT        IDC_CMDLINE_LIMIT,113,113,58,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_RELEASE_MAIN DIALOG DISCARDABLE  0, 0, 284, 135
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Release settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Directory:",IDC_STATIC,7,7,234,37
+    EDITTEXT        IDC_PATH,15,20,217,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "Delete CVS control files in the given directory (&export)",
+                    IDC_DELETE_CVS_INFO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,55,219,10
+    CONTROL         "&Delete the given directory",IDC_DELETE_DIRECTORY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,70,219,10
+    CONTROL         "Delete all files, including non-cvs &files",
+                    IDC_DELETE_ALL_FILES,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,25,83,207,10
+    LTEXT           "Reserved for: IDD_CVSROOT_ENTRY",
+                    IDC_CVSROOT_ENTRY_STATIC,7,101,270,14,NOT WS_VISIBLE | 
+                    WS_BORDER | NOT WS_GROUP
+END
+
+IDD_SELECTION_DETAILS DIALOG DISCARDABLE  0, 0, 339, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selection Details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Select:",IDC_STATIC,7,10,23,8
+    EDITTEXT        IDC_SELECTION,36,7,296,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_REVISION_SPIN,"msctls_updown32",
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,328,0,11,
+                    14
+    CONTROL         "&Filename",IDC_FILENAME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,13,30,44,10
+    CONTROL         "&Revision",IDC_REVISION,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,75,30,43,10
+    CONTROL         "&Path",IDC_FILEPATH,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,136,30,31,10
+    CONTROL         "List1",IDC_SELECTION_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,44,325,138
+    DEFPUSHBUTTON   "OK",IDOK,174,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,228,189,50,14
+    PUSHBUTTON      "Help",IDHELP,282,189,50,14
+END
+
+IDD_FILTERBAR_OPTIONS DIALOG DISCARDABLE  0, 0, 236, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fitler Bar Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Filter Bar",IDC_STATIC,7,7,222,38
+    LTEXT           "Reaction &Speed (ms):",IDC_STATIC,17,24,69,8
+    EDITTEXT        IDC_REACTION_SPEED,90,21,56,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_REACTION_SPEED_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,122,7,11,14
+    LTEXT           "IDC_REACTION_SPEED_SECONDS",IDC_REACTION_SPEED_SECONDS,
+                    150,24,73,8
+    DEFPUSHBUTTON   "OK",IDOK,71,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,53,50,14
+    PUSHBUTTON      "Help",IDHELP,179,53,50,14
+END
+
+IDD_FILTER_SELECTION DIALOG DISCARDABLE  0, 0, 264, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Filter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_FILTER,7,7,250,127,CBS_SIMPLE | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Contents:",IDC_STATIC,7,136,31,8
+    COMBOBOX        IDC_FILTER_CONTENTS,43,134,125,118,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,99,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,154,50,14
+    PUSHBUTTON      "Help",IDHELP,207,154,50,14
+END
+
+IDD_MULTILINE_ENTRY DIALOGEX 0, 0, 270, 94
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Enter the log &message:",IDC_MULTILINE_TYPE,0,0,270,94
+    EDITTEXT        IDC_MULTILINE_ENTRY,7,12,255,48,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_MULTILINE_ENTRY_WRAP,7,12,255,48,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "&Previous:",IDC_STATIC,7,66,30,8
+    COMBOBOX        IDC_MULTILINE_PREV_ENTRY,41,64,101,70,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Enter:",IDC_STATIC,155,66,20,8
+    COMBOBOX        IDC_MULTILINE_ACTION,178,64,64,73,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Go",IDC_MULTILINE_GO_ACTION,245,64,17,13
+    CONTROL         "&Word Wrap",IDC_MULTILINE_WORDWRAP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,80,53,10
+    EDITTEXT        IDC_MULTILINE_POSITION,181,80,81,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP,WS_EX_TRANSPARENT
+END
+
+IDD_CVSTEMPLATE DIALOG DISCARDABLE  0, 0, 347, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select CVS Template"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Template files",IDC_STATIC,7,7,276,153
+    CONTROL         "List1",IDC_TEMPLATE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,14,19,262,62
+    LTEXT           "&Preview:",IDC_STATIC,14,89,28,8
+    EDITTEXT        IDC_TEMPLATE_PREVIEW,14,101,262,51,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,290,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,24,50,14
+    PUSHBUTTON      "Help",IDHELP,290,41,50,14
+END
+
+IDD_OPEN_MAIN DIALOG DISCARDABLE  0, 0, 276, 135
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "File action"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "&Action:",IDC_STATIC,7,10,261,54
+    COMBOBOX        IDC_ACTION,18,26,110,93,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "IDC_ACTION_DESC",IDC_ACTION_DESC,131,28,127,8
+    CONTROL         "&Use same action next time",IDC_SAME_ACTION_NEXT_TIME,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,46,99,10
+END
+
+IDD_CVSROOT DIALOG DISCARDABLE  0, 0, 294, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CVSROOT"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Protocol:",IDC_STATIC,7,9,40,8
+    COMBOBOX        IDC_PROTOCOL,63,7,69,68,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "IDC_PROTOCOL_DESC",IDC_PROTOCOL_DESC,136,9,151,8
+    LTEXT           "&Repository path:",IDC_STATIC,7,28,52,8
+    COMBOBOX        IDC_REPOSITORY_PATH,63,27,224,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "&Keywords:",IDC_STATIC,7,43,280,113
+    CONTROL         "List1",IDC_KEYWORDLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,15,56,263,75
+    LTEXT           "Description:",IDC_STATIC,15,138,38,8
+    LTEXT           "IDC_KEYWORDLIST_DESC",IDC_KEYWORDLIST_DESC,58,138,104,8
+    PUSHBUTTON      "&Edit...",IDC_EDIT_KEYWORD,171,136,50,14
+    PUSHBUTTON      "&Clear",IDC_CLEAR_KEYWORD,228,136,50,14
+    GROUPBOX        "CVS&ROOT preview:",IDC_STATIC,7,159,280,33
+    EDITTEXT        IDC_PREVIEW_CVSROOT,15,172,263,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,127,199,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,183,199,50,14
+    PUSHBUTTON      "Help",IDHELP,237,199,50,14
+END
+
+IDD_EDITKEYWORD DIALOG DISCARDABLE  0, 0, 260, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit keyword"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Keyword:",IDC_STATIC,7,10,30,8
+    EDITTEXT        IDC_PROTOCOL_KEYWORD,55,10,198,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Description:",IDC_STATIC,7,27,38,8
+    EDITTEXT        IDC_KEYWORD_DESCRIPTION,55,27,198,14,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "&Value:",IDC_STATIC,7,47,21,8
+    COMBOBOX        IDC_KEYWORD_VALUE,55,45,198,55,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,95,65,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,149,65,50,14
+    PUSHBUTTON      "Help",IDHELP,203,65,50,14
+END
+
+IDD_CVSROOT_ENTRY DIALOG DISCARDABLE  0, 0, 270, 13
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "CVS&ROOT:",IDC_FORCE_CVSROOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,2,53,10
+    COMBOBOX        IDC_CVSROOT,54,0,201,105,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_CVSROOT,256,0,14,12
+END
+
+IDD_SUBSTMODE_ENTRY DIALOG DISCARDABLE  0, 0, 270, 13
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Keyword substitution:",IDC_STATIC,0,2,68,8
+    COMBOBOX        IDC_KEYWORD_OPT,72,0,44,86,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&...",IDC_BROWSE_KEYWORD,119,0,9,12,BS_BITMAP
+    EDITTEXT        IDC_KEYWORD_DESC,133,1,136,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_PREFS_GENERAL_DUMMY DIALOG DISCARDABLE  0, 0, 276, 143
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "More information at: http://cvsgui.sourceforge.net/newfaq.htm#CvsrootWizard",
+                    IDC_CVSROOT_MIGRATION_URL,7,76,262,8
+    LTEXT           "This setting was removed. \n\nYou can now specify CVSROOT values on the command dialogs where it is used, e.g. Checkout or Login commands.",
+                    IDC_STATIC,7,9,262,35
+    LTEXT           "You can enter CVSROOT values directly or use the wizard to create CVSROOT string. To enter the wizard click the ellipsis button next to the CVSROOT entry.",
+                    IDC_STATIC,7,49,262,21
+END
+
+IDD_REMOVE_MAIN DIALOG DISCARDABLE  0, 0, 284, 114
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Remove settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Files &removal:",IDC_STATIC,13,15,44,8
+    COMBOBOX        IDC_FILES_REMOVAL_TYPE,65,13,121,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Do not recurse into &sub-folders",IDC_NORECURS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,33,201,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        VERTGUIDE, 59
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_PASSWRD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PREFS_GLOBALS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_CHECKOUT_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 14
+        VERTGUIDE, 110
+        VERTGUIDE, 256
+        VERTGUIDE, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_COMMIT_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_IMPORT_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 15
+        VERTGUIDE, 78
+        VERTGUIDE, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+        HORZGUIDE, 81
+    END
+
+    IDD_IMPORT_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 14
+        VERTGUIDE, 247
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_CMDLINE_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_IMPORTFILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 347
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_WARNINGDESC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_ENTRYDESC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_UPDATE_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+        HORZGUIDE, 13
+    END
+
+    IDD_LOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 13
+        VERTGUIDE, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_LOG_FILTERS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        VERTGUIDE, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_UPDATE_MERGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 13
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_DIFF_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        VERTGUIDE, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+        HORZGUIDE, 85
+    END
+
+    IDD_UPDATE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 129
+        VERTGUIDE, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+        HORZGUIDE, 112
+    END
+
+    IDD_PREFS_WINCVS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        VERTGUIDE, 14
+        VERTGUIDE, 69
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_TIP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_INIT_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_CUSTOMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_SAVESETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_COMMIT_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_PREFS_CVSCMD_DIALOGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_ANNOTATE_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        VERTGUIDE, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_GRAPH_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_EDITMESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_ADMINOPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_EDITORMON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 227
+        VERTGUIDE, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_NOPYTHON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        VERTGUIDE, 34
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_TAG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        VERTGUIDE, 12
+        VERTGUIDE, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_RTAG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_RTAG_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        VERTGUIDE, 10
+        VERTGUIDE, 20
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_STATUS_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_ITEM_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+        HORZGUIDE, 137
+    END
+
+    IDD_LOGIN_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_DIFF_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        VERTGUIDE, 274
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+        HORZGUIDE, 190
+    END
+
+    IDD_PREFS_CVS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        VERTGUIDE, 14
+        VERTGUIDE, 247
+        VERTGUIDE, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_RELEASE_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 276
+        VERTGUIDE, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_SELECTION_DETAILS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        VERTGUIDE, 36
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 30
+        HORZGUIDE, 44
+        HORZGUIDE, 182
+    END
+
+    IDD_FILTERBAR_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_FILTER_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+        HORZGUIDE, 134
+    END
+
+    IDD_CVSTEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_OPEN_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        VERTGUIDE, 18
+        VERTGUIDE, 258
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_CVSROOT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        VERTGUIDE, 15
+        VERTGUIDE, 63
+        VERTGUIDE, 278
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+
+    IDD_EDITKEYWORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        VERTGUIDE, 55
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_PREFS_GENERAL_DUMMY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 9
+        BOTTOMMARGIN, 136
+    END
+
+    IDD_REMOVE_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        VERTGUIDE, 13
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+        HORZGUIDE, 13
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LOG_FILTERS DLGINIT
+BEGIN
+    IDC_RANGE_REV_TAG, 0x403, 10, 0
+0x2e31, 0x3233, 0x313a, 0x332e, 0x0035, 
+    IDC_RANGE_REV_TAG, 0x403, 6, 0
+0x2e31, 0x3233, 0x003a, 
+    IDC_RANGE_REV_TAG, 0x403, 6, 0
+0x313a, 0x332e, 0x0035, 
+    IDC_RANGE_REV_TAG, 0x403, 18, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x2d31, 0x0030, 
+
+    IDC_RANGE_DATE, 0x403, 11, 0
+0x313e, 0x3939, 0x2d38, 0x2d33, 0x3432, "\000" 
+    IDC_RANGE_DATE, 0x403, 11, 0
+0x313c, 0x3939, 0x2d38, 0x2d31, 0x3432, "\000" 
+    IDC_RANGE_DATE, 0x403, 20, 0
+0x3931, 0x3839, 0x312d, 0x322d, 0x3c34, 0x3931, 0x3839, 0x332d, 0x322d, 
+0x0034, 
+    IDC_RANGE_DATE, 0x403, 7, 0
+0x3d3c, 0x2d33, 0x3432, "\000" 
+    IDC_STATES, 0x403, 8, 0
+0x796d, 0x7473, 0x7461, 0x0065, 
+    IDC_STATES, 0x403, 5, 0
+0x6564, 0x6461, "\000" 
+    IDC_STATES, 0x403, 17, 0
+0x796d, 0x7473, 0x7461, 0x2c65, 0x756d, 0x7473, 0x7461, 0x3265, "\000" 
+    IDC_USERS, 0x403, 6, 0
+0x6f6a, 0x6e68, 0x0061, 
+    IDC_USERS, 0x403, 6, 0
+0x6167, 0x7972, 0x0062, 
+    IDC_USERS, 0x403, 12, 0
+0x6f6a, 0x6e68, 0x2c61, 0x6167, 0x7972, 0x0062, 
+    0
+END
+
+IDD_UPDATE_MERGE DLGINIT
+BEGIN
+    IDC_MERGE_TYPE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_MERGE_TYPE, 0x403, 24, 0
+0x654d, 0x6772, 0x2065, 0x6977, 0x6874, 0x6f20, 0x656e, 0x7220, 0x7665, 
+0x2f2e, 0x6174, 0x0067, 
+    IDC_MERGE_TYPE, 0x403, 45, 0
+0x654d, 0x6772, 0x2065, 0x6977, 0x6874, 0x6420, 0x6669, 0x6566, 0x6572, 
+0x636e, 0x7365, 0x6220, 0x7465, 0x6577, 0x6e65, 0x7420, 0x6f77, 0x7220, 
+0x7665, 0x2f2e, 0x6174, 0x7367, "\000" 
+    IDC_REV_TAG, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_DATE1, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_DATE1, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_DATE1, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_REV_TAG2, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG2, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG2, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_DATE2, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_DATE2, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_DATE2, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    0
+END
+
+IDD_UPDATE_OPTIONS DLGINIT
+BEGIN
+    IDC_DATE, 0x403, 7, 0
+0x3931, 0x3839, 0x332d, "\000" 
+    IDC_DATE, 0x403, 10, 0
+0x3931, 0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_DATE, 0x403, 16, 0
+0x3931, 0x3839, 0x332d, 0x322d, 0x2034, 0x3032, 0x353a, 0x0035, 
+    IDC_DATE, 0x403, 7, 0
+0x3432, 0x4d20, 0x7261, "\000" 
+    IDC_DATE, 0x403, 12, 0
+0x3432, 0x4d20, 0x7261, 0x3120, 0x3939, 0x0038, 
+    IDC_DATE, 0x403, 12, 0
+0x3d3c, 0x3931, 0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_REV_TAG, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    0
+END
+
+IDD_DIFF_MAIN DLGINIT
+BEGIN
+    IDC_COMPARE_TYPE, 0x403, 44, 0
+0x6f4c, 0x6163, 0x206c, 0x6f63, 0x7970, 0x6120, 0x6167, 0x6e69, 0x7473, 
+0x7420, 0x6568, 0x7320, 0x6d61, 0x2065, 0x6572, 0x6f6d, 0x6574, 0x7220, 
+0x7665, 0x7369, 0x6f69, 0x006e, 
+    IDC_COMPARE_TYPE, 0x403, 55, 0
+0x6f4c, 0x6163, 0x206c, 0x6f63, 0x7970, 0x6120, 0x6167, 0x6e69, 0x7473, 
+0x6120, 0x6f6e, 0x6874, 0x7265, 0x7220, 0x7665, 0x7369, 0x6f69, 0x2f6e, 
+0x6174, 0x2f67, 0x7262, 0x6e61, 0x6863, 0x6f20, 0x2072, 0x6164, 0x6574, 
+"\000" 
+    IDC_COMPARE_TYPE, 0x403, 56, 0
+0x7754, 0x206f, 0x6572, 0x6976, 0x6973, 0x6e6f, 0x2f73, 0x6174, 0x7367, 
+0x622f, 0x6172, 0x636e, 0x6568, 0x2073, 0x726f, 0x6420, 0x7461, 0x7365, 
+0x6120, 0x6167, 0x6e69, 0x7473, 0x6520, 0x6361, 0x2068, 0x746f, 0x6568, 
+0x0072, 
+    IDC_REV_TAG1, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG1, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG1, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_REV_TAG1, 0x403, 8, 0
+0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_REV_TAG1, 0x403, 14, 0
+0x3839, 0x332d, 0x322d, 0x2034, 0x3032, 0x353a, 0x0035, 
+    IDC_REV_TAG1, 0x403, 10, 0
+0x3d3e, 0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_REV_TAG2, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG2, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG2, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_REV_TAG2, 0x403, 8, 0
+0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_REV_TAG2, 0x403, 14, 0
+0x3839, 0x332d, 0x322d, 0x2034, 0x3032, 0x353a, 0x0035, 
+    IDC_REV_TAG2, 0x403, 10, 0
+0x3d3e, 0x3839, 0x332d, 0x322d, 0x0034, 
+    0
+END
+
+IDD_COMMIT_OPTIONS DLGINIT
+BEGIN
+    IDC_REV_TAG, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    0
+END
+
+IDD_ANNOTATE_MAIN DLGINIT
+BEGIN
+    IDC_REV_TAG_DATE, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG_DATE, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG_DATE, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_REV_TAG_DATE, 0x403, 8, 0
+0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_REV_TAG_DATE, 0x403, 14, 0
+0x3839, 0x332d, 0x322d, 0x2034, 0x3032, 0x353a, 0x0035, 
+    IDC_REV_TAG_DATE, 0x403, 10, 0
+0x3d3e, 0x3839, 0x332d, 0x322d, 0x0034, 
+    0
+END
+
+IDD_RTAG_OPTIONS DLGINIT
+BEGIN
+    IDC_DATE, 0x403, 7, 0
+0x3931, 0x3839, 0x332d, "\000" 
+    IDC_DATE, 0x403, 10, 0
+0x3931, 0x3839, 0x332d, 0x322d, 0x0034, 
+    IDC_DATE, 0x403, 16, 0
+0x3931, 0x3839, 0x332d, 0x322d, 0x2034, 0x3032, 0x353a, 0x0035, 
+    IDC_DATE, 0x403, 7, 0
+0x3432, 0x4d20, 0x7261, "\000" 
+    IDC_DATE, 0x403, 12, 0
+0x3432, 0x4d20, 0x7261, 0x3120, 0x3939, 0x0038, 
+    IDC_REV_TAG, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    0
+END
+
+IDD_ITEM_LIST DLGINIT
+BEGIN
+    IDC_REV_TAG, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_REV_TAG, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_REV_TAG, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_DATE, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_DATE, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_DATE, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    IDC_AUTO_REFRESH, 0x403, 8, 0
+0x6944, 0x6173, 0x6c62, 0x0065, 
+    IDC_AUTO_REFRESH, 0x403, 16, 0
+0x6946, 0x7372, 0x2074, 0x6974, 0x656d, 0x6f20, 0x6c6e, 0x0079, 
+    IDC_AUTO_REFRESH, 0x403, 7, 0
+0x6c41, 0x6177, 0x7379, "\000" 
+    0
+END
+
+IDD_IMPORT_OPTIONS DLGINIT
+BEGIN
+    IDC_BRANCHID, 0x403, 6, 0
+0x2e31, 0x2e31, 0x0031, 
+    IDC_BRANCHID, 0x403, 5, 0
+0x4548, 0x4441, "\000" 
+    IDC_BRANCHID, 0x403, 19, 0
+0x7262, 0x6e61, 0x6863, 0x722d, 0x6c65, 0x6165, 0x6573, 0x312d, 0x302d, 
+"\000" 
+    0
+END
+
+IDD_PREFS_GLOBALS DLGINIT
+BEGIN
+    IDC_CHECKOUTATTRIBUTE, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_CHECKOUTATTRIBUTE, 0x403, 10, 0
+0x6552, 0x6461, 0x6f2d, 0x6c6e, 0x0079, 
+    IDC_CHECKOUTATTRIBUTE, 0x403, 9, 0
+0x7257, 0x7469, 0x6261, 0x656c, "\000" 
+    IDC_CVSMESSAGES, 0x403, 8, 0
+0x6544, 0x6166, 0x6c75, 0x0074, 
+    IDC_CVSMESSAGES, 0x403, 6, 0
+0x7551, 0x6569, 0x0074, 
+    IDC_CVSMESSAGES, 0x403, 13, 0
+0x6552, 0x6c61, 0x796c, 0x5120, 0x6975, 0x7465, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    CG_IDS_TIPOFTHEDAY      "Displays a Tip of the Day."
+    CG_IDS_TIPOFTHEDAYMENU  "Ti&p of the Day..."
+    CG_IDS_DIDYOUKNOW       "Did you know..."
+    CG_IDS_FILE_ABSENT      "Tips file does not exist in the prescribed directory"
+    CG_IDP_FILE_CORRUPT     "Trouble reading the tips file"
+    CG_IDS_TIPOFTHEDAYHELP  "&Help"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "wincvs\n\nWincvs\nWinCvs Console Output(*.txt)\n.txt\nWincvs.Document\nWincvs Document"
+    IDS_DEFFONT             "Courier New"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "wincvs"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the output with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the output through electronic mail\nSend Mail"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_COMMITBF             "Commit your changes in the selected folder, changes the remote repository\nCommit selected folder"
+    ID_ADDBF                "Add the selected folder to the remote CVS repository\nAdd selected folder"
+    ID_VIEW_SMALLICONS      "Display items by using small icons\nSmall Icons"
+    ID_VIEW_FULLLIST        "Display items in a list\nList"
+    ID_VIEW_ROWDETAILS      "Display information about each item in the window\nDetails"
+    ID_VIEW_FILES_BAR       "Show or hide the files bar\nToggle FilesBar"
+    ID_VIEW_UPDATE          "Update and remove any sticky tag or revision\nUpdate to HEAD"
+    ID_VIEW_COMMIT          "Commit the selected items, changes the remote repository\nCommit selected"
+    ID_VIEW_ADD             "Add the selected items to the remote CVS repository\nAdd selected"
+    ID_VIEW_WORKSPACE       "Show or hide the workspace bar\nToggle Workspace Bar"
+    ID_VIEW_ADDB            "Add the selected binary items to the remote CVS repository\nAdd selected binary"
+    ID_VIEW_RMV             "Remove the selected items from the remote CVS repository\nRemove selected"
+    IDS_COMBOBROWSER        "Change browser to a pre-set directory\nJump browser to"
+    ID_VIEW_RELOAD          "Refresh view\nRefresh"
+    ID_VIEW_NEXTWINDOW      "Activate next window\nNext window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_PREVWINDOW      "Activate previous window\nPrevious window"
+    ID_VIEW_UPONE           "Up one level\nUp one level"
+    ID_VIEW_TRASH           "Erase the selection from your disk\nErase selected"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_PREFERENCES      "Change the settings\nPreferences"
+    ID_APP_CMDLINE          "Enter a CVS command line\nCommand line"
+    ID_APP_LOGIN            "Login to the CVS server\nLogin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STOPCVS              "Stop running CVS command\nStop CVS command"
+    ID_BROWSER_OPEN         "Change the root location of the browser\nChange location"
+    ID_VIEW_BROWSER_BAR     "Show or hide the browser bar\nToggle BrowserBar"
+    ID_UPDATEBF             "Update the selected folder recursively, changes your disk only\nUpdate selected folder"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FORMAT_FONT          "Set the log window font\nFont"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_DIFF            "Print the differences with the CVS remote repository\nDiff selected"
+    ID_VIEW_LOG             "Print the history of the selected files\nLog selected"
+    ID_VIEW_STATUS          "Print the current status of the selected files\nStatus selected"
+    ID_VIEW_LOCKF           "Lock the selected file on the remote repository until next commit\nLock selection"
+    ID_VIEW_UNLOCKF         "Unlock the selected file on the remote repository\nUnlock"
+    ID_VIEW_MULTI_BAR       "Show or hide the multi-users bar\nToggle MultiUsers Bar"
+    ID_MENUITEM32840        "Unlck files on the remote repository\nUnlock Files"
+    ID_VIEW_WATCHON         "Put a watch on the selected files\nWatch"
+    ID_VIEW_WATCHOFF        "Release a watch on the selected files\nRelease watch"
+    ID_VIEW_EDIT            "Edit the selected files\nEdit"
+    ID_VIEW_UNEDIT          "Unedit the selected files\nUnedit"
+    ID_VIEW_RELEASE         "Release the selected files\nRelease"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_WATCHERS        "Print all the watchers of the selection\nWatchers"
+    ID_VIEW_EDITORS         "Print all the editors of the selection\nEditors"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_CREDITS          "Print the Credits for WinCvs\nPrint Credits"
+    ID_APP_COPYRIGHTS       "Print the copyrights which apply to WinCvs\nPrint Copyrights"
+    ID_GRAPH_CLOSE          "Close the current log graph...\nClose graph"
+    ID_VIEW_GRAPH           "Print the history as a graph of the selected files\nGraph selected"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_GRAPH               "graph\n\nGraph\n\n\nGraph.Document\nGraph Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_RTAGCREATE       "Create a new tag in a remote CVS module\nNew module tag"
+    ID_APP_RTAGDELETE       "Delete a tag from a remote CVS module\nDelete module tag"
+    ID_APP_RTAGBRANCH       "Create a new branch in a remote CVS module\nNew module branch"
+    ID_VIEW_TAG             "Update file to the selected revision (sticky)\nUpdate to selected"
+    ID_VIEW_TAGNEW          "Create/move a tag on the selection\nTag selection"
+    ID_VIEW_TAGDELETE       "Remove a tag on the selection\nUntag selection"
+    ID_VIEW_TAGBRANCH       "Create a branch on the selection\nBranch selected"
+    ID_VIEW_TAGS_BAR        "Show or hide the tags bar\nToggle Tags Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_CONSOLE_BAR     "Show or hide the console bar\nToggle Console Bar"
+    ID_VIEW_EXPLORE         "Open an explorer window for this selection\nExplore selection"
+    ID_VIEW_QUERYUPDATE     "Query update, but touch nothing\nQuery update"
+    ID_VIEW_IGNORE          "Show any ignored files and folders\nShow Any Ignored"
+    ID_APP_LOGOUT           "Logout from the CVS server\nLogout"
+    ID_VIEW_EDITSEL         "Edit selection with the associated editor\nEdit"
+    ID_VIEW_EDITSELDEF      "Edit selection with the default editor\nEdit default"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEWW_INIT           "Create and initialize a new empty repository on the server\nCreate new repository"
+    ID_VIEW_IMPORT          "Create or update a module in the remote repository\nCreate or Update a module"
+    ID_VIEW_INIT            "Set up a new repository\nCreate a new repository"
+    ID_VIEW_CHECKOUT        "Checkout a fresh module on your local disk or update an existing one\nCheckout a module"
+    ID_VIEW_DELREV          "Delete the selected revisions on the server\nDelete revisions"
+    ID_VIEW_SELNONSIG       "Select in the graph window the non-significant revisions\nSelect non-significant revisions"
+    ID_SAVESETTINGS         "Save the location settings\nSave Settings..."
+    ID_VIEW_RETRIEVE        "Retrieves selected revision\nRetrieve revision"
+    ID_VIEW_RECURSIVE       "Show files in all subfolders\nFlat Mode"
+    ID_VIEW_FILTER_BAR      "Show or hide the filter tool bar\nToggle Filter"
+    ID_VIEW_MODIFIED        "Show files ready for commit\nShow All Commitable Files Only"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_CNTR_INPLACE        "wincvs\n\nWincvs\nWinCvs Console Output(*.txt)\n.txt\nWincvs.Document\nWincvs Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILTERMASK           "Enter file mask(s) of files to  display\nFile Mask "
+    ID_VIEW_CONFLICT        "Show files that contain merge conflicts\nShow Conflicts Files Only"
+    ID_VIEW_UNKNOWN         "Show files and folders unknown to CVS only\nShow Unknown Only"
+    ID_VIEW_MISSING         "Show missing files and folders only\nShow Missing Only"
+    ID_VIEW_ADDED           "Show added files\nShow Added Files Only"
+    ID_VIEW_REMOVED         "Show removed files\nShow Removed Files Only"
+    ID_VIEW_CHANGED         "Show changed files\nShow Changed Files Only"
+    ID_VIEW_HIDEUNKNOWN     "Hide any files and folders unknown to CVS\nHide Any Unknown"
+    ID_VIEW_CLEARALL        "Clear all filters\nClear All Filters"
+    ID_QUERY_ANNOTATE       "Show last revision where each line was modified\nAnnotate selected"
+    ID_VIEW_BROWSELOCATION_REMOVEUNWANTED 
+                            "Remove the unwanted locations from the history\nRemove unwanted locations"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_USE_TCLSHELL         "Use Tcl for the shell\nUse Tcl to type commands in the shell"
+    ID_USE_PYSHELL          "Use Python for the shell\nUse Python to type commands in the shell"
+    ID_GRAPH_GRAPHOPTIONS   "Change graph options\nGraph Options..."
+    ID_GRAPH_ADMINOPTIONS_CHANGELOGMESSAGE 
+                            "Change log message for the selected revision\nChange log message"
+    ID_GRAPH_ADMINOPTIONS_SETSTATE 
+                            "Set the state for the selected revision\nSet state"
+    ID_GRAPH_ADMINOPTIONS_SETDESCRIPTION 
+                            "Set the description for the file\nSet description"
+    ID_VIEW_RESERVEDEDIT    "Edit but check that working files are not edited\nReserved edit"
+    ID_VIEW_FORCEEDIT       "Edit even if working files are edited\nForce edit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ADDU            "Add the selected unicode items to the remote CVS repository\nAdd selected unicode"
+    ID_VIEW_HIDEMISSING     "Hide any missing files and folders\nHide Any Missing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_FILTERBAR_ENABLE "Enable filter bar\nEnable filter bar"
+    ID_VIEW_FILTERBAR_CLEARALL 
+                            "Clear all filter bar filters\nClear filter bar"
+    ID_VIEW_FILTERBAR_OPTIONS "Set the filter bar options\nFilter bar options"
+    ID_VIEW_RETRIEVEAS      "Retrieves selected revision to custom location\nRetrieve selected revision as"
+    ID_VIEW_OPENSEL         "Open selection with the associated viewer\nOpen selection"
+    ID_VIEW_OPENSELAS       "Choose an application to open selection with\nOpen with..."
+    ID_QUERY_SHELLACTION_DEFAULT 
+                            "Execute default associated shell action\nShell default"
+    ID_HELP_CVS             "Display CVS Documentation"
+    ID_QUERY_PROPERTIES     "Displays the properties of the selected item\nProperties"
+    ID_VIEW_NEWINSTANCE     "Open selection in new WinCvs instance\nOpen selection"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_CLOSEALL      "Close all graph documents\nClose All"
+    ID_QUERY_COMPARE        "Compare selected objects using External Diff\nCompare selected"
+    ID_VIEW_EDITSELCONFLICT "Edit selection with the conflict editor\nEdit conflict"
+    ID_VIEW_OPENSELANNOTATE "Open selection with the annotate viewer\nAnnotate viewer"
+    ID_VIEW_EXPORT          "Export a module to your local disk\nExport a module"
+    ID_QUERY_COMMANDPROMPT  "Open a Command Prompt window for this selection\nCommand Prompt selection"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+//#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "version_no.h"     // Location of the global version and build numbering
+#include "version_fu.h"     // preprocessor definitions for the VERSION_INFO resource
+#include "res\wincvs.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

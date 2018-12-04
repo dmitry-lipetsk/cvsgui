@@ -1,0 +1,18 @@
+Please read the COPYING file first located on the parent
+folder.
+
+This folder (should) contains :
+
+- a BUGS file : known bugs for the WinCVS port.
+- a Visual C++ 6.0 project wincvs.dsw which compiles
+WinCvs.
+- The others projects are located into cvs1.10xxx/Windows-NT
+and compile the several dll's WinCvs uses + cvs as a dos
+command (cvs.exe).
+
+You need also the TCL8.1 headers. Download it from http://www.scriptics.com.
+
+This implementation of WinCVS is provided for free and without support.
+Refer to each files to know the policy of each of them.
+
+Alexandre Parenteau  <aubonbeurre@hotmail.com>

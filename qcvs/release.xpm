@@ -1,0 +1,30 @@
+/* XPM */
+static const char *i_release[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        8            1",
+/* colors */
+". c #000000",
+"# c #808000",
+"a c #000080",
+"b c #c0c0c0",
+"c c #808080",
+"d c #f8fc00",
+"e c #0000f8",
+"f c #f8fcf8",
+/* pixels */
+".....bbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"....bbbbbbbbbbbb",
+"bbbbbbbbbb.bbbbb",
+".....bbbb.bbbbbb",
+"bbbbbbbb....bbbb",
+"..cdddd.eeea.bbb",
+"bcddccddeeea.bbb",
+".cddccddeeaaa...",
+"bccbcddeeaaaeee.",
+"bbbcdd..aaaeee.b",
+"bbb.ddbb.aeee.bb",
+"bb.cccbbb....bbb",
+"b.bcddbbbbbbbbbb",
+".bbcddbbbbbbbbbb"
+};

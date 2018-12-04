@@ -1,0 +1,68 @@
+Revision of
+ - CWinLogData::Offset
+ - CWinLogData::CollectMergePointPairPass1
+ - CWinLogData::CollectMergePointPairPass2
+    - replacement of recursive algorithms
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::Offset
+ - CWinLogData::CollectMergePointPairPass1
+ - CWinLogData::CollectMergePointPairPass2
+   - Iterative implementation through CLogNode_Walker_Std
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData::UnselectAll
+  - replacement of recursive algorithms
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::UnselectAll
+   - Iterative implementation through CLogNode_Walker_Std
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A new iterative algorithm CWinLogData::HitTest
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData
+   - [add] class tag_traits_for_ht
+   - HitTest
+     - Iterative implementation
+
+Amen
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A new iterative algorithm CWinLogData::Update
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ - Mark: "#OLD_CODE"
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData
+   - [add] class tag_traits_for_update
+   - Update
+     - Iterative implementation
+
+Amen

@@ -1,0 +1,22 @@
+#!/bin/sh
+IGNOREWHITESPACE="false"
+IGNORECASE="false"
+
+if [ "$1" = "-wb" ]; then
+  IGNOREWHITESPACE="true"
+  shift
+fi
+if [ "$1" = "-i" ]; then
+  IGNORECASE="true"
+  shift
+fi
+
+scriptFile="`dirname \"$0\"`/diff_in_bbedit.scpt"
+/usr/bin/osascript << EOI
+set x to load script POSIX file "$scriptFile"
+set file_1 to POSIX file "$1"
+set file_2 to POSIX file "$2"
+tell x
+  DoDiff(file_1, file_2, $IGNORECASE, $IGNOREWHITESPACE)
+end
+EOI

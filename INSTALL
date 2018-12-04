@@ -1,0 +1,92 @@
+(This note is relative only to the Unix platforms, it has no meanings
+ for other platforms)
+
+About gcvs
+==========
+
+   gcvs is currently in his first stage of developement.
+
+   This program is part of the CvsGui project, a set of cvs front-end
+   applications which use a native framework for each platform. More
+   informations can be found on the existing applications (MacCvs and
+   WinCvs) on the GvsGui main page http://www.wincvs.org.
+
+   gcvs is not fully functional yet : Only some capabilities are
+   implemented so far.  But the whole thing is mostly there and the
+   core of the application is working (the three panes, the buttons,
+   the cvs launching...).
+
+   Finally gcvs is looking a lot like WinCvs.
+
+Installing gcvs
+===============
+
+   If you have updated gcvs sources by cvs you had to to 'CVS Update'.
+
+
+   Tarball Update
+   --------------
+
+   You need one tararchive ("XX" stands for the minor version number):
+
+   * gcvs-1.0XX.tar.gz : the source code of gcvs. gcvs requires
+     gtk 1.2 or higher (http://www.gtk.org).
+
+   1) gzip -d -c gcvs-1.0XX.tar.gz | tar xvf -
+   2) cd gcvs-1.0XX
+   3) ./autogen.sh --prefix=/usr/local/gcvs
+   4) make; make install
+
+   5) /usr/local/gcvs/bin/gcvs
+
+
+   CVS Update
+   ----------
+   
+   At the moment you have to use a special branch for the cvs binary.
+   So it is necessery to do an extra update of the cvs sources.
+
+   I)  if you have already checkout gcvs sources:
+
+       1) cd cvsgui
+       2) cvs -q update
+       3) cvs -q update -rCVSGUI1112 cvs-1.10
+       4) ./autogen.sh --prefix=/usr/local/gcvs
+       5) make; make install
+    
+       6) /usr/local/gcvs/bin/gcvs
+ 
+
+   II) if you have not earlier done a checkout of gcvs:
+
+       1) cvs -d :pserver:anonymous@cvs.cvsgui.sourceforge.net:/cvsroot/cvsgui login
+       2) hit return for password
+       3) cvs -d :pserver:anonymous@cvs.cvsgui.sourceforge.net:/cvsroot/cvsgui co GCvsSrc
+       4) cd cvsgui
+       5) cvs -q update -rCVSGUI1112 cvs-1.10
+       6) ./autogen.sh --prefix=/usr/local/gcvs
+       7) make; make install
+    
+       8) /usr/local/gcvs/bin/gcvs
+
+   At the start-up, gcvs is asking for the CVSROOT and the
+   authentication. You can change these informations later
+   if you like.
+
+   When you got the main window opened, choose the "Locate
+   Browser" icon and point-out an existing checked-out copy
+   or use the checkout option to create one.
+
+   After the browser should help you to figure how to use gcvs.
+   Each file/folder has a specific icon which reflects the cvs
+   status. Click a folder and click the update button... You got
+   the idea.
+
+Alexandre Parenteau
+<aubonbeurre@hotmail.com>
+February 2000
+
+Karl-Heinz Bruenen
+<kbruenen@hotmail.com>
+November 2001
+

@@ -1,0 +1,24 @@
+Aleks Totic has contributed a hack in MacCVS in order to
+chekout the Mozilla project (http://www.mozilla.org).
+
+Now you need to have this set-up in order to checkout Mozilla :
+
+- Use MacCvs 3.1a7 or higher (MacBinary + long filenames support)
+- Go to the preferences (General) :
+	* CVSROOT to "anonymous@cvs1.mozilla.org:/cvsroot"
+	* Authentication to "pserver".
+- Go to the preferences (Globals) :
+	* Turn ON "Enable TCP/IP compression"
+- Go to the preferences (Binary files) :
+	* Set the default mac encoding to "Mac binary"
+- Use the "Login..." command of the "Cvs Main" menu
+and type "anonymous". If MacCVS doesn't complain,
+you should be logged.
+- Use the "Checkout module..." command of the "Cvs Main" menu
+and enter "mozilla" as the module name.
+
+This information is likely to change so keep in touch with
+the Mozilla home page.
+
+alex <aubonbeurre@hotmail.com>
+(4/28/98)

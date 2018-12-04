@@ -1,0 +1,23 @@
+// ===========================================================================
+//	DebugClassicPrefix.pch++	©1999-2000 Metrowerks Inc. All rights reserved.
+// ===========================================================================
+//	Precompiled header source for a Classic Target
+
+
+#if __POWERPC__
+	#pragma precompile_target "DebugClassicHeadersPPC++"
+#else
+	#pragma precompile_target "DebugClassicHeaders68K++"
+#endif
+
+
+// ---------------------------------------------------------------------------
+//	Common Settings
+
+#include "CommonClassicPrefix.h"
+
+
+// ---------------------------------------------------------------------------
+//	PowerPlant and Toolbox Headers
+
+#include <PP_DebugHeaders.cp>

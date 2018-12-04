@@ -1,0 +1,61 @@
+- What is the LSH/SSH2 library ?
+
+MacCvs is using the LSH/SSH2 shared library which is part of
+MacSSH (http://www.macssh.com).
+
+This support was implemented by Jean-Pierre Stierlin <jps@7ways.net>,
+the maintainer of MacSSH.
+
+MacCvs has in its source code tree only *stub* libraries of lsh
+to prevent developer from having to build LSH if they do not have
+the MacSSH source tree.
+
+- How to compile the LSH/SSH2 library ?
+
+* Make a MacSSH folder at the same level than cvsgui :
++ cvsgui
+  + MacCvs
+  + common
+  + ...
++ MacSSH
+
+* Follow the instructions to checkout MacSSH
+(http://sourceforge.net/projects/macssh)
+
+* Check-out the MacSSH module in the MacSSH folder you just created
+
+* Now the hiearachy should look like :
++ cvsgui
+  + MacCvs
+  + common
+  + ...
++ MacSSH
+  + lsh
+  + macssh
+  + gmp
+  + zlib
+
+* Follow the instructions (if any) to build MacSSH or go like that:
+  - Build MacSSH:zlib:MacOS:zlib.mcp
+  - Build MacSSH:gmp:MacOS:gmp.mcp
+  - Build MacSSH:GUSI:projects:GUSI2.mcp (target GUSI.PPC.min)
+  - Build MacSSH:macssh:MacSSH.mcp
+
+* Now to build the lsh support for MacCvs, build MacSSH:lsh:MacOS:lshmaccvs.mcp
+
+* This will build a shared library and put it directly into the
+cvsgui:MacCvs:build folder. Not that prior to compile lshmaccvs.mcp, you should
+have built MacCvs.
+
+- How that work together ?
+
+* Jean-Pierre did come-up with a LSH api, detailed in
+cvsgui:cvs-1.10:macintosh:lsh_dll.h. This exports some capabilities of lsh,
+like making a new lsh context, reading/writing in a SSH2 socket and yielding.
+
+* MacCvs uses this API at the end of client.c, in the function start_lsh_server.
+Since cvs requires a file descriptor to a socket, a GUSI implementation of the
+socket is implemented in cvsgui:cvs-1.10:macintosh:GUSIlsh.cp
+
+Enjoy,
+alex <aubonbeurre@hotmail.com>

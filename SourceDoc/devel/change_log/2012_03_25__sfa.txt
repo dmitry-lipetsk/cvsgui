@@ -1,0 +1,231 @@
+Revision of CWinLogData::ComputeBounds
+ - normalization
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData::ComputeBounds
+    - [change] argument 'entryInfo'
+       - constant pointer to constant
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Preparing of CWinLogData::ComputeBounds for future changes
+
+[Source]
+ - WinCvs\GraphView.cpp
+   - CWinLogData::ComputeBounds
+     - review and normalization
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Normalization of CWinLogData class
+ - use a "m_" prefix for members with data
+
+[Source]
+
+WinCvs\GraphView.h
+ - CWinLogData
+   - [rename] m_selfB
+   - [rename] m_totB
+   - [rename] m_sel
+
+WinCvs\GraphView.cpp
+ - CWinLogData::CWinLogData
+   - [rename] m_selfB, m_totB, m_sel
+
+ - CRect& CWinLogData::Bounds(void)
+ - const CRect& CWinLogData::Bounds(void)const
+   - [rename] m_totB
+
+ - CRect& CWinLogData::SelfBounds(void)
+ - const CRect& CWinLogData::SelfBounds(void)const
+   - [rename] m_selfB
+
+ - CWinLogData::Offset
+   - [rename] m_selfB, m_totB
+
+ - CWinLogData::SetSelected
+   - [rename] m_sel, m_selfB
+
+ - CWinLogData::Selected
+   - [rename] m_sel
+
+ - CWinLogData::HitTest
+   - [rename] m_totB, m_selfB
+
+ - CWinLogData::Update
+   - [rename] m_selfB
+
+ - CWinLogData::ComputeBounds
+   - [rename] m_selfB, m_totB
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of TGraphRectSelect::TraverseNode
+ - normalization
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - TGraphRectSelect::TGraphRectSelect
+   - [use] const
+   - reordering in "if-else-if" sequence
+      - without changes in logic
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of
+ - CWinLogData::CollectMergePointPairPass1
+ - CWinLogData::CollectMergePointPairPass2
+
+ Normalization of C++ code
+
+This code will be completely rewrited in future
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::CollectMergePointPairPass1
+ - CWinLogData::CollectMergePointPairPass2
+   - normalization
+     - [use] self_type::GetData
+     - [use] vector<CLogNode*>::const_iterator
+     - other small improvements
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of
+ - CWinLogHeaderData
+ - CWinLogRevData
+ - CWinLogTagData
+ - CWinLogBranchData
+   - private copy constructor/operator
+
+[Source]
+
+WinCvs\GraphView.h
+ - CWinLogHeaderData
+ - CWinLogRevData
+ - CWinLogTagData
+ - CWinLogBranchData
+    - [add] typedef self_type
+    - [add] typedef inherited
+    - [add] private copy constructor
+    - [add] private copy operator
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData
+ - using a typedef for "std::vector<std::pair<CWinLogData*, CWinLogData*> >"
+
+[Source]
+
+WinCvs\GraphView.h(cpp)
+ - CWinLogData
+   - [add] typedef data_pair_type
+   - [add] typedef data_pair_vec_type
+
+   - CollectMergePointPairPass1
+   - CollectMergePointPairPass2
+   - CollectMergePointPairPass1Self
+   - CollectMergePointPairPass2Self
+   - UpdateMergePoints
+     - using of data_pair_vec_type
+
+ - CWinLogRevData
+   - CollectMergePointPairPass1Self
+   - CollectMergePointPairPass2Self
+     - using of data_pair_vec_type
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogRevData
+ - Normalization of C++ code
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogRevData::CollectMergePointPairPass1Self
+ - CWinLogRevData::CollectMergePointPairPass2Self
+   - [use] const
+   - replacement of local 'CRevFile' on 'const CRevFile&'
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Cleanup in CWinLogData::Update
+ - local object 'brush' not used
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::Update
+   - [del] pOldBrush
+   - [del] brush
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Normalization of CWinLogData::Update
+ - [use] const
+ - [use] size_t
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::Update
+   - uses const for local variables
+   - uses size_t for avoid a problem with compilation for 64bit
+   - uses const_iterator for enumeration of childs
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of code from GraphView.cpp
+ - normalization of C++ code
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::HitTest
+   - exclude the local variable
+
+ - TGraph::TraverseGraph
+   - [use] const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of TGraph::TraverseGraph
+ - added a debug check
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - TGraph::TraverseGraph
+   - [add] assert: node!=NULL
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of code from CvsLog.cpp
+ - normalization of C++ code
+
+[Source]
+
+cvstree\CvsLog.cpp
+ - InsertSymbName
+ - InsertBranchName
+    - [use] const
+    - [add] assert: node!=NULL
+
+ - CvsLogGraph
+    - [use] const
+    - case: issamebranch
+       - [add] assert: curNode->Next()==NULL
+
+ - CLogNodeData::CLogNodeData
+ - CLogNode::CLogNode
+    - [use] const
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Current state:
+ Seems, I fully prepared the CvsLog.h(cpp), GraphView.h(cpp) for
+ the final large upgrade.

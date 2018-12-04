@@ -1,0 +1,83 @@
+- [BUG FIX] Wrong implementation of insert branch element into log tree.
+  It violates the integrity of the tree.
+
+[Source]
+
+cvstree\CvsLog.cpp
+ - InsertBranchName
+   - [BUG FIX] [add] subnode->Root()=branch;
+      Connection of a "revision" node to "branch" node through "Root" pointer.
+   - [add] asserts
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision and normalization of InsertBranchName
+
+[Source]
+ - cvstree\CvsLog.cpp
+   - InsertBranchName
+     - [use] const
+     - formatting
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision and normalization of InsertBranchName (#2)
+
+[Source]
+ - cvstree\CvsLog.cpp
+   - InsertBranchName
+     - [use] const
+     - formatting
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision of CWinLogData::Update
+ - normalization of C++ code
+
+[Source]
+
+WinCvs\GraphView.cpp
+ - CWinLogData::Update
+   - [use] const for local variables
+   - formatting
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Large update of CvsLog.h(cpp)
+ - replacement of recursive algorithms
+ - support for STL from VS2010
+
+This patch (first from two) resolves a problem with "stack overflow" when WinCvs
+ processes a large number of nodes in LogTree.
+
+All original code was saved for to facilitate comparison of algorithms.
+ - Will removed in future
+ 
+[Source]
+
+[add] cvstree/CLogNode_Walker_Std.h(cc)
+ - class CLogNode_Walker_Std
+
+[add] cvstree/CLogNode_Walker_For_InsertBranchName.h(cc)
+ - class CLogNode_Walker_For_InsertBranchName
+
+cvstree\CvsLog.h(cpp)
+ - InsertSymbName
+   - iterative implementation
+     - uses CLogNode_Walker_Std
+
+ - InsertBranchName
+   - iterative implementation
+     - uses CLogNode_Walker_For_InsertBranchName
+
+ - excluded: sortRevs
+
+ - [add] CRevFile::tag_less_by_rev_num
+
+ - CRcsFile::sort
+   - uses std::sort instead qsort.
+
+ - CLogNode::~CLogNode
+   - iterative implementation
+
+Amen

@@ -1,0 +1,29 @@
+/* XPM */
+static const char *i_ro[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15        7            1",
+/* colors */
+". c #000000",
+"# c #808000",
+"a c #c0c0c0",
+"b c #808080",
+"c c None",
+"d c #f8fc00",
+"e c #0000f8",
+/* pixels */
+"cccccccccccccccc",
+"ccceccccc...cccc",
+"cceeeccc.bbb.ccc",
+"ccceeecc..#b.ccc",
+"cccceee.ad...ccc",
+"ccccceeeddd.cccc",
+"cccccceeedd.cccc",
+"cccccc.eee.ccccc",
+"ccccc.adeeeccccc",
+"ccccc.aaaeeecccc",
+"ccccc....ceeeccc",
+"ccccc...ccceeecc",
+"ccccc..ccccceeec",
+"ccccc.cccccccecc",
+"cccccccccccccccc"
+};

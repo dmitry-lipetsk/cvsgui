@@ -1,0 +1,82 @@
+DlgEdit:v1.2:Dialog:
+Dialog {
+	ClassHeader {QImportWarning.h}
+	ClassSource {QImportWarning.cpp}
+	ClassName {QImportWarning}
+	DataHeader {QImportWarningData.h}
+	DataSource {QImportWarningData.cpp}
+	DataName {QImportWarningData}
+	WindowBaseClass {QDialog}
+	IsModal {TRUE}
+	WindowCaption {Import Warning}
+	WindowFlags {0}
+}
+WidgetLayout {
+InitialPos {-1 -1}
+Size {370 260}
+MinSize {0 0}
+MaxSize {32767 32767}
+Grid {10}
+
+MultiLineEdit {
+		Line {}
+		ReadOnly {TRUE}
+		OverwriteMode {FALSE}
+		Rect {5 5 360 215}
+		Name {MultiLineEdit_1}
+		Variable {fText}
+		MinimumSize {0 0}
+		MaximumSize {32767 32767}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {StrongFocus}
+		BackgroundMode {PaletteBase}
+		FontPropagation {SameFont}
+		PalettePropagation {SameFont}
+}
+PushButton {
+		ToggleButton {FALSE}
+		Default {FALSE}
+		AutoDefault {TRUE}
+		Text {OK}
+		AutoRepeat {FALSE}
+		AutoResize {FALSE}
+		Rect {135 225 100 30}
+		Name {PushButton_1}
+		Signal {[Protected]  clicked --> accept  ()}
+		MinimumSize {0 0}
+		MaximumSize {100 30}
+		BackgroundPixmap {}
+		UseBackgroundPixmap {FALSE}
+		AdjustSize {FALSE}
+		ReadPixmapFromData {FALSE}
+		DataVarName {}
+		DataLenName {}
+		FocusPolicy {TabFocus}
+		BackgroundMode {PaletteBackground}
+		FontPropagation {NoChildren}
+		PalettePropagation {NoChildren}
+}
+Box_Layout-1{
+	Direction {TopToBottom}
+	Border {5}
+	AutoBorder {5}
+	Name {}
+	Strut {0}
+	Stretch {1}
+}
+Layout_Widget-1.1{
+	Widget {MultiLineEdit_1}
+	BoxStretch {6}
+	Alignment {36}
+}
+Layout_Widget-1.2{
+	Widget {PushButton_1}
+	BoxStretch {1}
+	Alignment {36}
+}
+}

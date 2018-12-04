@@ -1,0 +1,28 @@
+/* XPM */
+static const char *i_addb[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15       6            1",
+/* colors */
+". c #000000",
+"c c #c0c0c0",
+"d c #808080",
+"e c #f80000",
+"k c #f8fcf8",
+"l c None",
+/* pixels */
+"llddddddddddllll",
+"lldkkkkkkkkcdlll",
+"lldkkkeekkkckdll",
+"lldkkkeekkk....l",
+"lldkeeeeeekkkc.l",
+"lldkeeeeeekkkc.l",
+"lldkkkeekkkkkc.l",
+"lldkkkeekkkkkc.l",
+"lldkkkkkkkkkkc.l",
+"lldkk..kkk.kkc.l",
+"lldk.kk.k..kkc.l",
+"lldk.kk.kk.kkc.l",
+"lldkk..kkk.kkc.l",
+"lldccccccccccc.l",
+"lldddddddddddd.l"
+};

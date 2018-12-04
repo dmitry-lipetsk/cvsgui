@@ -1,0 +1,35 @@
+/* XPM */
+static const char *i_status[] = {
+/* width height num_colors chars_per_pixel */
+"    16    15       13            1",
+/* colors */
+". c #000000",
+"# c #008000",
+"a c #808000",
+"b c #000080",
+"c c #c0c0c0",
+"d c #808080",
+"e c #f80000",
+"f c #00fc00",
+"g c #f8fc00",
+"h c #0000f8",
+"i c #f800f8",
+"j c #00fcf8",
+"k c #f8fcf8",
+/* pixels */
+"ccddddddddddcccc",
+"ccdkkkkkkkkcdccc",
+"ccdkkhhhhkkckdcc",
+"ccdkhhkkhhk....c",
+"ccdkhhkkhhkkkc.c",
+"ccdkkkkkhhkkkc.c",
+"ccdkkkkhhkkkkc.c",
+"ccdkkkhhkkkkkc.c",
+"ccdkkkhhkkkkkc.c",
+"ccdkkkkkkkkkkc.c",
+"ccdkkkhhkkkkkc.c",
+"ccdkkkhhkkkkkc.c",
+"ccdkkkkkkkkkkc.c",
+"ccdccccccccccc.c",
+"ccdddddddddddd.c"
+};

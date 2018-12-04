@@ -1,0 +1,773 @@
+.>>> Common CVS command switches <<<
+
+.Topic IDH_IDC_NORECURS
+Local directory only, no recursion.
+
+.Topic IDH_IDC_FORCE_HEAD_REV
+Use head revision if tag/date not found.
+
+.>>> Common Dialog controls <<<
+
+.Topic IDH_IDC_HAS_REV
+Enable revision entry.
+
+.Topic IDH_IDC_ISDATE
+Specified revision is a date.
+
+.Topic IDH_IDC_REV_TAG_DATE
+Revision, tag or date.
+
+.Topic IDH_IDC_REV_TAG
+Revision or tag.
+
+.Topic IDH_IDC_BROWSE_TAG
+Browse for revision/tag.
+
+.Topic IDH_IDC_HAS_DATE
+Enable date entry.
+
+.Topic IDH_IDC_DATE
+Date.
+
+.Topic IDH_IDC_MODNAME
+Module name and path on the server.
+
+.Topic IDH_IDC_BROWSE_MODNAME
+Browse for modules/files on the server.
+
+.Topic IDH_IDC_FORCE_CVSROOT
+Force CVSROOT.
+
+.Topic IDH_IDC_CVSROOT
+CVSROOT value.
+
+.Topic IDH_IDC_BROWSE_CVSROOT
+Enter CVSROOT wizard.
+
+.Topic IDH_IDC_HAS_PATH
+Enable local folder path entry.
+
+.Topic IDH_IDC_PATH
+Local folder path.
+
+.Topic IDH_IDC_BROWSE_PATH
+Browse for folder.
+
+.Topic IDH_IDC_BROWSE_FILENAME
+Browse for file.
+
+.Topic IDH_IDC_REPOSITORY_PATH
+Repository path.
+
+.>>> COptionalPropertySheet <<<
+
+.Topic IDH_IDC_OPTIONCHECK_BUTTON
+If selected dialog will be skipped unless forced by pressing force key.
+
+
+You can setup force key and dialogs to be skipped in the Preferences - Command Dialogs tab.
+
+.>>> CAboutDlg <<<
+
+.Topic IDH_IDC_WINCVSVER
+WinCvs version information.
+
+.Topic IDH_IDC_WINCVSURL
+WinCvs website.
+
+.Topic IDH_IDC_CVSGUISFURL
+WinCvs website.
+
+.>>> CAnnotate_MAIN <<<
+
+.Topic IDH_IDC_BULK_ANNOTATE
+Fetch all annotations of files with one invocation of CVS, then launch annotate viewer for each file. Caution: This can crash your viewer tool if too many files are affected.
+
+.>>> CCheckout_MAIN <<<
+
+.Topic IDH_IDC_OVERRIDE_CHECKOUT_DIR
+Enable check out into specified directory instead of module name.
+
+.Topic IDH_IDC_CHECKOUT_DIR
+Checkout directory.
+
+.Topic IDH_IDC_DONT_SHORTEN_PATHS
+Don't shorten module paths for specified checkout directory.
+
+.>>> CCheckout_OPTIONS <<<
+
+.>>> CCmdLine_MAIN <<<
+
+.Topic IDH_IDC_ADD_DEFAULT
+Add global options.
+
+.Topic IDH_IDC_ADD_SELECTION
+Execute for current selection.
+
+.>>> CCommit_MAIN <<<
+
+.Topic IDH_IDC_FILETODIFF
+File to diff.
+
+.Topic IDH_IDC_DIFF
+Diff.
+
+.>>> CCommit_OPTIONS <<<
+
+.Topic IDH_IDC_FORCE_COMMIT
+Force the file to be committed; disables recursion.
+
+.Topic IDH_IDC_FORCE_RECURSE
+Process directories recursively.
+
+.Topic IDH_IDC_NO_MODULE_PROGRAM
+Do not run the module program (if any).
+
+.Topic IDH_IDC_CHECK_VALID_EDITS
+Check for valid edits before committing.
+
+.>>> CCustomizeMenus <<<
+
+.Topic IDH_IDC_ALLCMDS
+List of available menu commands.
+
+.Topic IDH_IDC_MENULIST
+List of selected menu commands.
+
+.Topic IDH_IDC_ADD
+Add command.
+
+.Topic IDH_IDC_REMOVE
+Remove command.
+
+.Topic IDH_IDC_UP
+Move command item up in the list.
+
+.Topic IDH_IDC_DOWN
+Move command item down in the list.
+
+.>>> CCvsRootDlg <<<
+
+.Topic IDH_IDC_PROTOCOL
+Select protocol.
+
+.Topic IDH_IDC_PROTOCOL_DESC
+Protocol description.
+
+.Topic IDH_IDC_KEYWORDLIST
+List of protocols keywords.
+
+.Topic IDH_IDC_KEYWORDLIST_DESC
+Selected keyword description.
+
+.Topic IDH_IDC_EDIT_KEYWORD
+Edit keyword.
+
+.Topic IDH_IDC_CLEAR_KEYWORD
+Clear keyword value.
+
+.Topic IDH_IDC_PREVIEW_CVSROOT
+CVSROOT resulting from current entries.
+
+.>>> CEditKeywordDlg <<<
+
+.Topic IDH_IDC_PROTOCOL_KEYWORD
+Keyword.
+
+.Topic IDH_IDC_KEYWORD_DESCRIPTION
+Keyword description.
+
+.Topic IDH_IDC_KEYWORD_VALUE
+Keyword value.
+
+.>>> CTemplateDlg <<<
+
+.Topic IDH_IDC_TEMPLATE_LIST
+Template file list.
+
+.Topic IDH_IDC_TEMPLATE_PREVIEW
+Template file preview.
+
+.>>> CDiff_MAIN <<<
+
+.Topic IDH_IDC_COMPARE_TYPE
+Compare type.
+
+.Topic IDH_IDC_USE_EXTERNAL_DIFF
+Use the external diff.
+
+.Topic IDH_IDC_BULK_UPDATE
+Fetch all different files with one invocation of CVS, then launch external diff for each file. Caution: This can crash your external diff tool if too many files are affected.
+
+.Topic IDH_IDC_UNIFIEDDIFF
+Unified diff output format.
+
+.Topic IDH_IDC_IGNORECASE
+Ignore case.
+
+.Topic IDH_IDC_IGNOREWHITESPACE
+Ignore whitespace.
+
+.Topic IDH_IDC_DIFFOPTIONS
+Other (rcsdiff) options.
+
+.Topic IDH_IDC_BROWSE_DIFFOPTIONS
+Add more rcsdiff-options.
+
+.>>> CDiff_Options <<<
+
+.Topic IDH_IDC_DIFF_OPTION_LIST
+Diff options list.
+
+.Topic IDH_IDC_DIFF_OPTION_DESCRIPTION
+Selected option details.
+
+.Topic IDH_IDC_CURRENT_DIFF_OPTIONS
+Currently entered options.
+
+.>>> CEditorMonDlg <<<
+
+.Topic IDH_IDC_TEMPFILE
+Temporary file name.
+
+.>>> CImportWarning <<<
+
+.Topic IDH_IDC_WARNING_DESC
+Warning description.
+
+.>>> CImportEntry <<<
+
+.Topic IDH_IDC_ENTRYSTATE_NO_CHANGE
+Leave unchanged.
+
+.Topic IDH_IDC_ENTRYSTATE_FORCE_BINARY
+Force binary (-kb).
+
+.Topic IDH_IDC_ENTRYSTATE_FORCE_UNICODE
+Force unicode (-ku).
+
+.Topic IDH_IDC_ENTRYSTATE_FORCE_TEXT
+Force text.
+
+.Topic IDH_IDC_ENTRYSTATE_NO_EXPANSION
+Force no keywords expansion (-ko).
+
+.Topic IDH_IDC_ENTRYSTATE_IGNORE
+Ignore (-I).
+
+.Topic IDH_IDC_CONFLICT_DESC
+Conflict description.
+
+.>>> CImportFilterDlg <<<
+
+.Topic IDH_IDC_ENTRIES_LIST
+Import entries list.
+
+.Topic IDH_IDC_ENTRY_EDIT
+Edit selected entry.
+
+.>>> CFilterSelectionDlg <<<
+
+.Topic IDH_IDC_FILTER
+Filter selection.
+
+.Topic IDH_IDC_FILTER_CONTENTS
+Filter contents.
+
+.>>> CFilterMaskOptDlg <<<
+
+.Topic IDH_IDC_REACTION_SPEED
+Reaction speed in milliseconds.
+
+.Topic IDH_IDC_REACTION_SPEED_SPIN
+Change reaction speed.
+
+.Topic IDH_IDC_REACTION_SPEED_SECONDS
+Reaction speed in seconds.
+
+.>>> CGraphOptDlg <<<
+
+.Topic IDH_IDC_COLOR_HEADER
+File header color.
+
+.Topic IDH_IDC_COLOR_TAG
+Tag color.
+
+.Topic IDH_IDC_COLOR_BRANCH
+Branch tag color.
+
+.Topic IDH_IDC_COLOR_NODE
+Revision node color.
+
+.Topic IDH_IDC_COLOR_DEAD
+Dead revision color.
+
+.Topic IDH_IDC_COLOR_STATE
+Special state color.
+
+.Topic IDH_IDC_COLOR_SELECTION
+Selection color.
+
+.Topic IDH_IDC_COLOR_SHADOW
+Shadow color.
+
+.Topic IDH_IDC_COLOR_MERGE
+Merge point color.
+
+.Topic IDH_IDC_RGB_HEADER
+File header color sample.
+
+.Topic IDH_IDC_RGB_TAG
+Tag color sample.
+
+.Topic IDH_IDC_RGB_BRANCH
+Branch tag color sample.
+
+.Topic IDH_IDC_RGB_NODE
+Revision node color sample.
+
+.Topic IDH_IDC_RGB_DEAD
+Dead revision color sample.
+
+.Topic IDH_IDC_RGB_STATE
+Special state color sample.
+
+.Topic IDH_IDC_RGB_SELECTION
+Selection color sample.
+
+.Topic IDH_IDC_RGB_SHADOW
+Shadow color sample.
+
+.Topic IDH_IDC_RGB_MERGE
+Merge point color sample.
+
+.Topic IDH_IDC_RESET_COLORS
+Reset colors to default values.
+
+.Topic IDH_IDC_APPLY
+Apply changes without closing the dialog.
+
+.>>> CImport_MAIN <<<
+
+.Topic IDH_IDC_VENDOR_TAG
+Vendor tag.
+
+.Topic IDH_IDC_RELEASE_TAG
+Release tag.
+
+.Topic IDH_IDC_NO_VENDOR_RELEASE_TAGS
+Don't create vendor branch or release tags.
+
+.Topic IDH_IDC_OVERWRITE_RELEASE_TAGS
+Overwrite existing release tags.
+
+.>>> CImport_OPTIONS <<<
+
+.Topic IDH_IDC_SERVER_CVSWRAPPERS
+Use server cvswrappers to detect file types.
+
+.Topic IDH_IDC_IMPORT_FILTER
+Change the import filter settings.
+
+.Topic IDH_IDC_DEFAULT_CVSIGNORE
+Use default cvsignore (and CVSROOT/cvsignore or .cvsignore).
+
+.Topic IDH_IDC_FILES_MODIFICATION_TIME
+Use the file's modification time as the time of import.
+
+.Topic IDH_IDC_CREATE_SANDBOX
+Create CVS directories while importing.
+
+.Topic IDH_IDC_HAS_BRANCHID
+Enable vendor branch id.
+
+.Topic IDH_IDC_BRANCHID
+Vendor branch id.
+
+.Topic IDH_IDC_BROWSE_BRANCHID
+Browse for Vendor branch id.
+
+.>>> CInit_MAIN <<<
+
+.Topic IDH_IDC_HELP_INIT
+Help on "cvs init" command.
+
+.>>> CItemListDlg <<<
+
+.Topic IDH_IDC_ITEM_LABEL
+Item selection type.
+
+.Topic IDH_IDC_ITEM
+Select item.
+
+.Topic IDH_IDC_BROWSE_SELECTION
+Browse for selection information.
+
+.Topic IDH_IDC_ITEM_LIST
+Item list.
+
+.Topic IDH_IDC_GROUP_OPTIONS
+List command options.
+
+.Topic IDH_IDC_READ_FROM
+Read items source.
+
+.Topic IDH_IDC_BROWSE_READ_FROM
+Browse for read items source.
+
+.Topic IDH_IDC_REFRESH_ITEMS
+Refresh item list.
+
+.Topic IDH_IDC_ITEM_LIST_OPTION
+Enable to use "cvs ls" command to list files and folders in repository instead of virtual modules list.
+
+.Topic IDH_IDC_AUTO_REFRESH
+Auto refresh type.
+
+.>>> CLogFilters <<<
+
+.Topic IDH_IDC_RANGE_REV_TAG
+Specify revision(s)s to list.
+
+   rev1:rev2   Between rev1 and rev2, including rev1 and rev2.
+
+   rev1::rev2  Between rev1 and rev2, excluding rev1 and rev2.
+
+   rev1:::rev2 Between rev1 and rev2, excluding rev1.
+
+   rev:        rev and following revisions on the same branch.
+
+   rev::       After rev on the same branch.
+
+   :rev        rev and previous revisions on the same branch.
+
+   ::rev       Before rev on the same branch.
+
+   rev         Just rev.
+
+   branch      All revisions on the branch.
+
+   branch.     The last revision on the branch.
+.
+
+.Topic IDH_IDC_RANGE_DATE
+Specify dates (D1<D2 for range, D for latest before).
+
+.Topic IDH_IDC_HAS_STATES
+Enable state entry.
+
+.Topic IDH_IDC_STATES
+State(s).
+
+.Topic IDH_IDC_HAS_USERS
+Enable user entry.
+
+.Topic IDH_IDC_USERS
+User(s).
+
+.>>> CLogMain <<<
+
+.Topic IDH_IDC_SUPRESS_HEADER
+Supress header information when no revisions are selected.
+
+.Topic IDH_IDC_CVSRCSOUTPUT
+CVS 1.x/RCS 5.7 compatible output.
+
+.Topic IDH_IDC_DEFAULT_BRANCH
+List revisions on the default branch only.
+
+.Topic IDH_IDC_RCS_FILENAMES_ONLY
+Print only the RCS files names.
+
+.Topic IDH_IDC_NOTAGS
+Do not print tag names.
+
+.Topic IDH_IDC_HEADERS
+Print headers only.
+
+.Topic IDH_IDC_HEADERS_DESC
+Print headers with the descriptive text.
+
+.>>> CLogin_MAIN <<<
+
+.Topic IDH_IDC_HELPLOGIN
+Help on "cvs login" command.
+
+.>>> CMultilineEntryDlg <<<
+
+.Topic IDH_IDC_MULTILINE_ENTRY
+Entry, no wrapping.
+
+.Topic IDH_IDC_MULTILINE_ENTRY_WRAP
+Entry, wrapping.
+
+.Topic IDH_IDC_MULTILINE_PREV_ENTRY
+Previous entries.
+
+.Topic IDH_IDC_MULTILINE_ACTION
+Action selection.
+
+.Topic IDH_IDC_MULTILINE_GO_ACTION
+Execute selected action.
+
+.Topic IDH_IDC_MULTILINE_WORDWRAP
+World-wrap entry.
+
+.Topic IDH_IDC_MULTILINE_POSITION
+Editing position information.
+
+.>>> CNoPython <<<
+
+.Topic IDH_IDC_PYTHON_URL
+Python website.
+
+.Topic IDH_IDC_REMIND
+Clear to skip the remainder next time.
+
+.>>> CFileAction_MAIN <<<
+
+.Topic IDH_IDC_ACTION
+Action.
+
+.Topic IDH_IDC_ACTION_DESC
+Action description.
+
+.Topic IDH_IDC_SAME_ACTION_NEXT_TIME
+Use same action next time.
+
+.>>> GetPassword <<<
+
+.Topic IDH_IDC_PASSWORD
+Password.
+
+.>>> CGetPrefs_CVS <<<
+
+.Topic IDH_IDC_HOME
+CVS home folder.
+
+.Topic IDH_IDC_HAS_ALTERNATE_CVS
+Enable alternate CVS executable.
+
+.Topic IDH_IDC_ALTERNATE_CVS
+Alternate CVS executable.
+
+.Topic IDH_IDC_CONSOLE
+Enable CVS console (open TTY).
+
+.Topic IDH_IDC_SHOW_CVS_METHOD
+CVS executable run method.
+
+.Topic IDH_IDC_ENABLE_CMDLINE_LIMIT
+Enable command line length limit.
+
+.Topic IDH_IDC_CMDLINE_LIMIT
+Command line length limit.
+
+.>>> CGetPrefs_CVSCMD_DIALOGS <<<
+
+.Topic IDH_IDC_SKIP_DIALOGS
+Select dialogs to skip.
+
+.Topic IDH_IDC_FORCE_KEY_SHIFT
+Use Shift key to force dialogs.
+
+.Topic IDH_IDC_FORCE_KEY_CTRL
+Use Ctrl key to force dialogs.
+
+.Topic IDH_IDC_CTRL_PRESSED_ON_OK
+Use Ctrl + Enter to confirm multiline editing entry dialogs.
+
+.>>> CGetPrefs_GLOBALS <<<
+
+.Topic IDH_IDC_CHECKOUTATTRIBUTE
+Control files attibutes on checkout.
+
+.Topic IDH_IDC_CVSMESSAGES
+Set messages filter when executing CVS commands.
+
+.Topic IDH_IDC_PRUNE_EMPTY_DIR
+Prune empty directories.
+
+.Topic IDH_IDC_HAS_COMPRESSION
+Enable compression.
+
+.Topic IDH_IDC_COMPRESSION
+Compression level.
+
+.Topic IDH_IDC_SPIN_COMPRESSION
+Change compression level.
+
+.Topic IDH_IDC_ENCRYPTION
+Encrypt communication.
+
+.Topic IDH_IDC_UNIX_LF
+Checkout text files with the Unix LF (0xa).
+
+.Topic IDH_IDC_NO_SPLASH_SCREEN
+Disable splash screen.
+
+.Topic IDH_IDC_CONTROL_ADDED_FILES
+Supply control when adding files.
+
+.Topic IDH_IDC_MATCH_ENTRIES_CASE
+Match path case with Entries case.
+
+.Topic IDH_IDC_SMART_SORTING
+Use a more sophisticated sorting scheme instead of lexicographical sorting where applicable.
+
+.Topic IDH_IDC_AUTO_LOGOUT
+Enable automatic logout. (Password authentication only.)
+
+.Topic IDH_IDC_AUTO_LOGOUT_TIME
+Enter time to logout automatically.
+
+.Topic IDH_IDC_SPIN_AUTO_LOGOUT_TIME
+Change time to logout automatically.
+
+.Topic IDH_IDC_REFRESH_INACTIVE
+Check to refresh file view upon changes to visible files even when another application is active.
+
+.Topic IDH_IDC_REFRESH_INACTIVE_TIME
+Enter minimum time between two consecutive refreshes.
+
+.Topic IDH_IDC_SPIN_REFRESH_INACTIVE_TIME
+Change minimum time between two consecutive refreshs.
+
+.>>> CGetPrefs_WINCVS <<<
+
+.Topic IDH_IDC_WINCVS_SETTINGS_TYPE
+Select the settings type.
+
+.Topic IDH_IDC_WINCVS_SETTINGS_LIST
+List of available settings.
+
+.Topic IDH_IDC_BROWSE_WINCVS_SETTINGS
+Browse for the selected setting.
+
+.Topic IDH_IDC_CLEAR_WINCVS_SETTINGS
+Clear the selected setting.
+
+.>>> CRelease_MAIN <<<
+
+.Topic IDH_IDC_DELETE_CVS_INFO
+Delete CVS control files in the given directory (export).
+
+.Topic IDH_IDC_DELETE_DIRECTORY
+Delete the given directory.
+
+.Topic IDH_IDC_DELETE_ALL_FILES
+Delete all files, including non-cvs files.
+
+.>>> CRtag_MAIN <<<
+
+.Topic IDH_IDC_TAGNAME
+Tag.
+
+.Topic IDH_IDC_MOVDEL_BRANCH
+Allow move/delete of branch tag (not recommended).
+
+.Topic IDH_IDC_ATTIC
+Tag also the "Attic" (deleted revisions) folder.
+
+.Topic IDH_IDC_OVERWRITE
+Overwrite existing tags with the same name.
+
+.>>> CRtag_OPTIONS <<<
+
+.>>> CSaveSettingsDlg <<<
+
+.Topic IDH_IDC_SETTINGS_NAME
+Settings name.
+
+.Topic IDH_IDC_COPY_SETTINGS
+Enable copy settings name entry.
+
+.Topic IDH_IDC_COPY_SETTINGS_NAME
+Copy settings name.
+
+.>>> CSelectionDetailsDlg <<<
+
+.Topic IDH_IDC_SELECTION
+Selection.
+
+.Topic IDH_IDC_REVISION_SPIN
+Change revision.
+
+.Topic IDH_IDC_FILENAME
+Filename.
+
+.Topic IDH_IDC_REVISION
+Revision.
+
+.Topic IDH_IDC_FILEPATH
+Path.
+
+.Topic IDH_IDC_SELECTION_LIST
+Selection list.
+
+.>>> CStatus_MAIN <<<
+
+.Topic IDH_IDC_OUTPUT_STANDARD
+Standard.
+
+.Topic IDH_IDC_OUTPUT_QUICK
+Quick summary.
+
+.Topic IDH_IDC_OUTPUT_VERBOSE
+Verbose format (includes tag information for the file).
+
+.>>> CSubstModeEntryDlg <<<
+
+.Topic IDH_IDC_KEYWORD_OPT
+Substitution mode.
+
+.Topic IDH_IDC_KEYWORD_DESC
+Substitution mode description.
+
+.Topic IDH_IDC_BROWSE_KEYWORD
+Click to display the list of available substitution modes.
+
+.>>> CTag_MAIN - see CRtag_MAIN <<<
+
+.Topic IDH_IDC_CHECK_UNMODIFIED
+Check that the files are unmodified before tagging.
+
+.>>> CUpdateMain <<<
+
+.Topic IDH_IDC_CREATE_MISSING_DIR
+Build directories, like checkout does.
+
+.Topic IDH_IDC_GET_CLEAN_COPY
+Overwrite locally modified files with clean repository copies.
+
+.>>> CUpdateOptions <<<
+
+.Topic IDH_IDC_RESET_STICKY
+Reset any sticky tags/date/kopts.
+
+.Topic IDH_IDC_STDOUT
+Send result to standard output (avoids stickiness).
+
+.Topic IDH_IDC_CASE_SENSITIVE_NAMES
+Select between conflicting case sensitive names.
+
+.Topic IDH_IDC_LAST_CHECKIN_TIME
+Update using last checkin time.
+
+.>>> CUpdateMerge <<<
+
+.Topic IDH_IDC_MERGE_TYPE
+Merge type.
+
+.Topic IDH_IDC_THREE_WAY_CONFLICTS
+Produce 3-way conflicts.
+
+.Topic IDH_IDC_BRANCHPOINT_MERGE
+Perform merge from branch point.
+
+.>>> CRemoveMain <<<
+
+.Topic IDH_IDC_FILES_REMOVAL_TYPE
+Files removal type.
+
+.

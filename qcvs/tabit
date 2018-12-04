@@ -1,0 +1,4 @@
+cat QUpdateTab.cpp | sed s/QUpdate/$1/g >> $1Tab.cpp
+cat QUpdateTab.h | sed s/QUpdate/$1/g >> $1Tab.h
+cat QUpdateTabData.cpp | sed s/QUpdate/$1/g >> $1TabData.cpp
+cat QUpdateTabData.h | sed s/QUpdate/$1/g >> $1TabData.h

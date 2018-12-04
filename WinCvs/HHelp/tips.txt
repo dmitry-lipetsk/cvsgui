@@ -1,0 +1,27 @@
+Learn more about CVS at http://www.cvshome.org.
+If you have any questions about CVS, the best place to ask is the CVSNT or CVS mailing list. See http://www.cvsnt.org and http://www.cvshome.org.
+Before using WinCvs, you should have read the CVS documentation.
+To take full advantage of WinCvs, update your server and client to a recent CVSNT version.
+Read the Output window - you can learn how to use CVS as a command line tool.
+Never experiment with new CVS commands on your working repository. Create a sample module instead.
+Having the CVS repository backed-up every day is a good idea...
+The CVS documentation explains in detail about branching and merging.
+You can use TCP/IP compression if you have a slow modem connection.
+You can easily visualize the history of a file using the "Graph selected" command.
+It is easier to customize the behaviour of CVS if you use a CVSNT server.
+To customize the CVS server remotely, check out the standard module "CVSROOT".
+CVS is outstanding for tracking and customizing third-party source code or libraries. This is explained in "Tracking sources" under "CVS Documentation" in the help menu.
+You cannot remove a folder: use the "prune" option instead.
+Importing a new module requires some skill: WinCvs is designed to make it easier.
+You can open a file directly from WinCvs by double-clicking on it. You can customize this feature by pressing the Shift key.
+In the "Graph view" window, you can compare revisions using an external diff program (as set in the preferences).
+You can switch between the Output window and a Graph window using Ctrl+Tab.
+You can reload a view by using 'F5'.
+You can open-up an explorer view by using 'F2'.
+Install CvsWeb or CvsView on your CVS server, then you can browse the source code in the repository with your web browser.
+If you run WinCvs with a file or directory name as a command line argument, then WinCvs will locate and select it for you so you can operate on it right away.
+If you create a shortcut to WinCvs.exe in the 'Send To' folder inside your Windows folder then you can invoke WinCvs from the Windows Explorer context menu.
+Combo boxes that contain the previously used items list support the items deletion - just press a Del key while the items list is dropped down.
+Lock command is deprecated. You can use "reserved edits" to aid editing of the files that are hard or impossible to merge.
+You can browse for modules on the server using the browse button next to the module name edit box. If your server supports "cvs ls" command (e.g. CVSNT server) you can also browse for files and directories.
+You can browse for tags or branches using the browse button next to the revision/tag/branch edit box.

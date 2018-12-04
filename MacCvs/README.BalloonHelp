@@ -1,0 +1,48 @@
+Comments about the BalloonHelp
+------------------------------
+
+Date: November 6th, 1998
+
+Note: BalloonHelp are not finished.  They are mostly done, but still miss some
+      retouching at some places.
+      The AUMBalloon (UnderMouse balloon) are a bit buggy...
+      I'll look into it later.
+
+I decided to let 2 strings in the string list for every button.  It permits a 
+little more freedom in case we decide to add a different text for disabled
+buttons.
+
+I also decided to begin the STR# indexes at 5000.  That way, we won't conflict 
+with the normal application strings (which currently was the case).
+
+I tried to use a convention: the STR# ID is: 5000 + [ID of the PP view]
+For example, since the "Browser Window" ID is 140 in Constructor, the associated 
+BalloonHelp STR# related ID will be 5000 + 140 = 5140 !
+The problem is I didn't mind for the local STR# number, so that might be 
+spaghetti!!! =(
+I did try to add them logically, though!
+
+(I chose 5000 because I didn't want to conflict with any others, and because 
+beginning at 1000, as I first did, gave me troubles when I learned prefs started 
+at 2000, which gave 3000, same as Dlog...  Henceforth, I had to start higher)
+
+
+Menu-related STR# should begin at 2000, and Dlog-related, at 3000.
+(those last numbers were generated automatically by Balloony...)
+I comment out some portions (with #if 0 ... #endif) but there are many left 
+dangling uselessly...  I'll clean it up when I'm sure none will be used!
+
+
+
+BalloonHelp for the PowerPlant widgets were made with the use of ABalloon 1.3,
+created by James W. Walker.
+<http://members.aol.com/jwwalker/pages/codes.html>
+
+BalloonHelp for the menus were devised using Balloony, by David Phillip Oster.
+<ftp://ftp.apple.com/developer/Tool_Chest/Toolbox/Balloony.hqx>
+
+
+
+
+Jocelyn Houle
+houlejo@iro.umontreal.ca

@@ -1,0 +1,10 @@
+- This is the cvstree library which allows to parse the cvs log output.
+Look at CvsLog.h to get an idea of how the API works.
+
+- The yacc/lexer have a suffix .yy/.ll because automake will automatically
+generate parser.cc and lexer.cc to be used with a C++ compiler. Because the
+".cc" extension may be a problem, parser.cpp and lexer.cpp are provided and
+will include parser.cc and lexer.cc.
+
+- *.dsp are the M$ VisualC++ projects. The compat folder is provided for
+VisualC++ which lacks unistd.h.

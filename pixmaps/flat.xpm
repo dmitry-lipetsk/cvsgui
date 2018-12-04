@@ -1,0 +1,21 @@
+/* XPM */
+static char * test_xpm[] = {
+"16 15 2 1",
+"b	c None",
+".	c #000000",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb",
+"bb.....bbbbbbbbb",
+"bb......bbb.bbbb",
+"bb.......b..bbbb",
+"bbbbbbb.....bbbb",
+"bbbbbb......bbbb",
+"bbbbbb......bbbb",
+"bbbbb.......bbbb",
+"bbbb........bbbb",
+"bbbbbbbb....bbbb",
+"bbbbbbbbbbbbbbbb",
+"bbbbbbbbbbbbbbbb"
+};

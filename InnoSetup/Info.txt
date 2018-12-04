@@ -1,0 +1,21 @@
+Welcome to WinCvs, a graphical front-end for Concurent Versions System (CVS).
+
+You can find more information about WinCvs at:
+http://www.wincvs.org
+http://cvsgui.sourceforge.net/
+
+You can find more information about CVSNT at:
+http://www.cvsnt.org
+
+You can find more information about cvs at:
+http://www.cvshome.org
+
+If you have any questions, subscribe to the CvsGui mailing list:
+http://groups.yahoo.com/subscribe/cvsgui
+
+You need a recent version of comctl32.dll and comdlg32.dll in order to run WinCvs.
+You can find the latest updates to Common Control Library at:
+http://www.microsoft.com/msdownload/ieplatform/ie/comctrlx86.asp
+
+If you face problems with Run-Time dlls (mfc42.dll, msvcp60.dll or msvcrt.dll) you may try to install the Latest Components for Visual C++ Applications, which can be downloaded from here:
+http://support.microsoft.com/support/kb/articles/Q259/4/03.ASP

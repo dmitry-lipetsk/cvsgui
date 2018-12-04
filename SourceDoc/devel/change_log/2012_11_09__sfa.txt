@@ -1,0 +1,126 @@
+Dirty solution for problem CMfFileDialog and VS2010+Windows 7.
+
+Problem:
+ - Try to select the editor exe file (Menu: Admin->Preferences->WinCVS).
+
+My results on Win7 SP1 x64:
+ - WinCVS 32bit [VS2010 build] not works
+ - WinCVS 64bit [VS2010 build] generates AV
+
+Solution:
+ - do not use CommDlg_OpenSave_GetSpec, CommDlg_OpenSave_GetFolderPath
+
+Source code was tested with
+ - VC6SP5, Platform SDK 2003
+ - VS2010 SP1+, Platform SDK 7.0A
+
+VS2010 binaries was tested with
+ - XP-SP2
+ - Windows 7 SP1
+
+VC6SP5 binaries was tested with
+ - XP-SP2
+ - Windows 7 SP1
+
+[Source]
+
+WinCvs\MfFileDialog.h(cpp)
+ - CPathBuffer
+   - [add] private copy constructor/operator
+   - [add] void Set(const CString& s);
+
+ - CMfFileDialog::DoModal
+   - [add] todo for OFN_ALLOWMULTISELECT
+      - seem, this code works incorrectly
+
+ - CMfFileDialog::OnFileNameChange
+   - [use] this->GetFileName(), this->GetFolderPath()
+     instead CommDlg_OpenSave_GetSpec, CommDlg_OpenSave_GetFolderPath
+
+     reason: [VS2010, Win7] this->GetParent() always returns NULL....
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Fix the problem with file name for "WinCvs Console Output"
+ - template should be defined in m_strTitle, not in m_strPathName
+
+[Source]
+
+WinCvs\wincvsDoc.h(cpp)
+ - CWincvsDoc
+   - [add] DoSave
+
+   - SetTitle
+     - Not changes m_strFileName
+     - TODO: remove this method
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CJLib [CCJToolBar]
+ - using explicit compare of LRESULT with (0/FALSE) for reducing a number of warnings in compile process [VS2010]
+
+[Source]
+
+Include\CJToolBar.h
+ - CCJToolBar
+   - EnableButton [TB_ENABLEBUTTON]
+   - CheckButton [TB_CHECKBUTTON]
+   - PressButton [TB_PRESSBUTTON]
+   - HideButton [TB_HIDEBUTTON]
+   - Indeterminate [TB_INDETERMINATE]
+   - SetState [TB_SETSTATE]
+   - AddButtons [TB_ADDBUTTONS]
+   - InsertButton [TB_INSERTBUTTON]
+   - DeleteButton [TB_DELETEBUTTON]
+   - SetButtonSize [TB_SETBUTTONSIZE]
+   - SetBitmapSize [TB_SETBITMAPSIZE]
+   - SetCmdID [TB_SETCMDID]
+     - [use] !=FALSE
+
+   - IsButtonEnabled [TB_ISBUTTONENABLED]
+   - IsButtonChecked [TB_ISBUTTONCHECKED]
+   - IsButtonPressed [TB_ISBUTTONPRESSED]
+   - IsButtonHidden  [TB_ISBUTTONHIDDEN]
+   - IsButtonIndeterminate [TB_ISBUTTONINDETERMINATE]
+   - SetIndent [TB_SETINDENT]
+   - GetRect [TB_GETRECT]
+   - MapAccelerator [TB_MAPACCELERATOR]
+     - [use] !=0
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Update for CJLib [VS2010]
+ - Restore the CX_BORDER=1 and CY_BORDER=1 when we compile in VS2010 (_MFC_VER>=0x0A00)
+
+[Source]
+
+WinCvs\CJLib\CJLibrary\StdAfx.h
+ - [add] define CX_BORDER 1
+ - [add] define CY_BORDER 1
+    - condition: _MFC_VER>=0x0A00
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. Project files for VS2010 [32/64 bits]
+2. InnoSetup scripts for two installers:
+   - for Windows 32bit
+   - for Windows 64bit
+
+[Source]
+
+[add] WinCvs\build\innosetup\info.txt
+[add] WinCvs\build\innosetup\wincvs__common.inc
+[add] WinCvs\build\innosetup\wincvs__win32bit.iss
+[add] WinCvs\build\innosetup\wincvs__win64bit.iss
+
+[add] WinCvs\build\vc10\CJLibrary.def
+[add] WinCvs\build\vc10\CJLibrary.vcxproj
+[add] WinCvs\build\vc10\CJLibrary.vcxproj.filters
+[add] WinCvs\build\vc10\__rules_for_compile.txt
+[add] WinCvs\build\vc10\cvstree.vcxproj
+[add] WinCvs\build\vc10\cvstree.vcxproj.filters
+[add] WinCvs\build\vc10\wincvs.sln
+[add] WinCvs\build\vc10\wincvs.vcxproj
+[add] WinCvs\build\vc10\wincvs.vcxproj.filters
+
+Go!

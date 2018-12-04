@@ -1,0 +1,26 @@
+* Data
+*.Lib
+*.MAP
+*.SYM
+*.dbg
+*.dbg.macho
+*.hqx
+*.idb
+*.in
+*.lib
+*.pyc
+*.pyo
+*.rel.macho
+*.slb
+*.xMAP
+*.xSYM
+.#*
+.DS_Store
+.gdb_history
+CVS
+Makefile
+Makefile.am
+Makefile.in
+cvstree.dsp
+cvstree.mak
+cvstree_vc5.dsp

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=gcvs
+Comment=gCvs is a GTK+ interface for CVS (Concurrent Version System)
+Exec=gcvs
+Icon=@PACKAGE_PIXMAPS_DIR@/gcvs_icon.bmp
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Application;Development;

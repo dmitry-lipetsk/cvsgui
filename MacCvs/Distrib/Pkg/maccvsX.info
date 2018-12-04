@@ -1,0 +1,15 @@
+Title MacCvsX
+Version 3.3.a1
+Description The Cvs Interface for MacOSX by CvsGui
+DefaultLocation /
+DeleteWarning
+
+### Package Flags
+
+NeedsAuthorization YES
+Required NO
+Relocatable NO
+RequiresReboot NO
+UseUserMask NO
+OverwritePermissions NO
+InstallFat NO

@@ -1,0 +1,1386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2004-02-24 11:39+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-15\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: common/AppGlue.cpp:141
+#, c-format
+msgid ""
+"\n"
+"***** CVS exited normally with code %d *****\n"
+"\n"
+msgstr ""
+
+#: common/AppGlue.cpp:312
+#, c-format
+msgid "MacCvs: Cannot extract login from cvsroot %s !\n"
+msgstr ""
+
+#: common/AppGlue.cpp:341
+msgid "Enter the password:"
+msgstr ""
+
+#: common/AppGlue.cpp:366
+msgid "CVS is requiring you to answer yes or no."
+msgstr ""
+
+#: common/AppGlue.cpp:366
+msgid "(See the console for details)"
+msgstr ""
+
+#: common/AppGlue.cpp:387
+msgid "Select your home directory"
+msgstr ""
+
+#: common/AppGlue.cpp:540
+msgid "Error: CVS is already running !\n"
+msgstr ""
+
+#: common/AppGlue.cpp:572
+#, c-format
+msgid "Unable to find the cvs process in : (error %d)\n"
+msgstr ""
+
+#: common/AppGlue.cpp:632
+#, c-format
+msgid "Unable to initialize the CVS process: %s\n"
+msgstr ""
+
+#: common/AppGlue.cpp:633
+#, c-format
+msgid "The CVS used is : %s\n"
+msgstr ""
+
+#: common/AppGlue.cpp:664
+msgid "testing cvs timed out\n"
+msgstr ""
+
+#: common/AppGlue.cpp:692
+msgid "***** Stopping CVS on user request !!! *****"
+msgstr ""
+
+#: common/AppGlue.cpp:743
+#, c-format
+msgid "Impossible to open the temp file '%s' for write (error %d)"
+msgstr ""
+
+#: common/Authen.cpp:111
+msgid ".rhosts authentication"
+msgstr ""
+
+#: common/Authen.cpp:114
+msgid "password authentication"
+msgstr ""
+
+#: common/Authen.cpp:117
+msgid "kerberos authentication"
+msgstr ""
+
+#: common/Authen.cpp:120
+msgid "local mounted directory"
+msgstr ""
+
+#: common/Authen.cpp:123
+msgid "ssh authentication"
+msgstr ""
+
+#: common/Authen.cpp:126
+msgid "NT server services"
+msgstr ""
+
+#: common/Authen.cpp:129
+msgid "GSSAPI authentication"
+msgstr ""
+
+#: common/Authen.cpp:132
+msgid "sspi authentication"
+msgstr ""
+
+#: common/Authen.cpp:135
+msgid "server authentication"
+msgstr ""
+
+#: common/Authen.cpp:141
+msgid " using a proxy"
+msgstr ""
+
+#: common/Authen.cpp:231
+#, c-format
+msgid "Unknown authentication kind '%s'\n"
+msgstr ""
+
+#. default to local
+#: common/Authen.cpp:411
+#, c-format
+msgid "Unknown authentication kind %d\n"
+msgstr ""
+
+#: common/Authen.cpp:627
+msgid "Select the RSA identity file"
+msgstr ""
+
+#: common/Authen.cpp:664
+msgid "Select SSH"
+msgstr ""
+
+#: common/Authen.cpp:690
+msgid ""
+"* Some Cygwin/OpenSSH options :\n"
+"-v : Verbose mode\n"
+"-C : Request compression\n"
+"-1 : Forces ssh to try protocol version 1 only\n"
+"-2 : Forces ssh to try protocol version 2 only\n"
+"-4 : Forces ssh to use IPv4 addresses only\n"
+"-6 : Forces ssh to use IPv6 addresses only"
+msgstr ""
+
+#: common/Authen.cpp:776 common/Authen.cpp:784
+msgid "Using "
+msgstr ""
+
+#: common/Authen.cpp:1040 common/Authen.cpp:1258
+msgid "Using default port and "
+msgstr ""
+
+#: common/Authen.cpp:1042 common/Authen.cpp:1260 common/Authen.cpp:1457
+msgid "Using port "
+msgstr ""
+
+#: common/Authen.cpp:1042 common/Authen.cpp:1260
+msgid " and "
+msgstr ""
+
+#: common/Authen.cpp:1045
+msgid "no proxy"
+msgstr ""
+
+#: common/Authen.cpp:1047
+msgid "using proxy host "
+msgstr ""
+
+#: common/Authen.cpp:1047
+msgid " with port "
+msgstr ""
+
+#: common/Authen.cpp:1263
+msgid "default shell name"
+msgstr ""
+
+#: common/Authen.cpp:1265
+msgid "shell named "
+msgstr ""
+
+#: common/Authen.cpp:1455
+msgid "Using default port"
+msgstr ""
+
+#: common/Authen.cpp:1514 common/Authen.cpp:1611
+msgid "Encryption turned on"
+msgstr ""
+
+#: common/Authen.cpp:1516 common/Authen.cpp:1613
+msgid "Encryption turned off"
+msgstr ""
+
+#: common/CvsAlert.cpp:54
+msgid "WinCvs Alert"
+msgstr ""
+
+#: common/CvsAlert.cpp:60
+msgid "gCvs Alert"
+msgstr ""
+
+#: common/CvsCommands.cpp:161
+msgid ""
+"Logging in is required for 'pserver' or 'sspi' authentication only (see "
+"Preferences dialog).\n"
+"Please consult the CVS manual for more details.\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:167
+msgid "Making automatic logout:\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:198
+msgid ""
+"Logging out is required for 'pserver' or 'sspi' authentication only (see "
+"Preferences dialog).\n"
+"Please consult the CVS manual for more details.\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:1171
+msgid "Do you want to continue?"
+msgstr ""
+
+#: common/CvsCommands.cpp:1171
+msgid ""
+"Some problems have been found while adding files and should be corrected. "
+"See the console window for details."
+msgstr ""
+
+#: common/CvsCommands.cpp:1190 common/CvsCommands.cpp:1670
+#, c-format
+msgid "Unable to convert path name '%s'\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:1864
+msgid "Are you sure you want to move the selected files to the trash?"
+msgstr ""
+
+#: common/CvsCommands.cpp:1865
+msgid ""
+"The files will be moved into the trash just as if you deleted them from the "
+"Finder."
+msgstr ""
+
+#: common/CvsCommands.cpp:1868
+msgid "Are you sure you want to move the selected files to the recycle bin?"
+msgstr ""
+
+#: common/CvsCommands.cpp:1870
+msgid "Are you sure you want to remove the selected files?"
+msgstr ""
+
+#. HINT for translate: "Unable to remove '<FILE>' (error <ERROR>)\n"
+#: common/CvsCommands.cpp:1903
+msgid "Unable to remove '"
+msgstr ""
+
+#: common/CvsCommands.cpp:1903
+msgid "' (error "
+msgstr ""
+
+#: common/CvsCommands.cpp:1911
+msgid "' has been moved successfully to the trash ...\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:1913
+msgid "' has been moved successfully to the recycle bin ...\n"
+msgstr ""
+
+#: common/CvsCommands.cpp:1915
+msgid "' has been removed successfully ...\n"
+msgstr ""
+
+#: common/CvsEntries.cpp:80
+msgid "Text"
+msgstr ""
+
+#: common/CvsEntries.cpp:81
+msgid "Binary"
+msgstr ""
+
+#: common/CvsEntries.cpp:82
+msgid "Unicode"
+msgstr ""
+
+#: common/CvsEntries.cpp:84
+msgid "Ignored"
+msgstr ""
+
+#: common/CvsEntries.cpp:85
+msgid "Unknown"
+msgstr ""
+
+#: common/CvsEntries.cpp:86 common/CvsEntries.h:95
+msgid "Conflict"
+msgstr ""
+
+#: common/CvsEntries.cpp:87
+msgid "Resolved"
+msgstr ""
+
+#: common/CvsEntries.cpp:88
+msgid "Modified"
+msgstr ""
+
+#: common/CvsEntries.cpp:89
+msgid "Removed"
+msgstr ""
+
+#: common/CvsEntries.cpp:90
+msgid "Missing"
+msgstr ""
+
+#: common/ImportFilter.cpp:265
+msgid "Continue importing?"
+msgstr ""
+
+#: common/UCvsFiles.cpp:1209
+msgid "Edit with "
+msgstr ""
+
+#: common/UCvsFiles.cpp:1498 common/UCvsFolders.cpp:1155
+#, c-format
+msgid "Unable to explore '%s' (error %d)\n"
+msgstr ""
+
+#: common/UCvsFolders.cpp:888
+#, c-format
+msgid "Cannot access directory '%s' (error %d)\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:159
+msgid "Cvs is currently running. Are you sure you want to quit ?"
+msgstr ""
+
+#: common/UCvsFrame.cpp:177
+msgid "Select a folder to open with the browser"
+msgstr ""
+
+#: common/UCvsFrame.cpp:220
+#, c-format
+msgid ""
+"\n"
+"Both %s and CVS are distributed under the terms of\n"
+"the GNU General Public License (GPL).\n"
+"\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:222
+#, c-format
+msgid "* %s : maintained by Alexandre Parenteau (aubonbeurre@hotmail.com)\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:223
+msgid "* CVS : Copyright  1989-1998 Brian Berliner, david d `zoo' zuhn,\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:224
+msgid "        Jeff Polk, and other authors\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:230
+msgid "* ABalloon : Freeware of James W. Walker (jwwalker@kagi.com)\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:236
+#, c-format
+msgid ""
+"* WinCvs documentation : Copyright %c 1999 Don Harper <don@lamrc.com>.\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:237
+msgid "* CJLIB : Copyright  1998-99 Kirk Stowell <kstowell@codejockeys.com>\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:238
+msgid "* MFC : Copyright  1992-1997 Microsoft Corporation\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:240
+msgid "* Kerberos : Copyright  1997 Massachusetts Institute of Technology\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:241
+msgid "* TCL : Copyright  Sun Microsystems Inc.\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:242
+msgid ""
+"\n"
+"Some others copyrights may apply, check the source code for details.\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:252
+#, c-format
+msgid ""
+"\n"
+"%s %s - Client/Local\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:254
+#, c-format
+msgid ""
+"\n"
+"%s %s - Client\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:256
+#, c-format
+msgid "%s is maintained by Alexandre Parenteau\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:257
+msgid ""
+"- WinCvs/MacCvs/gcvs page : http://www.wincvs.org or http://cvsgui."
+"sourceforge.net/\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:258
+msgid "- cvs page : http://www.cvshome.org\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:260
+msgid "- WinCvs documentation : Don Harper <don@lamrc.com>.\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:261
+msgid "- WinHelp cvs documentation : Norbert Klamann.\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:264
+msgid "- Mac port :\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:268
+msgid "- With contributions of :\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:273
+msgid "- Special thanks to :\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:274
+msgid ""
+"\t* Gary Bringhurst from C3D Digital who gives me time, resources,\n"
+"\t  help and ideas for doing this project (http://www.3d.com)\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:276
+msgid ""
+"\t* The Freeware community for providing cvs, Linux, Perl, GTK, gcc\n"
+"\t  and so many others valuables tools\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:278
+msgid ""
+"\t* The users of the CvsGui project (WinCvs, MacCvs, gcvs) who have\n"
+"\t  defined all the functionnalities and help every day to enhance it\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:280
+msgid "- Cvs contributors :\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:281
+msgid "\t* Too many to be listed here, see the 'ChangeLog' instead !\n"
+msgstr ""
+
+#: common/UCvsFrame.cpp:350
+msgid ""
+"***** CVS stopped on user request !!! *****\n"
+"\n"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:60
+msgid "&File"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:61
+msgid "&Save\tCtrl+S"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:62
+msgid "Save &As..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:64
+msgid "&Print...\tCtrl+P"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:65
+msgid "Print Pre&view"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:66
+msgid "P&rint Setup..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:68
+msgid "Sen&d..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:70
+msgid "E&xit\tCtrl+Q"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:72
+msgid "&Edit"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:73
+msgid "&Undo\tCtrl+Z"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:75
+msgid "Cu&t\tCtrl+X"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:76
+msgid "&Copy\tCtrl+C"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:77
+msgid "&Paste\tCtrl+V"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:79
+msgid "Select &All\tCtrl+A"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:80
+msgid "&Erase all"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:82
+msgid "&Find...\tCtrl+F"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:83
+msgid "Find next\tF3"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:85
+msgid "F&ont..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:87
+msgid "&View"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:88
+msgid "&Toolbar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:89
+msgid "&Status Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:90
+msgid "&Browser Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:91
+msgid "&Files Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:92
+msgid "&Multi-Users Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:93
+msgid "T&ags Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:94
+msgid "&Console Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:95
+msgid "&Workspace Bar"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:97
+msgid "Change browser &location..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:98
+msgid "S&ave settings for location..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:100
+msgid "&Admin"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:101
+msgid "Pr&eferences...\tCtrl+F1"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:102
+msgid "&Command Line..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:104
+msgid "&Login..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:105
+msgid "Lo&gout"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:107
+msgid "&Stop cvs"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:108
+msgid "Macros admin"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:114
+msgid "&Remote"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:115
+msgid "&Create a new repository..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:117
+msgid "Import module..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:118
+msgid "Checkout module..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:120
+msgid "&Create a tag by module..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:121
+msgid "&Delete a tag by module..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:122
+msgid "Create a &branch by module..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:124
+msgid "&Modify"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:125
+msgid "&Update selection...\tCtrl+U"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:126
+msgid "Co&mmit selection...\tCtrl+M"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:128
+msgid "&Add selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:129
+msgid "Add selection binar&y"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:130
+msgid "&Remove selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:132
+msgid "Erase &selection\tCtrl+Backspace"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:134
+msgid "&Create a tag on selection..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:135
+msgid "&Delete a tag on selection..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:136
+msgid "Create a &branch on selection..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:138
+msgid "&Query"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:139
+msgid "E&xplore selection\tF2"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:140
+msgid "&Query Update\tF4"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:141
+msgid "R&eload view\tF5"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:143
+msgid "View selection\tF7"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:144
+msgid "View default"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:146
+msgid "&Diff selection\tCtrl+D"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:147
+msgid "&Log selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:148
+msgid "Status sele&ction"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:149
+msgid "Graph selection\tCtrl+G"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:151
+msgid "&Trace"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:152
+msgid "Lock selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:153
+msgid "Unlock selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:154
+msgid "Edit selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:155
+msgid "Reserved edit selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:156
+msgid "Unedit selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:157
+msgid "Add a Watch on selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:158
+msgid "Remove a watch from selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:160
+msgid "Release selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:162
+msgid "Watchers of selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:163
+msgid "Editors of selection"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:165
+msgid "Macro&s"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:171
+msgid "&Window"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:172
+msgid "&Cascade"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:173
+msgid "&Tile"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:174
+msgid "&Arrange Icons"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:176
+msgid "&Help"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:177
+msgid "&Help Topics"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:178
+msgid "Help on cvs-1.10"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:179
+msgid "Help on cvs client"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:181
+msgid "&Credits"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:182
+msgid "C&opyrights"
+msgstr ""
+
+#: common/UCvsMenubar.cpp:185
+msgid "&About wincvs..."
+msgstr ""
+
+#: common/UCvsMenubar.cpp:188
+msgid "&About gcvs..."
+msgstr ""
+
+#: common/UCvsToolbar.cpp:67
+msgid ""
+"Update the selected items, changes your disk only\n"
+"Update selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:74
+msgid ""
+"Commit the selected items, changes the remote repository\n"
+"Commit selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:81
+msgid ""
+"Stop when cvs is running...\n"
+"Stop cvs..."
+msgstr ""
+
+#: common/UCvsToolbar.cpp:88
+msgid ""
+"Open an explorer window for this selection\n"
+"Explore selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:95
+msgid ""
+"Go to the upper folder and refresh\n"
+"Up one level"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:102
+msgid ""
+"Print the differences with the CVS remote repository\n"
+"Diff selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:109
+msgid ""
+"Print the history of the selected files\n"
+"Log selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:116
+msgid ""
+"Print the current status of the selected files\n"
+"Status selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:123
+msgid ""
+"Print the history as a graph of the selected files\n"
+"Graph selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:130
+msgid ""
+"Erase the selection from your disk\n"
+"Erase selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:137
+msgid ""
+"Add the selected items to the remote CVS repository\n"
+"Add selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:144
+msgid ""
+"Add the selected binary items to the remote CVS repository\n"
+"Add selected binary"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:151
+msgid ""
+"Remove the selected items to the remote CVS repository\n"
+"Remove selected"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:158
+msgid ""
+"Create/move a tag on the selection\n"
+"Tag selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:165
+msgid ""
+"Remove a tag on the selection\n"
+"Untag selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:172
+msgid ""
+"Open (fork) a branch on the selection\n"
+"Fork selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:179
+msgid ""
+"Lock the selected file on the remote repository until next commit\n"
+"Lock selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:186
+msgid ""
+"Unlock the selected file on the remote repository\n"
+"Unlock selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:193
+msgid ""
+"Put a watch on the selected files\n"
+"Watch selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:200
+msgid ""
+"Release a watch on the selected files\n"
+"Release watch selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:207
+msgid ""
+"Edit the selected files\n"
+"Edit selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:214
+msgid ""
+"Reserved edit the selected files\n"
+"Reserve edit selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:221
+msgid ""
+"Unedit the selected files\n"
+"Unedit selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:228
+msgid ""
+"Release the selected files\n"
+"Release selection"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:296
+msgid "view recursive"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:302
+msgid "Enter file mask(s) of files to display"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:310
+msgid "view modified files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:318
+msgid "view changed files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:326
+msgid "view added files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:334
+msgid "view removed files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:342
+msgid "view conflict files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:350
+msgid "view unknown files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:358
+msgid "hide unknown files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:366
+msgid "view only missing files"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:374
+msgid ""
+"View or hide the cvs ignored files\n"
+"Ignore switch"
+msgstr ""
+
+#: common/UCvsToolbar.cpp:382
+msgid ""
+"Refresh the views, updating the contents\n"
+"Refresh view"
+msgstr ""
+
+#: common/UpdateDlg.cpp:865
+msgid "Update settings"
+msgstr ""
+
+#: common/SmartComboBox.cpp:149
+msgid "Do you want to remove item from the list?"
+msgstr ""
+
+#: rf/ustr.cpp:198
+#, c-format
+msgid "Unable to locate the preferences folder (error %d) !\n"
+msgstr ""
+
+#: rf/ustr.cpp:209
+#, c-format
+msgid "Unable to access '%s' (error %d) !\n"
+msgstr ""
+
+#: rf/ustr.cpp:248
+#, c-format
+msgid "Time out to access '%s' !\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:143
+msgid "The external diff program is not defined.\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:144
+msgid "You need to set it in the preferences dialog.\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:212
+#, c-format
+msgid "Unable to open '%s' (%s), using console instead\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:273
+#, c-format
+msgid "Unable to open '%s' (error %d), using editor instead\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:334
+#, c-format
+msgid "Unable to open '%s' (error %d), using default editor instead\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:398
+#, c-format
+msgid "Unable to open '%s' (error %ld), using default editor instead\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:428
+msgid "You need to define a default editor in the preferences\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:519
+#, c-format
+msgid ""
+"Unable to find your default viewer '%s' (error %ld), will use default text "
+"editor.\n"
+msgstr ""
+
+#: common/LaunchHandlers.cpp:536
+#, c-format
+msgid "Unable to open '%s' (error %ld) with default editor '%s'.\n"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1081 common/ItemListDlg.cpp:2682
+msgid "Action"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1083 common/ItemListDlg.cpp:2691
+msgid "Please wait while retrieving data"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1084 common/ItemListDlg.cpp:2695
+msgid "You can press Stop button to cancel the operation"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1094 common/ItemListDlg.cpp:1100
+#: common/ItemListDlg.cpp:2706 common/ItemListDlg.cpp:2713
+msgid "Description"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1101 common/ItemListDlg.cpp:2714
+#: common/CvsEntries.h:93
+msgid "Timestamp"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1106 common/ItemListDlg.cpp:2719
+msgid "Options"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1107 common/ItemListDlg.cpp:2720
+msgid "Directories / Files"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1117 common/ItemListDlg.cpp:2731
+msgid "Information"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1206 common/ItemListDlg.cpp:2459
+msgid "Stop"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1324 common/ItemListDlg.cpp:2763
+msgid "Modules file doesn't contain any modules definitions"
+msgstr ""
+
+#. Show the error in the list control
+#: common/ItemListDlg.cpp:1333 common/ItemListDlg.cpp:2780
+msgid "Command failed:"
+msgstr ""
+
+#: common/ItemListDlg.cpp:1549
+msgid "Stopping..."
+msgstr ""
+
+#. Set windows titles
+#: common/ItemListDlg.cpp:2310
+msgid "Select tag/branch"
+msgstr ""
+
+#: common/ItemListDlg.cpp:2312
+msgid "Recurse"
+msgstr ""
+
+#. Set windows titles
+#: common/ItemListDlg.cpp:2343
+msgid "Select module"
+msgstr ""
+
+#: common/ItemListDlg.cpp:2345
+msgid "List"
+msgstr ""
+
+#: common/ItemListDlg.cpp:2554
+msgid "Please enter more than 1 character for revision/tag"
+msgstr ""
+
+#: common/ItemListDlg.cpp:2566
+msgid "Please enter more than 1 character for date"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:85
+msgid "Move To Trash"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:107
+msgid "Update Move To Trash"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:131
+msgid "Create Tag"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:152
+msgid "Delete Tag"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:173
+msgid "Branch"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:194
+msgid "Edit"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:215
+msgid "Reserved Edit"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:236
+msgid "Force Edit"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:257
+msgid "Unedit"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:278
+msgid "Release"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:296
+msgid "Watchers"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:317
+msgid "Editors"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:338
+msgid "Watch On"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:359
+msgid "Watch Off"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:380 common/BrowseViewHandlers.h:401
+msgid "Diff"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:419
+msgid "Log"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:440
+msgid "Graph"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:465
+msgid "Status"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:486
+msgid "Remove"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:504
+msgid "Lock"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:525
+msgid "Unlock"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:545
+msgid "Add"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:571
+msgid "Add Binary"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:597
+msgid "Add Unicode"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:623
+msgid "Commit"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:644
+msgid "Update"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:665
+msgid "Query Update"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:686 common/BrowseViewHandlers.h:706
+msgid "Annotate"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:725
+msgid "Cancel Changes"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:745
+msgid "Command Line"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:766
+msgid "Import"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:787
+msgid "Checkout"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:808
+msgid "Rtag Create"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:829
+msgid "Rtag Delete"
+msgstr ""
+
+#: common/BrowseViewHandlers.h:850
+msgid "Rtag Branch"
+msgstr ""
+
+#. / Title for OK button
+#: common/CvsAlert.h:43
+msgid "OK"
+msgstr ""
+
+#. / Title for Cancel button
+#: common/CvsAlert.h:46
+msgid "Cancel"
+msgstr ""
+
+#. / Title for Continue button
+#: common/CvsAlert.h:49
+msgid "Continue"
+msgstr ""
+
+#. / Title for Yes button
+#: common/CvsAlert.h:52
+msgid "Yes"
+msgstr ""
+
+#. / Title for No button
+#: common/CvsAlert.h:55
+msgid "No"
+msgstr ""
+
+#. / Title for Delete button
+#: common/CvsAlert.h:58
+msgid "Delete"
+msgstr ""
+
+#: common/CvsEntries.h:79
+msgid "Name"
+msgstr ""
+
+#: common/CvsEntries.h:79
+msgid "Filename"
+msgstr ""
+
+#: common/CvsEntries.h:81
+msgid "Ext"
+msgstr ""
+
+#: common/CvsEntries.h:81
+msgid "Extension"
+msgstr ""
+
+#: common/CvsEntries.h:83
+msgid "Rev."
+msgstr ""
+
+#: common/CvsEntries.h:83
+msgid "Revision"
+msgstr ""
+
+#: common/CvsEntries.h:85
+msgid "Option"
+msgstr ""
+
+#: common/CvsEntries.h:85
+msgid "Keyword Expansion Option"
+msgstr ""
+
+#: common/CvsEntries.h:87
+msgid "State"
+msgstr ""
+
+#: common/CvsEntries.h:89
+msgid "Encoding"
+msgstr ""
+
+#: common/CvsEntries.h:91
+msgid "Tag"
+msgstr ""
+
+#: common/CvsEntries.h:91
+msgid "Sticky Tag"
+msgstr ""
+
+#: common/CvsEntries.h:97
+msgid "Path"
+msgstr ""

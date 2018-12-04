@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\cvstree\CvsLog.cpp" />
+    <ClCompile Include="..\..\..\cvstree\lexer.cpp" />
+    <ClCompile Include="..\..\..\cvstree\parser.cpp" />
+    <ClCompile Include="..\..\..\cvstree\CLogNode_Walker_For_InsertBranchName.cc" />
+    <ClCompile Include="..\..\..\cvstree\CLogNode_Walker_Std.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\cvstree\compat\unistd.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvstree\parser.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvstree\CvsLog.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvstree\common.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvstree\CLogNode_Walker_For_InsertBranchName.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\cvstree\CLogNode_Walker_Std.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{37553e4d-1dec-4e57-9fd3-89af1b00d9bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

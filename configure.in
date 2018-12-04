@@ -1,0 +1,486 @@
+dnl Process this file with autoconf to produce a configure script.
+dnl Created by Anjuta - will be overwritten
+dnl If you don't want it to overwrite it,
+dnl 	Please disable it in the Anjuta project configuration
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(gcvs, 1.1b1)
+AM_CONFIG_HEADER(config.h)
+
+AC_ISC_POSIX
+AC_SUBST(CFLAGS,$CFLAGS)
+AC_SUBST(CXXFLAGS,$CXXFLAGS)
+AC_PROG_CC
+AC_PROG_CXX
+AM_PROG_CC_STDC
+AC_HEADER_STDC
+AM_PROG_LIBTOOL
+
+dnl Pick up the GNOME macros.
+AM_ACLOCAL_INCLUDE(macros)
+
+dnl GNOME macros.
+GNOME_INIT
+GNOME_COMPILE_WARNINGS
+GNOME_X_CHECKS
+
+dnl Checks for programs.
+dnl ***************************************************************************
+dnl
+dnl don't insert any code before this line
+dnl 
+dnl the lines above this are created automatically by anjuta
+dnl
+dnl ***************************************************************************
+
+AC_PATH_PROG(EXTRA_LIBGLADE_CONFIG, libglade-config,no)
+if test x$EXTRA_LIBGLADE_CONFIG = xno; then
+  AC_MSG_ERROR(Couldn't find libglade-config, please install the LibGlade package.)
+fi
+
+dnl Look for yacc (bison) program
+AC_PROG_YACC
+AM_PROG_LEX
+test -n "$YACC" && YACC="$YACC -d"
+
+dnl Initialize xml-i18n-tools
+AM_PROG_XML_I18N_TOOLS
+
+dnl ***************************************************************************
+dnl Check for Gnome XML
+dnl ***************************************************************************
+GNOME_XML_CHECK
+
+dnl dnl ******************************
+dnl dnl GnomePrint checking
+dnl dnl ******************************
+dnl AC_MSG_CHECKING(for GnomePrint libraries >= 0.35)
+dnl if gnome-config --libs print > /dev/null 2>&1; then
+dnl     vers=`gnome-config --modversion print | sed -e "s/gnome-print-//" | \
+dnl         awk 'BEGIN { FS = "."; } { print $1 * 1000 + $2;}'`
+dnl     if test "$vers" -ge 35; then
+dnl         AC_MSG_RESULT(found)
+dnl     else
+dnl         AC_MSG_ERROR(You need at least GNOME print 0.35 for this version of Anjuta)
+dnl     fi
+dnl else
+dnl     AC_MSG_ERROR(Did not find GnomePrint installed)
+dnl fi
+
+AM_PATH_PYTHON
+
+dnl Checks for libraries.
+dnl EXTRA_GNOME_LIBS=`gnome-config --libs zvt vfs print gdk_pixbuf libglade`
+dnl EXTRA_GNOME_CFLAGS=`gnome-config --cflags zvt vfs print gdk_pixbuf libglade`
+EXTRA_GNOME_LIBS=""
+EXTRA_GNOME_CFLAGS=""
+AC_SUBST(EXTRA_GNOME_LIBS)
+AC_SUBST(EXTRA_GNOME_CFLAGS)
+
+dnl Gladen not used, so no need to link orbit
+dnl EXTRA_ORBIT_LIBS=`orbit-config --libs client`
+dnl EXTRA_ORBIT_CFLAGS=`orbit-config --cflags client`
+EXTRA_ORBIT_LIBS=""
+EXTRA_ORBIT_CFLAGS=""
+AC_SUBST(EXTRA_ORBIT_LIBS)
+AC_SUBST(EXTRA_ORBIT_CFLAGS)
+
+dnl check if it is for Mac
+if test $host_os = "darwin6.0"; then
+   echo "Doing MacCvs"     
+else
+   AC_PATH_X
+
+dnl   dnl We only support GTK+ >= 1.2.0 now.
+dnl   AM_PATH_GTK(1.2.0,
+dnl           [LIBS="$LIBS $GTK_LIBS"
+dnl            CFLAGS="$CFLAGS $GTK_CFLAGS  -DqGTK"
+dnl            CPPFLAGS="$CPPFLAGS $GTK_CFLAGS  -DqGTK"],
+dnl            AC_MSG_ERROR(Cannot find GTK: Is gtk-config in path?))
+
+   dnl add gcvs specifix flag
+   test -n "$GTK_CFLAGS" && CFLAGS="$CFLAGS -DqGTK" && CPPFLAGS="$CPPFLAGS -DqGTK"
+
+   dnl could be removed when gnome support is implemented
+   test -n "$GTK_CFLAGS" && LIBS="$LIBS $GTK_LIBS"
+ 
+   dnl Set the c++ and the linker flags
+   CPPFLAGS="$CPPFLAGS -DqUnix"
+   CFLAGS="$CFLAGS -DqUnix"
+ 
+   test -n "$x_includes" && CPPFLAGS="$CPPFLAGS -I$x_includes"
+   test -n "$x_includes" && CFLAGS="$CFLAGS -I$x_includes"
+   test -n "$x_libraries" && LDFLAGS="$LDFLAGS -L$x_libraries"
+fi
+
+dnl TCL
+dnl User specified location of the tcl include
+ac_has_tclinc=no
+ac_has_tcllib=no
+
+dnl some default locations for tcl.h
+prefix_locations="$prefix /usr/local/include /usr/include .."
+exec_prefix_locations="$exec_prefix /usr/local/lib /usr/lib .."
+dnl common tcl folder prefixes
+tcl_versions="tcl8.4 tcl8.3 ."
+
+AC_ARG_WITH(tclinclude, [  --with-tclinclude=DIR          use Tcl 8.x includes from DIR],
+        TCL_INCLUDE_DIR=$withval,
+	[ TCL_INCLUDE_DIR=/usr/include
+		for f in $prefix_locations ; do
+			for t in $tcl_versions ; do
+				if test -r "$f/$t/tcl.h"; then
+					break
+				fi
+			done
+ 
+			dnl if tcl_versions is not nesseccery, remove "." from path
+			if test $t = "."; then
+				t=""
+			fi
+ 
+			if test -r "$f/$t/tcl.h"; then
+				TCL_INCLUDE_DIR=$f/$t
+				dnl AC_MSG_RESULT(setting TCL_INCLUDE_DIR to $TCL_INCLUDE_DIR)
+				break
+			fi
+		done
+	])
+
+
+AC_MSG_CHECKING([for tcl.h])
+if test -f $TCL_INCLUDE_DIR/tcl.h; then 
+	AC_MSG_RESULT($TCL_INCLUDE_DIR/tcl.h)
+	ac_has_tclinc=yes
+else
+	AC_MSG_WARN([Cannot find $TCL_INCLUDE_DIR/tcl.h, try --with-tclinclude=DIR])
+fi
+
+dnl User specified location of the tcl lib
+AC_ARG_WITH(tcllib, [  --with-tcllib=DIR          use Tcl 8.x lib from DIR],
+	TCL_LIB_DIR=$withval,
+ 		[ TCL_LIB_DIR=/usr/lib/
+		for f in $exec_prefix_locations ; do
+			for t in $tcl_versions . ; do
+				if test -r "$f/$t/tclConfig.sh"; then
+					break
+				fi
+			done
+ 
+			dnl if tcl_versions is not nesseccery, remove "." from path
+			if test $t = "."; then
+				t=""
+			fi
+ 
+			if test -r "$f/$t/tclConfig.sh"; then
+				TCL_LIB_DIR=$f/$t
+				dnl AC_MSG_RESULT(setting TCL_LIB_DIR to $TCL_LIB_DIR)
+				break
+			fi
+		done
+	])
+
+
+AC_MSG_CHECKING([for tclConfig.sh])
+if test -f $TCL_LIB_DIR/tclConfig.sh; then 
+	AC_MSG_RESULT($TCL_LIB_DIR/tclConfig.sh)
+	ac_has_tcllib=yes
+else
+	AC_MSG_WARN([Cannot find $TCL_LIB_DIR/tclConfig.sh, try --with-tcllib=DIR])
+fi
+
+HAVE_TCL=0
+TCL_CFLAGS=
+TCL_LIB_SPEC=
+
+if test $ac_has_tclinc = yes -a $ac_has_tcllib = yes ; then
+	HAVE_TCL=1
+
+	file=$TCL_LIB_DIR/tclConfig.sh
+	. $file
+
+	# The variables that we use from tclConfig.sh
+	TCL_CFLAGS=-I$TCL_INCLUDE_DIR $TCL_CFLAGS
+	TCL_LIB_SPEC="$TCL_LIB_SPEC $TCL_LIBS"
+#	TCL_LIB_SPEC="-L$TCL_PACKAGE_PATH -ltcl"
+fi
+
+AC_SUBST(HAVE_TCL)
+AC_SUBST(TCL_CFLAGS)
+AC_SUBST(TCL_LIB_SPEC)
+
+if test $HAVE_TCL = 1; then
+	AC_MSG_RESULT(Using TCL ${TCL_VERSION}${TCL_PATCH_LEVEL})
+else
+	AC_MSG_RESULT(Unable to find TCL, shell will be disabled)
+fi
+
+
+dnl PYTHON
+dnl User specified location of the python include
+ac_has_pyinc=no
+ac_has_pylib=no
+
+PYGTK_REQUIRED=1.99.15
+AC_SUBST(PYGTK_REQUIRED)
+AC_PATH_PROG(PYGTK_CODEGEN, pygtk-codegen-2.0, no)
+AM_PATH_PYTHON([2.2])
+AM_CHECK_PYTHON_HEADERS(,[AC_MSG_ERROR(could not find Python headers)])
+dnl PKG_CHECK_MODULES(PYGTK, pygtk-2.0 >= $PYGTK_REQUIRED)
+AC_SUBST(PYGTK_CFLAGS)
+
+AC_ARG_WITH(pyinclude, [  --with-pyinclude=DIR          use Python 2.2 includes from DIR],
+        PY_INCLUDE_DIR=$withval, PY_INCLUDE_DIR=/usr/include/python)
+
+AC_MSG_CHECKING([for Python.h])
+if test -f $PY_INCLUDE_DIR/Python.h; then 
+	AC_MSG_RESULT($PY_INCLUDE_DIR/Python.h)
+	ac_has_pyinc=yes
+else
+	AC_MSG_WARN([Cannot find $PY_INCLUDE_DIR/Python.h, try --with-pyinclude=DIR])
+fi
+
+dnl User specified location of the python${PYTHON_VERSION}.a lib
+AC_ARG_WITH(pylib, [  --with-pylib=DIR          use Python 2.2 lib from DIR],
+        PY_LIB_DIR=$withval, PY_LIB_DIR=/usr/lib/python${PYTHON_VERSION}/config)
+
+AC_MSG_CHECKING([for libpython${PYTHON_VERSION}.a])
+if test -f $PY_LIB_DIR/libpython${PYTHON_VERSION}.a; then 
+	AC_MSG_RESULT($PY_LIB_DIR/libpython${PYTHON_VERSION}.a)
+	ac_has_pylib=yes
+else
+	AC_MSG_WARN([Cannot find $PY_LIB_DIR/libpython${PYTHON_VERSION}.a, try --with-pylib=DIR])
+fi
+
+HAVE_PYTHON=0
+PYTHON_CFLAGS=
+PYTHON_LIB_SPEC=
+
+if test $ac_has_pyinc = yes -a $ac_has_pylib = yes ; then
+ 	HAVE_PYTHON=1
+
+dnl  	file=$PY_LIB_DIR/tclConfig.sh
+dnl	. $file
+
+	# The variables that we use from tclConfig.sh
+	PYTHON_CFLAGS=-I$PY_INCLUDE_DIR $PYTHON_CFLAGS
+	PYTHON_LIB_SPEC="-L$PY_LIB_DIR -lpython${PYTHON_VERSION} $PTHREAD_LIB -lutil"
+fi
+
+AC_SUBST(HAVE_PYTHON)
+AC_SUBST(PYTHON_CFLAGS)
+AC_SUBST(PYTHON_LIB_SPEC)
+
+if test $HAVE_PYTHON = 1; then
+	AC_MSG_RESULT(Using Python ${PYTHON_VERSION}${PYTHON_PATCH_LEVEL})
+else
+	AC_MSG_RESULT(Unable to find Python, some macros will be disabled)
+fi
+
+
+
+
+dnl Checks for header files.
+dnl AM_WITH_REGEX
+AC_HEADER_STDC
+AC_CHECK_HEADERS(errno.h unistd.h string.h strings.h memory.h utime.h fcntl.h)
+AC_CHECK_HEADERS(get_opt.h limits.h sys/file.h pwd.h sys/param.h sys/select.h)
+AC_CHECK_HEADERS(sys/time.h sys/timeb.h io.h direct.h)
+
+AC_HEADER_SYS_WAIT
+AC_HEADER_STAT
+AC_HEADER_TIME
+AC_HEADER_DIRENT
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_SIGNAL
+AC_TYPE_UID_T
+AC_TYPE_MODE_T
+AC_TYPE_SIZE_T
+AC_TYPE_PID_T
+AC_CHECK_SIZEOF(void *)
+
+dnl Checks for library functions.
+AC_REPLACE_FUNCS(mkdir rename strerror memmove vasprintf)
+
+dnl AC_CHECK_FUNCS(stricmp, have_stricmp=yes,
+dnl 	CHECK_HEADER_DEFINE)
+AC_CHECK_FUNCS(stricmp)
+AC_CHECK_FUNCS(strnicmp)
+AC_CHECK_FUNCS(mktemp)
+AC_CHECK_FUNCS(putenv)
+AC_CHECK_FUNCS(vprintf)
+AC_CHECK_FUNCS(tempnam)
+
+dnl Checks for Additional stuffs.
+AH_TEMPLATE(DYNAMIC_LINKING, Define if you want support for dynamic linking.)
+AH_TEMPLATE(USCORE, Define if symbol tables on this system use leading underscores.)
+AH_TEMPLATE(DLSYM_ADDS_USCORE, Define if dlsym automatically supplies a leading underscore.)
+AH_TEMPLATE(FD_SETTER, How can you violate a stdio abstraction by setting a stream's fd?)
+AH_TEMPLATE(HAVE_LIBSM,)
+
+AH_TEMPLATE(PACKAGE_DATA_DIR, the packages data locations)
+AH_TEMPLATE(PACKAGE_SOURCE_DIR, the packages source locations)
+AH_TEMPLATE(PACKAGE_DOC_DIR, the packages doc locations)
+AH_TEMPLATE(PACKAGE_HELP_DIR, the packages help locations)
+AH_TEMPLATE(PACKAGE_LOCALE_DIR, the packages locale locations)
+AH_TEMPLATE(PACKAGE_MENU_DIR, the packages menu locations)
+AH_TEMPLATE(PACKAGE_PIXMAPS_DIR, the packages pixmaps locations)
+
+AC_ARG_ENABLE(debug, 
+	[  --enable-debug          Enable debug messages],
+      CFLAGS="$CFLAGS -DDEBUG -O0 -g"
+      CXXFLAGS="$CXXFLAGS -DDEBUG -O0 -g")
+
+AC_ARG_ENABLE(profil, 
+	[  --enable-profil         Enable profiling], 
+       CFLAGS="$CFLAGS -pg"
+       CXXFLAGS="$CXXFLAGS -pg")
+dnl      CFLAGS="$CFLAGS -pg -ftest-coverage -fprofile-arcs"
+dnl      CXXFLAGS="$CXXFLAGS -pg -ftest-coverage -fprofile-arcs")
+
+dnl Enable debugging mode
+AC_ARG_ENABLE(qCvsDebug, 
+	[  --enable-qCvsDebug      Enable gCvs debug messages],
+	[case "${enableval}" in
+		yes) qCvsDebug=true ;;
+		no)  qCvsDebug=false ;;
+		*) AC_MSG_ERROR(bad value ${enableval} for --enable-qCvsDebug) ;;
+	esac], [qCvsDebug=no])
+
+dnl M_CONDITIONAL(GCVSDEBUG, test x$qCvsDebug = xtrue)
+
+if test "$qCvsDebug" != true; then
+  CXXFLAGS="$CXXFLAGS -DqCvsDebug=0"
+  CFLAGS="$CFLAGS -DqCvsDebug=0"
+else
+  CXXFLAGS="$CXXFLAGS -DqCvsDebug=1"
+  CFLAGS="$CFLAGS -DqCvsDebug=1"
+fi
+
+dnl Enable stripped and optimized release builds
+AC_ARG_ENABLE(final,
+      [  --enable-final          Build release executables (GCC only)],
+      if test "x$GCC" != xyes; then
+        CFLAGS="$CFLAGS -DNDEBUG -Os -s"
+        CXXFLAGS="$CXXFLAGS -DNDEBUG -Os -s -fno-exceptions -fno-check-new"
+      fi)
+
+dnl Enable compiler warnings
+AC_ARG_ENABLE(warnings,
+      [  --enable-warnings       Enable compiler warnings (GCC only)],
+      if test "x$GCC" != xyes; then
+        CFLAGS="$CFLAGS -Wall -Wmissing-prototypes -Wmissing-declarations -Wparentheses -Wpointer-arith"
+        CXXFLAGS="$CXXFLAGS -Wall -Wparentheses -Wpointer-arith"
+      fi)
+
+dnl add call for cvs-1.10/autogen.sh
+dnl AC_CONFIG_SUBDIRS(cvs-1.10)
+
+dnl ***************************************************************************
+dnl
+dnl don't insert any code below this line
+dnl
+dnl the lines after this are created automatically by anjuta
+dnl
+dnl ***************************************************************************
+
+GETTEXT_PACKAGE=gcvs
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Package name for gettext])
+
+
+dnl Languages which your application supports
+ALL_LINGUAS="de en_GB"
+AM_GNU_GETTEXT
+AM_GNU_GETTEXT_VERSION(0.10.40)
+
+dnl Set PACKAGE_LOCALE_DIR in config.h.
+if test "x${prefix}" = "xNONE"; then
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${ac_default_prefix}/${DATADIRNAME}/locale")
+else
+  AC_DEFINE_UNQUOTED(PACKAGE_LOCALE_DIR, "${prefix}/${DATADIRNAME}/locale")
+fi
+
+
+dnl Set PACKAGE SOURCE DIR in config.h.
+packagesrcdir=`cd $srcdir && pwd`
+
+dnl Set PACKAGE PREFIX
+if test "x${prefix}" = "xNONE"; then
+  packageprefix=${ac_default_prefix}
+else
+  packageprefix=${prefix}
+fi
+
+dnl Set PACKAGE DATA & DOC DIR
+packagedatadir=share/${PACKAGE}
+packagedocdir=doc/${PACKAGE}
+
+dnl Set PACKAGE DIRs in config.h.
+packagepixmapsdir=share/pixmaps/${PACKAGE}
+packagehelpdir=share/gnome/help/${PACKAGE}
+packagemenudir=share/gnome/apps
+
+dnl Subst PACKAGE_DATA_DIR.
+NO_PREFIX_PACKAGE_DATA_DIR="${packagedatadir}"
+AC_SUBST(NO_PREFIX_PACKAGE_DATA_DIR)
+PACKAGE_DATA_DIR="${packageprefix}/${packagedatadir}"
+AC_SUBST(PACKAGE_DATA_DIR)
+
+dnl Subst PACKAGE_DOC_DIR.
+NO_PREFIX_PACKAGE_DOC_DIR="${packagedocdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_DOC_DIR)
+PACKAGE_DOC_DIR="${packageprefix}/${packagedocdir}"
+AC_SUBST(PACKAGE_DOC_DIR)
+
+dnl Subst PACKAGE_PIXMAPS_DIR.
+NO_PREFIX_PACKAGE_PIXMAPS_DIR="${packagepixmapsdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_PIXMAPS_DIR)
+PACKAGE_PIXMAPS_DIR="${packageprefix}/${packagepixmapsdir}"
+AC_SUBST(PACKAGE_PIXMAPS_DIR)
+
+dnl Subst PACKAGE_HELP_DIR.
+NO_PREFIX_PACKAGE_HELP_DIR="${packagehelpdir}"
+AC_SUBST(NO_PREFIX_PACKAGE_HELP_DIR)
+PACKAGE_HELP_DIR="${packageprefix}/${packagehelpdir}"
+AC_SUBST(PACKAGE_HELP_DIR)
+
+dnl Subst PACKAGE_MENU_DIR.
+NO_PREFIX_PACKAGE_MENU_DIR="${packagemenudir}"
+AC_SUBST(NO_PREFIX_PACKAGE_MENU_DIR)
+PACKAGE_MENU_DIR="${packageprefix}/${packagemenudir}"
+AC_SUBST(PACKAGE_MENU_DIR)
+
+AC_DEFINE_UNQUOTED(PACKAGE_DATA_DIR, "${packageprefix}/${packagedatadir}")
+AC_DEFINE_UNQUOTED(PACKAGE_DOC_DIR, "${packageprefix}/${packagedocdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_PIXMAPS_DIR, "${packageprefix}/${packagepixmapsdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_HELP_DIR, "${packageprefix}/${packagehelpdir}")
+AC_DEFINE_UNQUOTED(PACKAGE_MENU_DIR, "${packageprefix}/${packagemenudir}")
+AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}")
+
+AC_OUTPUT([
+Makefile
+intl/Makefile
+po/Makefile.in
+macros/Makefile
+am_macros/Makefile
+rf/Makefile
+cvstree/Makefile
+cvsgui_protocol/Makefile
+rf/support/Makefile
+rf/support/gtk/Makefile
+gcvs/src/Makefile
+gcvs.desktop.in
+gcvs.spec
+xml-i18n-update
+PythonLib/cvsgui/Makefile
+common/Makefile
+./Makefile
+pixmaps/Makefile
+gcvs/Makefile
+Macros/Makefile
+PythonLib/Makefile
+gcvs.desktop
+])
+
