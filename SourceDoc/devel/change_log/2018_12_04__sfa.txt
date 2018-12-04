@@ -9,3 +9,12 @@ WinCvs\CJLib\Include\CJMenuBar.h
 WinCvs\CJLib\Include\CJBrowseEdit.h
  - enum BROWSE_TYPE
    - was: typedef enum BROWSE_TYPE
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Add new bitmap with size 48x48 into wincvs.ico
+
+[Source]
+
+WinCvs\res\wincvs.ico
+ - [add] new size 48x48
