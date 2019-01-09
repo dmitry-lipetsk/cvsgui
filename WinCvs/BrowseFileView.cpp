@@ -2848,9 +2848,12 @@ void CBrowseFileView::DoDrag()
 
 			reinterpret_cast<BYTE*>(hMem)[Offset]=0;
 
-			COleDataSource ds;
-			ds.CacheGlobalData( CF_HDROP, hMem );
-			ds.DoDragDrop( DROPEFFECT_COPY );
+			//! \todo
+			//!  Rewrite with RAII or with smart pointer
+			COleDataSource* pDS=new COleDataSource(); //throw
+			pDS->CacheGlobalData( CF_HDROP, hMem );
+			pDS->DoDragDrop( DROPEFFECT_COPY );
+			pDS->InternalRelease();
 		}
 	}
 }
