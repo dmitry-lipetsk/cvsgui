@@ -1,0 +1,39 @@
+Initial support of monitor with DPI=144
+ - TreeView
+ - Main view of files
+
+[Source]
+
+WinCvs\BrowseFileView.cpp
+ - CBrowseFileView::OnInitialUpdate
+   - creation of m_smallImageList
+     - [use] GetImageResources() [p->SmallIcons]
+
+WinCvs\WinCvsBrowser.cpp
+ - CWinCvsBrowser::Create
+   - creation of m_imageList
+     - [use] GetImageResources() [p->Modules]
+
+WinCvs\resource.h
+ - [add] IDB_SMALLICONS_24=235
+ - [add] IDB_MODULES_24=236
+
+WinCvs\wincvs.rc
+ - [add] IDB_SMALLICONS_24 BITMAP DISCARDABLE "res\\smallico-24.bmp"
+ - [add] IDB_MODULES_24 BITMAP DISCARDABLE "res\\modules-24.bmp"
+
+WinCvs\wincvs.h(cpp)
+ - [add] struct CImageResourceDescr
+ - [add] struct CImageResources
+ - [add] const CImageResources* GetImageResources();
+
+ - [add] g_ImageResources_std
+ - [add] g_ImageResources_144
+
+WinCvs\build\vc10\wincvs.vcxproj
+WinCvs\build\vc10\wincvs.vcxproj.filters
+ - [add] res\modules-24.bmp
+ - [add] res\smallico-24.bmp
+
+[add] WinCvs\res\smallico-24.bmp
+[add] WinCvs\res\modules-24.bmp

@@ -501,7 +501,13 @@ BOOL CWinCvsBrowser::Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD
 	}
 	
 	if( m_imageList.m_hImageList == 0L )
-		m_imageList.Create(IDB_MODULES, 16, 1, RGB(255, 255, 255));
+	{
+		const auto* const p=GetImageResources();
+
+		assert(p);
+
+		m_imageList.Create(p->Modules.ResID, p->Modules.Size, 1, RGB(255, 255, 255));
+	}
 
 	CTreeCtrl& treeCtrl = GetTreeCtrl();
 	treeCtrl.SetImageList(&m_imageList, TVSIL_NORMAL);

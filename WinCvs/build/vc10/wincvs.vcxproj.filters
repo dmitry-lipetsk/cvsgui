@@ -1160,4 +1160,12 @@
     <CustomBuild Include="..\..\..\ChangeLog" />
     <CustomBuild Include="..\..\..\TODO" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\res\modules-24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\res\smallico-24.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

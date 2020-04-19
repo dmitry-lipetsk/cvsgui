@@ -73,6 +73,41 @@ const char* gAuthors[] =
 	"Oliver Giesen <ogware@gmx.net>"
 };
 
+/////////////////////////////////////////////////////////////////////////////
+
+static const CImageResources g_ImageResources_std=
+{
+	//SmallIcons
+	{IDB_SMALLICONS, 16},
+
+	//Modules
+	{IDB_MODULES, 16},
+};//g_ImageResources_std
+
+/////////////////////////////////////////////////////////////////////////////
+
+static const CImageResources g_ImageResources_144=
+{
+	//SmallIcons
+	{IDB_SMALLICONS_24, 24},
+
+	//Modules
+	{IDB_MODULES_24, 24},
+};//g_ImageResources_144
+
+/////////////////////////////////////////////////////////////////////////////
+
+const CImageResources* GetImageResources()
+{
+	const int dpi = ::GetDeviceCaps(::GetWindowDC(::GetDesktopWindow()), LOGPIXELSY);
+
+	if(dpi>=144)
+		return &g_ImageResources_144;
+
+	return &g_ImageResources_std;
+}//GetImageResources
+
+/////////////////////////////////////////////////////////////////////////////
 /// Class to handle auto-logout
 class CLogoutThread : public CWinThread
 {

@@ -95,6 +95,8 @@
 #define IDD_REMOVE_MAIN                 230
 #define IDR_SUBSTMODE                   232
 #define IDB_BUTTON_POPUP                234
+#define IDB_SMALLICONS_24               235
+#define IDB_MODULES_24                  236
 #define IDC_CVSROOT                     1000
 #define IDC_BULB                        1001
 #define IDC_STARTUP                     1003

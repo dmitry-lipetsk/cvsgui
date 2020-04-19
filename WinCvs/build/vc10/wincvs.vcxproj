@@ -1503,6 +1503,10 @@ type "..\..\HHelp\HHelp\%(Filename).log"
       <FileType>Document</FileType>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\res\modules-24.bmp" />
+    <None Include="..\..\res\smallico-24.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

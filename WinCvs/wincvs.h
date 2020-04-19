@@ -50,6 +50,28 @@ void AFXAPI DDV_CheckCVSROOT(CDataExchange* pDX, CString& value);
 void AFXAPI DDX_ComboMString(CDataExchange* pDX, int nIDC, CSmartComboBox& combo);
 
 /////////////////////////////////////////////////////////////////////////////
+//CImageResourceDescr
+
+struct CImageResourceDescr
+{
+	UINT ResID;
+	int  Size;
+};//struct CImageResourceDescr
+
+/////////////////////////////////////////////////////////////////////////////
+//CImageResources
+
+struct CImageResources
+{
+	CImageResourceDescr SmallIcons;
+	CImageResourceDescr Modules;
+};//struct CImageResources
+
+/////////////////////////////////////////////////////////////////////////////
+
+const CImageResources* GetImageResources();
+
+/////////////////////////////////////////////////////////////////////////////
 // CWincvsApp:
 // See wincvs.cpp for the implementation of this class
 //

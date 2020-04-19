@@ -684,7 +684,13 @@ void CBrowseFileView::OnInitialUpdate()
 
 	// Set image lists
 	if( !m_smallImageList.m_hImageList )
-		m_smallImageList.Create(IDB_SMALLICONS, 16, 1, RGB(255, 255, 255));
+	{
+		const auto* const p=GetImageResources();
+
+		assert(p);
+
+		m_smallImageList.Create(p->SmallIcons.ResID, p->SmallIcons.Size, 1, RGB(255, 255, 255));
+	}//if
 
 	if( !m_stateImageList.m_hImageList )
 		m_stateImageList.Create(IDR_STATEICONS, 16, 1, RGB(255, 0, 0));
