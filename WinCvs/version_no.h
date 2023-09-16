@@ -37,7 +37,7 @@
 // manually increment these when declaring a build.
 // Ideally, tag the repository with the build number
 // so a build can be reproduced.
-#define WINCVS_BUILD 1
+#define WINCVS_BUILD 2
 
 //
 // Example preprocessor definitions.
